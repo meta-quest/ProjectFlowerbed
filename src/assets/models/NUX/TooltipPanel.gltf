@@ -1,0 +1,260 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 6,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 720,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.18893566727638245,
+        0,
+        0.06944093108177185
+      ],
+      "min": [
+        -0.18966254591941833,
+        0,
+        -0.06942261755466461
+      ],
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 4,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 4,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 4,
+      "bufferView": 1,
+      "byteOffset": 32
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 456,
+      "max": [
+        0.202176034450531,
+        0.030306369066238403,
+        0.0830383226275444
+      ],
+      "min": [
+        -0.20280753076076508,
+        -0.030306383967399597,
+        -0.0830383226275444
+      ],
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 456,
+      "bufferView": 2,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 456,
+      "bufferView": 2,
+      "byteOffset": 24
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 456,
+      "bufferView": 2,
+      "byteOffset": 32
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1452,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1452,
+      "byteLength": 192,
+      "byteStride": 48,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1644,
+      "byteLength": 21888,
+      "byteStride": 48,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Tooltip_BG",
+      "mimeType": "image/ktx2",
+      "uri": "Tooltip_BG.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "TooltipPanel.bin",
+      "byteLength": 23532
+    }
+  ],
+  "materials": [
+    {
+      "name": "Tooltip",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "roughnessFactor": 0.5,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        }
+      }
+    },
+    {
+      "name": "TooltipTrim",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "roughnessFactor": 0.5,
+        "metallicFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Plane",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "TANGENT": 5
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    },
+    {
+      "name": "CUBezierCurve.004",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7,
+            "TEXCOORD_0": 8,
+            "TANGENT": 9
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 1
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Panel",
+      "translation": [
+        0,
+        0,
+        0.0024263858795166016
+      ],
+      "rotation": [
+        0.7071068286895752,
+        0,
+        0,
+        0.7071067094802856
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "Trim",
+      "translation": [
+        0,
+        0,
+        -0.01763240061700344
+      ],
+      "rotation": [
+        0.7071066498756409,
+        0,
+        0,
+        0.70710688829422
+      ],
+      "mesh": 1
+    },
+    {
+      "name": "Tooltip",
+      "children": [
+        0,
+        1
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        2
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu"
+  ]
+}

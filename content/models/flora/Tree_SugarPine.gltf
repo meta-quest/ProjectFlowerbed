@@ -1,0 +1,254 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Root"
+        },
+        {
+            "name" : "Branches01",
+            "translation" : [
+                0,
+                3.9875035285949707,
+                0
+            ]
+        },
+        {
+            "name" : "Branches02",
+            "translation" : [
+                0,
+                5.001505374908447,
+                0
+            ]
+        },
+        {
+            "name" : "Branches03",
+            "translation" : [
+                0,
+                6.049533843994141,
+                0
+            ]
+        },
+        {
+            "name" : "Branches04",
+            "translation" : [
+                0,
+                6.982847690582275,
+                0
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Tree_SugarPine",
+            "skin" : 0
+        },
+        {
+            "children" : [
+                5,
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "ARM_Tree_SugarPine"
+        }
+    ],
+    "materials" : [
+        {
+            "alphaCutoff" : 0.5,
+            "alphaMode" : "MASK",
+            "name" : "M_SkinnedPlant_Tree_SugarPine",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Tree_SugarPine",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "JOINTS_0" : 3,
+                        "WEIGHTS_0" : 4
+                    },
+                    "indices" : 5,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Tree_Sugar_Pine_normal",
+            "uri" : "Tree_Sugar_Pine_normal.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Tree_Sugar_Pine_occlusionRoughnessMetallic",
+            "uri" : "Tree_Sugar_Pine_occlusionRoughnessMetallic.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Tree_Sugar_Pine_baseColor",
+            "uri" : "Tree_Sugar_Pine_baseColor.png"
+        }
+    ],
+    "skins" : [
+        {
+            "inverseBindMatrices" : 6,
+            "joints" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "ARM_Tree_SugarPine"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 1738,
+            "max" : [
+                1.8445018529891968,
+                7.367919921875,
+                1.8806614875793457
+            ],
+            "min" : [
+                -1.8740208148956299,
+                -0.052583251148462296,
+                -1.861431360244751
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 1738,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 1738,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5121,
+            "count" : 1738,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 1738,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5123,
+            "count" : 6240,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 5,
+            "type" : "MAT4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 20856,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 20856,
+            "byteOffset" : 20856
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 13904,
+            "byteOffset" : 41712
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6952,
+            "byteOffset" : 55616
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 27808,
+            "byteOffset" : 62568
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12480,
+            "byteOffset" : 90376
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 102856
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 103176,
+            "uri" : "Tree_SugarPine.bin"
+        }
+    ]
+}

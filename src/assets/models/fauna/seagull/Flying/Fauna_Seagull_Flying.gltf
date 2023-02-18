@@ -1,0 +1,284 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 1656,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 519,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 519,
+      "max": [
+        21058,
+        6628,
+        9133
+      ],
+      "min": [
+        -19862,
+        1200,
+        -9133
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 519,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 519,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 519,
+      "max": [
+        11041,
+        20730,
+        488
+      ],
+      "min": [
+        -11433,
+        -1008,
+        -1140
+      ],
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 519,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 519,
+      "max": [
+        6532,
+        140,
+        2432
+      ],
+      "min": [
+        -5628,
+        -12037,
+        -292
+      ],
+      "normalized": true,
+      "bufferView": 3,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 519,
+      "normalized": true,
+      "bufferView": 3,
+      "byteOffset": 8
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 3312,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3312,
+      "byteLength": 12456,
+      "byteStride": 24,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 15768,
+      "byteLength": 6228,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 21996,
+      "byteLength": 6228,
+      "byteStride": 12,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Fauna_Seagull_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Fauna_Seagull_NormalMap.ktx2"
+    },
+    {
+      "name": "Fauna_Seagull_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Fauna_Seagull_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Fauna_Seagull_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Fauna_Seagull_BaseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Fauna_Seagull_Flying.bin",
+      "byteLength": 28224
+    }
+  ],
+  "materials": [
+    {
+      "name": "Fauna_Seagull",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Fauna_Seagull_Flying",
+      "extras": {
+        "targetNames": [
+          "Flap_Up",
+          "Flap_Down"
+        ]
+      },
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TANGENT": 4
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0,
+          "targets": [
+            {
+              "POSITION": 5,
+              "NORMAL": 6
+            },
+            {
+              "POSITION": 7,
+              "NORMAL": 8
+            }
+          ]
+        }
+      ],
+      "weights": [
+        0,
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Fauna_Seagull_Flying",
+      "translation": [
+        -0.012149184942245483,
+        0.2713388502597809,
+        -0.022612810134887695
+      ],
+      "scale": [
+        1.0224662721157074,
+        1.0224662721157074,
+        1.0224662721157074
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

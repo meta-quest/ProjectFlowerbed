@@ -1,0 +1,290 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Root"
+        },
+        {
+            "name" : "Flower_03",
+            "rotation" : [
+                -0.8008229732513428,
+                -0.021917525678873062,
+                -0.021917523816227913,
+                0.5980985164642334
+            ],
+            "scale" : [
+                0.9999999403953552,
+                1,
+                1
+            ],
+            "translation" : [
+                0.012716835364699364,
+                0.72162926197052,
+                -0.13111092150211334
+            ]
+        },
+        {
+            "name" : "Flower_01",
+            "rotation" : [
+                -0.5412503480911255,
+                0.5766861438751221,
+                0.5766861438751221,
+                0.20472963154315948
+            ],
+            "scale" : [
+                0.9999999403953552,
+                0.9999999403953552,
+                1.0000001192092896
+            ],
+            "translation" : [
+                -0.11464639753103256,
+                0.7617157101631165,
+                0.043101657181978226
+            ]
+        },
+        {
+            "name" : "Flower_02",
+            "rotation" : [
+                -0.4553859233856201,
+                -0.6295328736305237,
+                -0.6295329928398132,
+                0.0006017198320478201
+            ],
+            "scale" : [
+                0.9999996423721313,
+                0.9999999403953552,
+                0.9999999403953552
+            ],
+            "translation" : [
+                0.03109411522746086,
+                0.6446378231048584,
+                0.05285445973277092
+            ]
+        },
+        {
+            "name" : "Leaves_01",
+            "rotation" : [
+                -0.019596386700868607,
+                0.1896754503250122,
+                -0.005750616081058979,
+                0.9816344380378723
+            ],
+            "scale" : [
+                1,
+                1.0000001192092896,
+                1
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Flora_Daffodil",
+            "skin" : 0
+        },
+        {
+            "children" : [
+                5,
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Daffodil_Armature"
+        }
+    ],
+    "materials" : [
+        {
+            "alphaCutoff" : 0.5,
+            "alphaMode" : "MASK",
+            "name" : "SkinnedPlant_Flora_Daffodil_B",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 2
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Flora_Daffodil",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "JOINTS_0" : 3,
+                        "WEIGHTS_0" : 4
+                    },
+                    "indices" : 5,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Daffodil_NormalMap",
+            "uri" : "Flora_Daffodil_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Daffodil_B_BaseColor",
+            "uri" : "Flora_Daffodil_B_BaseColor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Daffodil_occlusionRoughnessMetallic",
+            "uri" : "Flora_Daffodil_occlusionRoughnessMetallic.png"
+        }
+    ],
+    "skins" : [
+        {
+            "inverseBindMatrices" : 6,
+            "joints" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Daffodil_Armature"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 817,
+            "max" : [
+                0.1482938528060913,
+                0.8580371141433716,
+                0.1538841724395752
+            ],
+            "min" : [
+                -0.22987958788871765,
+                -0.0015149499522522092,
+                -0.2225881814956665
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 817,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 817,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5121,
+            "count" : 817,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 817,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5123,
+            "count" : 2358,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 5,
+            "type" : "MAT4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 9804,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 9804,
+            "byteOffset" : 9804
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6536,
+            "byteOffset" : 19608
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3268,
+            "byteOffset" : 26144
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 13072,
+            "byteOffset" : 29412
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4716,
+            "byteOffset" : 42484
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 47200
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 47520,
+            "uri" : "Flora_Daffodil_B.bin"
+        }
+    ]
+}

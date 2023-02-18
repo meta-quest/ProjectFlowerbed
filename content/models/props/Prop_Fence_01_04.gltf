@@ -1,0 +1,303 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "b_painter_panels" : [
+                    "BRUSH",
+                    "COLOR",
+                    "TEXTURE",
+                    "STENCIL",
+                    "LAYER"
+                ],
+                "bc" : {
+                    "snap" : {
+                        "hit" : 0
+                    }
+                },
+                "MM" : {
+                    "revision" : "6b9140d97c1c89684282504c1b43358bc5142503"
+                },
+                "b_painter_active_tex_brush_category" : "Brush Textures",
+                "vr_landmarks" : [
+                    {
+                        "type" : 0
+                    }
+                ],
+                "b_painter_active_brush" : "Brush Mask",
+                "b_painter_brush" : 0,
+                "b_painter_active_tex_brush" : "None",
+                "curvetools" : {
+                    "CurveLength" : 1.6705399751663208
+                },
+                "zen_display" : {
+                    "stacked" : 0,
+                    "finished" : 0,
+                    "stretch" : 0
+                },
+                "DM" : {
+                    "revision" : "cc8df93aaa3044a610f0d75120f185790c4bb932",
+                    "export_atlas_texture_channel_packCOL" : [
+                        {
+                            "avoid_update" : 0,
+                            "name" : "ao_curv_height",
+                            "red" : 2,
+                            "green" : 3,
+                            "blue" : 4
+                        },
+                        {
+                            "avoid_update" : 0,
+                            "name" : "masks",
+                            "red" : 1,
+                            "green" : 9,
+                            "blue" : 10
+                        }
+                    ]
+                },
+                "M3" : {
+                    "avoid_update" : 0,
+                    "shading_light" : 0,
+                    "use_flat_shadows" : 0
+                },
+                "glTF2ExportSettings" : {
+                    "export_animations" : 0,
+                    "export_extras" : 1,
+                    "export_format" : "GLTF_SEPARATE",
+                    "use_visible" : 1
+                }
+            },
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extras" : {},
+            "mesh" : 0,
+            "name" : "Prop_Fence_01_04"
+        },
+        {
+            "extras" : {
+                "collider" : 1
+            },
+            "mesh" : 1,
+            "name" : "Fence_04_collider",
+            "translation" : [
+                0.0032463748939335346,
+                1.7430081367492676,
+                -0.0005378422210924327
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "extras" : {},
+            "name" : "Prop_Fence",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "BezierCurve.004",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Cube.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Fence_NormalMap",
+            "uri" : "Prop_Fence_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Fence_occlusionRoughnessMetallic",
+            "uri" : "Prop_Fence_occlusionRoughnessMetallic.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Fence_BaseColor",
+            "uri" : "Prop_Fence_BaseColor.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 133,
+            "max" : [
+                1.5,
+                0.9271062612533569,
+                0.034640949219465256
+            ],
+            "min" : [
+                0,
+                0.5181077122688293,
+                -0.03464117273688316
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 133,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 133,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 612,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                1.5239214897155762,
+                -0.6511462926864624,
+                0.11885941028594971
+            ],
+            "min" : [
+                -0.015662632882595062,
+                -1.770005702972412,
+                -0.11092114448547363
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 36,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 1596,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1596,
+            "byteOffset" : 1596
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1064,
+            "byteOffset" : 3192
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1224,
+            "byteOffset" : 4256
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 5480
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 5768
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 192,
+            "byteOffset" : 6056
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 72,
+            "byteOffset" : 6248
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 6320,
+            "uri" : "Prop_Fence_01_04.bin"
+        }
+    ]
+}

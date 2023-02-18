@@ -1,0 +1,254 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Root"
+        },
+        {
+            "name" : "Flowers_03",
+            "translation" : [
+                -0.11711107194423676,
+                0,
+                0.06672726571559906
+            ]
+        },
+        {
+            "name" : "Flowers_04",
+            "scale" : [
+                0.9627036452293396,
+                0.9627036452293396,
+                0.9627036452293396
+            ],
+            "translation" : [
+                0.16322220861911774,
+                -4.656612873077393e-10,
+                -0.1250249743461609
+            ]
+        },
+        {
+            "name" : "Flowers_01",
+            "translation" : [
+                0.0922362357378006,
+                0,
+                0.047242917120456696
+            ]
+        },
+        {
+            "name" : "Flowers_02",
+            "translation" : [
+                -0.10634069889783859,
+                0,
+                -0.11784940958023071
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Flora_Rose_Geo",
+            "skin" : 0
+        },
+        {
+            "children" : [
+                5,
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Rose"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "SkinnedPlant_Flora_Rose_B",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 2
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.007",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "JOINTS_0" : 3,
+                        "WEIGHTS_0" : 4
+                    },
+                    "indices" : 5,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Rose_NormalMap",
+            "uri" : "Flora_Rose_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Rose_B_BaseColor",
+            "uri" : "Flora_Rose_B_BaseColor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Rose_occlusionRoughnessMetallic",
+            "uri" : "Flora_Rose_occlusionRoughnessMetallic.png"
+        }
+    ],
+    "skins" : [
+        {
+            "inverseBindMatrices" : 6,
+            "joints" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Rose"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 5963,
+            "max" : [
+                0.4482734203338623,
+                0.6460155844688416,
+                0.4074898064136505
+            ],
+            "min" : [
+                -0.38781875371932983,
+                -0.010186120867729187,
+                -0.46660467982292175
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 5963,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 5963,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5121,
+            "count" : 5963,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 5963,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5123,
+            "count" : 14265,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 5,
+            "type" : "MAT4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 71556,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 71556,
+            "byteOffset" : 71556
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 47704,
+            "byteOffset" : 143112
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 23852,
+            "byteOffset" : 190816
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 95408,
+            "byteOffset" : 214668
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 28530,
+            "byteOffset" : 310076
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 338608
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 338928,
+            "uri" : "Flora_Rose_B.bin"
+        }
+    ]
+}

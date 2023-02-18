@@ -1,0 +1,291 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 2166,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 545,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 545,
+      "max": [
+        32767,
+        7960,
+        7824
+      ],
+      "min": [
+        -32767,
+        -7960,
+        -7824
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 545,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 545,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 4332,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4332,
+      "byteLength": 13080,
+      "byteStride": 24,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Bridge_combined_nrm",
+      "mimeType": "image/ktx2",
+      "uri": "Bridge_combined_nrm.ktx2"
+    },
+    {
+      "name": "Bridge_combined_orm",
+      "mimeType": "image/ktx2",
+      "uri": "Bridge_combined_orm.ktx2"
+    },
+    {
+      "name": "Bridge_combined_color",
+      "mimeType": "image/ktx2",
+      "uri": "Bridge_combined_color.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Prop_Bridge_LOD0.bin",
+      "byteLength": 17412
+    }
+  ],
+  "materials": [
+    {
+      "name": "M_Bridge",
+      "extras": {
+        "DM": {
+          "istrimsheetmat": 1,
+          "trimsheetname": "T_Bridge",
+          "version": "2.1.0",
+          "trimsheetuuid": "49d7842b-73c7-4ce4-9469-c12f6429cbbe"
+        },
+        "b_painter": {}
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh.002",
+      "extras": {
+        "hops": {}
+      },
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TANGENT": 4
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Prop_Bridge",
+      "extras": {
+        "b_painter_active_material": 0,
+        "kitops": {},
+        "MM": {},
+        "hops": {},
+        "DM": {},
+        "speedretopo_ref_object": {},
+        "M3": {}
+      },
+      "translation": [
+        -0.0033288002014160156,
+        -0.330116868019104,
+        0
+      ],
+      "scale": [
+        7.081610679626465,
+        7.081610679626465,
+        7.081610679626465
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "extras": {
+        "scatter_properties": {},
+        "curvetools": {},
+        "b_painter_panels": [
+          "BRUSH",
+          "COLOR",
+          "TEXTURE",
+          "STENCIL",
+          "LAYER"
+        ],
+        "b_painter_active_tex_brush_category": "Brush Textures",
+        "kitops": {},
+        "bc": {
+          "snap": {
+            "hit": 0
+          }
+        },
+        "MM": {
+          "revision": "6b9140d97c1c89684282504c1b43358bc5142503"
+        },
+        "vr_landmarks": [
+          {
+            "type": 0
+          }
+        ],
+        "DM": {
+          "revision": "cc8df93aaa3044a610f0d75120f185790c4bb932",
+          "export_atlas_texture_channel_packCOL": [
+            {
+              "avoid_update": 0,
+              "name": "ao_curv_height",
+              "red": 2,
+              "green": 3,
+              "blue": 4
+            },
+            {
+              "avoid_update": 0,
+              "name": "masks",
+              "red": 1,
+              "green": 9,
+              "blue": 10
+            }
+          ],
+          "register_panel_creation": 1,
+          "create_type": 2,
+          "show_panel_utils": 1,
+          "show_panel_tools": 0,
+          "show_panel_defaults": 0,
+          "create_trim_import_keep_sheet_uuid": 1
+        },
+        "b_painter_brush": 0,
+        "b_painter_active_tex_brush": "None",
+        "b_painter_active_brush": "Brush Mask",
+        "zen_uv": {
+          "tr_mode": 2,
+          "tr_pivot_mode": 1
+        },
+        "bsurfaces": {
+          "SURFSK_mesh": {}
+        },
+        "uvpm3_props": {
+          "scripted_pipeline_props": {}
+        },
+        "td": {},
+        "print_3d": {},
+        "zen_display": {
+          "stacked": 0,
+          "finished": 0,
+          "stretch": 0
+        },
+        "M3": {}
+      },
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

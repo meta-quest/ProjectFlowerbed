@@ -1,0 +1,353 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 96,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 41472,
+      "bufferView": 0,
+      "byteOffset": 192
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 24,
+      "bufferView": 0,
+      "byteOffset": 83136
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 32,
+      "max": [
+        0.1487303078174591,
+        0.019682612270116806,
+        0.27611973881721497
+      ],
+      "min": [
+        -0.1487303078174591,
+        -0.017548266798257828,
+        -0.16931916773319244
+      ],
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 32,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 32,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 32,
+      "bufferView": 1,
+      "byteOffset": 32
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 10800,
+      "max": [
+        0.15642061829566956,
+        0.029043613001704216,
+        0.2303968220949173
+      ],
+      "min": [
+        -0.15642061829566956,
+        -0.029043620452284813,
+        -0.2303968220949173
+      ],
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 10800,
+      "bufferView": 2,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 10800,
+      "bufferView": 2,
+      "byteOffset": 24
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 10800,
+      "bufferView": 2,
+      "byteOffset": 32
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 10,
+      "max": [
+        0.30480000376701355,
+        0,
+        0.30480000376701355
+      ],
+      "min": [
+        -0.30480000376701355,
+        0,
+        -0.06263381242752075
+      ],
+      "bufferView": 3,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 10,
+      "bufferView": 3,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 10,
+      "bufferView": 3,
+      "byteOffset": 24
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 10,
+      "bufferView": 3,
+      "byteOffset": 32
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 83184,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 83184,
+      "byteLength": 1536,
+      "byteStride": 48,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 84720,
+      "byteLength": 518400,
+      "byteStride": 48,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 603120,
+      "byteLength": 480,
+      "byteStride": 48,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "woodtexture",
+      "mimeType": "image/ktx2",
+      "uri": "woodtexture.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "NUXTallPanel.bin",
+      "byteLength": 603600
+    }
+  ],
+  "materials": [
+    {
+      "name": "UIPanelWoodTexture",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "roughnessFactor": 0,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        }
+      }
+    },
+    {
+      "name": "UIPanelTrim",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {}
+    },
+    {
+      "name": "VideoMask",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0.002273739781230688,
+          0.8000000715255737,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "metallicFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "CUBezierCurve.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4,
+            "TEXCOORD_0": 5,
+            "TANGENT": 6
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    },
+    {
+      "name": "CUBezierCurve.003",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 7,
+            "NORMAL": 8,
+            "TEXCOORD_0": 9,
+            "TANGENT": 10
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 1
+        }
+      ]
+    },
+    {
+      "name": "Plane",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 11,
+            "NORMAL": 12,
+            "TEXCOORD_0": 13,
+            "TANGENT": 14
+          },
+          "mode": 4,
+          "material": 2,
+          "indices": 2
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "PanelGraphic.003",
+      "mesh": 0
+    },
+    {
+      "name": "Trim.004",
+      "translation": [
+        0,
+        0,
+        0.054103173315525055
+      ],
+      "mesh": 1
+    },
+    {
+      "name": "VideoMask",
+      "translation": [
+        0.000896003155503422,
+        0.022018752992153168,
+        -0.14047907292842865
+      ],
+      "scale": [
+        0.46792343258857727,
+        0.46792343258857727,
+        0.46792343258857727
+      ],
+      "mesh": 2
+    },
+    {
+      "name": "LetsGetGardeningPanel",
+      "translation": [
+        0,
+        0.3369663655757904,
+        -0.05319517105817795
+      ],
+      "rotation": [
+        0.7071068286895752,
+        0,
+        0,
+        0.7071068286895752
+      ],
+      "scale": [
+        3.5,
+        3.5,
+        3.5
+      ],
+      "children": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        3
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu"
+  ]
+}

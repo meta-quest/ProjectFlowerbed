@@ -1,0 +1,514 @@
+/**
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+:root {
+	--oc-panel-background: #1c2b33;
+	--oc-dialog-background: #283943;
+	--oc-card-background: rgba(255, 255, 255, 0.1);
+	--oc-context-menu-background: #0e161b;
+
+	--qds-gradient-background: radial-gradient(
+			circle closest-corner at bottom center,
+			rgba(255, 108, 92, 0.08) 0%,
+			rgba(255, 108, 92, 0) 100%
+		),
+		radial-gradient(
+			100% 128% at 0% 0%,
+			rgba(160, 51, 255, 0.08) 0%,
+			rgba(160, 51, 255, 0) 100%
+		),
+		radial-gradient(
+			100% 128% at 100% 0%,
+			rgba(37, 211, 102, 0.04) 0%,
+			rgba(37, 211, 102, 0) 100%
+		),
+		var(--oc-panel-background);
+	--qds-navui-gradient-background: radial-gradient(
+			circle closest-corner at bottom center,
+			rgba(255, 108, 92, 0.08) 0%,
+			rgba(255, 108, 92, 0) 100%
+		),
+		radial-gradient(
+			100% 128% at 0% 0%,
+			rgba(160, 51, 255, 0.08) 0%,
+			rgba(160, 51, 255, 0) 100%
+		),
+		radial-gradient(
+			100% 128% at 100% 0%,
+			rgba(37, 211, 102, 0.04) 0%,
+			rgba(37, 211, 102, 0) 100%
+		),
+		var(--oc-panel-background);
+	--qds-dialog-gradient-background: radial-gradient(
+			123% 83% at 50% 122.2%,
+			rgba(255, 108, 92, 0.08) 0%,
+			rgba(255, 108, 92, 0) 100%
+		),
+		radial-gradient(
+			114.51% 100% at 0% 0%,
+			rgba(169, 90, 198, 0.08) 0%,
+			rgba(169, 90, 198, 0) 100%
+		),
+		radial-gradient(
+			115.56% 100% at 100% 0%,
+			rgba(37, 211, 102, 0.02) 0%,
+			rgba(37, 211, 102, 0) 100%
+		),
+		var(--oc-dialog-background);
+	--qds-media-controls-dropdown-gradient-background: radial-gradient(
+			142.61% 82% at 50% 117.6%,
+			rgba(255, 92, 103, 0.1) 0%,
+			rgba(255, 108, 92, 0) 100%
+		),
+		radial-gradient(
+			129.69% 100% at 100% 0%,
+			rgba(37, 211, 102, 0.04) 0%,
+			rgba(37, 211, 102, 0) 100%
+		),
+		radial-gradient(
+			131.14% 100% at 0% 0%,
+			rgba(160, 51, 255, 0.08) 0%,
+			rgba(160, 51, 255, 0) 100%
+		),
+		var(--oc-context-menu-background);
+
+	--qds-button-primary-background: #0064e0;
+	--qds-button-secondary-background: #45505b;
+}
+
+body {
+	margin: 0;
+	background: var(--qds-gradient-background);
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+hr {
+	border-bottom: 1px solid #fff;
+	background: none;
+	opacity: 1;
+	margin: 24px 0;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+p {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover {
+	color: #eee;
+}
+
+.page {
+	transition: opacity 0.3s;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.navbar {
+	justify-content: start;
+	height: 72px;
+	padding: 0 20px;
+}
+
+.navbar .btn {
+	padding: 15px 15px;
+}
+
+.navbar-top {
+	justify-content: space-between;
+}
+
+.main {
+	margin-top: 48px;
+	flex: 1;
+}
+
+.footer {
+	border-top: 1px solid #fff;
+	flex-shrink: 0;
+}
+
+.footer .middle {
+	flex-basis: content;
+	flex-grow: 0;
+}
+
+.footer-main {
+	border-top: none !important;
+}
+
+.footer-right {
+	padding: 15px;
+}
+
+.footer-separator {
+	font-family: 'Optimistic Display';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 21px;
+	text-align: center;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+
+	width: 6px;
+	height: 25px;
+
+	/* Interactive Components/Secondary Button Background */
+
+	color: rgba(255, 255, 255, 0.1);
+}
+
+.btn {
+	border-radius: 25px;
+	border: none;
+	font-size: 18px;
+	line-height: 20px;
+	height: 50px;
+	padding: 15px 30px;
+	color: #fff;
+	transition: opacity 0.3s, width 0.3s;
+}
+
+.btn:hover {
+	color: #fff;
+}
+
+.btn.active {
+	font-weight: 700;
+}
+
+.btn-primary {
+	background-color: var(--qds-button-primary-background);
+}
+
+.btn-secondary {
+	background-color: var(--qds-button-secondary-background);
+}
+
+.btn-icon {
+	width: 24px;
+	height: 24px;
+	padding: 0px !important;
+	margin: 15px;
+}
+
+.btn-icon img {
+	max-width: 100%;
+}
+
+.footer-strong {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.footer .btn {
+	font-size: 14px;
+	padding: 15px 8px;
+	opacity: 0.6;
+	font-weight: bold;
+}
+
+.footer .btn:hover {
+	opacity: 1;
+}
+
+.footer-id {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	gap: 8px;
+	width: 500px;
+	height: 17px;
+	flex: none;
+}
+
+.copyright {
+	font-size: 14px;
+	opacity: 0.6;
+}
+
+#flowerbed-logo {
+	max-width: 300px;
+	width: 90vw;
+}
+
+#primary-action-btn {
+	width: 240px;
+}
+
+#primary-action-btn:disabled {
+	opacity: 1;
+}
+
+#secondary-action-btn:disabled {
+	opacity: 0;
+}
+
+#app {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+#app-overlay {
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1000;
+	pointer-events: none;
+	padding: 8px;
+}
+
+#app-overlay .btn {
+	pointer-events: auto;
+}
+
+#main-nav {
+	z-index: 5;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+#scene-container {
+	position: relative;
+	height: 100%;
+}
+
+#splash-screen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 1s ease-in-out;
+}
+
+#splash-screen::before {
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(
+		90deg,
+		rgba(45, 45, 45, 0.8) 3.5%,
+		rgba(0, 0, 0, 0) 46.36%
+	);
+}
+
+#splash-screen img {
+	object-fit: cover;
+}
+
+#splash-screen video {
+	object-fit: cover !important;
+	width: 100%;
+	height: 100%;
+}
+
+.loading-button {
+	position: relative;
+	overflow: hidden;
+	width: 200px;
+}
+
+#loading-bar {
+	/* The loading bar is the _inverse_ of actual loading progress, so
+	   starts at 100% and goes to 0% facing the right */
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: width 300ms ease-in-out;
+	z-index: 1;
+}
+
+#preview-card {
+	border: none;
+	padding: 0;
+	border-radius: 0px;
+	overflow: hidden;
+	height: calc(100vh - 72px);
+}
+
+#preview-card h3 {
+	font-weight: 700;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+#preview-card p {
+	font-size: 18px;
+	margin-bottom: 20px;
+	line-height: 24px;
+	max-width: 300px;
+}
+
+#preview-action {
+	pointer-events: auto;
+	margin-left: 36px;
+}
+
+#brand-label {
+	padding: 0px;
+	font-size: 1.4em;
+}
+
+#garden-list-container {
+	margin: 16px 12px;
+}
+
+.card-body {
+	padding: 8px 12px !important;
+}
+
+.card-img-top {
+	height: 130px;
+}
+
+.card-overlay-buttons {
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.6);
+	position: absolute;
+	opacity: 0;
+	transition: all 0.2s ease-in !important;
+}
+
+.card:hover .card-overlay-buttons {
+	opacity: 1;
+}
+
+.garden-list-container {
+	margin-bottom: 20px;
+}
+
+/** QDS MODAL **/
+.modal-dialog {
+	max-width: 460px !important;
+}
+
+.modal-content {
+	background: var(--qds-dialog-gradient-background);
+	border: none;
+	border-radius: 25px;
+}
+
+.modal-header {
+	border: none;
+	font-weight: 700;
+	font-size: 25px;
+	height: 72px;
+	display: inline-block;
+	text-align: center;
+}
+
+.modal-body {
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0;
+	padding: 0 28px;
+}
+
+.modal-footer {
+	border: none;
+	padding: 25px 50px;
+}
+
+.modal-footer button {
+	flex: 1;
+}
+
+/** Ordered list, used mostly on legal terms **/
+ol {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+ol li {
+	margin-bottom: 20px;
+}
+
+ol.sublist {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+/** MOBILE CONTROLS **/
+
+#mobile-controls {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	pointer-events: none;
+}
+
+#mobile-locomotion {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	pointer-events: none;
+	z-index: 2000;
+}
+
+#mobile-rotation {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 50%;
+	pointer-events: none;
+	z-index: 2000;
+}
+
+.mobile-joystick-pad {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-joystick-handle {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	background-color: #fff;
+}

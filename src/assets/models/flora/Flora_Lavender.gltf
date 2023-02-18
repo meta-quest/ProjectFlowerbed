@@ -1,0 +1,309 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 14490,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 3570,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 3570,
+      "max": [
+        13493,
+        32767,
+        16510
+      ],
+      "min": [
+        -13493,
+        -32767,
+        -16510
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 4
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 3570,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 3570,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 3570,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 3570,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 5,
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 28980,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 28980,
+      "byteLength": 99960,
+      "byteStride": 28,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 128940,
+      "byteLength": 320
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Flora_Lavender_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Lavender_NormalMap.ktx2"
+    },
+    {
+      "name": "Flora_Lavender_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Lavender_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Flora_Lavender_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Lavender_BaseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Flora_Lavender.bin",
+      "byteLength": 129260
+    }
+  ],
+  "materials": [
+    {
+      "name": "SkinnedPlant_Flora_Lavender",
+      "alphaMode": "MASK",
+      "alphaCutoff": 0.5,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "WEIGHTS_0": 5,
+            "TANGENT": 6
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Flowers_01",
+      "rotation": [
+        0.047031763941049576,
+        0.03969423845410347,
+        0.03969424217939377,
+        0.9973148107528687
+      ]
+    },
+    {
+      "name": "Flowers_02",
+      "translation": [
+        0.005829792469739914,
+        2.3283064365386963e-9,
+        -0.007549895904958248
+      ],
+      "rotation": [
+        -0.08197355270385742,
+        0.004286124370992184,
+        0.004286124370992184,
+        0.9966161847114563
+      ]
+    },
+    {
+      "name": "Flowers_03",
+      "translation": [
+        0.0019162551034241915,
+        -8.091741499072214e-9,
+        -0.0056960005313158035
+      ],
+      "rotation": [
+        -0.0003649620048236102,
+        -0.005341467447578907,
+        -0.00534146698191762,
+        0.9999713897705078
+      ]
+    },
+    {
+      "name": "Flowers_04",
+      "translation": [
+        0.005725763738155365,
+        3.169529527724535e-9,
+        -0.0015916306292638183
+      ],
+      "rotation": [
+        -0.014096668921411037,
+        0.0014488933375105262,
+        -0.10851475596427917,
+        0.9939939379692078
+      ]
+    },
+    {
+      "name": "Root",
+      "translation": [
+        0.001916225766763091,
+        -8.119968697428703e-9,
+        -0.0015916331904008985
+      ]
+    },
+    {
+      "name": "Flora_Lavender_Geo",
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "Flora_Lavender",
+      "translation": [
+        -0.001916225766763091,
+        0,
+        0.0015916331904008985
+      ],
+      "children": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "name": "Flora_Lavender",
+      "inverseBindMatrices": 7,
+      "joints": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        6
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

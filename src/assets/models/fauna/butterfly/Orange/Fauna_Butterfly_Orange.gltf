@@ -1,0 +1,324 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 564,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 190,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 190,
+      "max": [
+        15241,
+        1224,
+        9241
+      ],
+      "min": [
+        -17422,
+        -1584,
+        -9241
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 190,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 190,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 190,
+      "max": [
+        15157,
+        16217,
+        512
+      ],
+      "min": [
+        -14065,
+        -20,
+        -904
+      ],
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 190,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 190,
+      "max": [
+        4980,
+        13209,
+        3100
+      ],
+      "min": [
+        -5032,
+        -1544,
+        -664
+      ],
+      "normalized": true,
+      "bufferView": 3,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 190,
+      "normalized": true,
+      "bufferView": 3,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 190,
+      "max": [
+        13229,
+        2156,
+        2072
+      ],
+      "min": [
+        -13501,
+        -16550,
+        -828
+      ],
+      "normalized": true,
+      "bufferView": 4,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 190,
+      "normalized": true,
+      "bufferView": 4,
+      "byteOffset": 8
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1128,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1128,
+      "byteLength": 4560,
+      "byteStride": 24,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5688,
+      "byteLength": 2280,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7968,
+      "byteLength": 2280,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10248,
+      "byteLength": 2280,
+      "byteStride": 12,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Fauna_Butterfly_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Fauna_Butterfly_NormalMap.ktx2"
+    },
+    {
+      "name": "Fauna_Butterfly_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Fauna_Butterfly_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Fauna_Butterfly_Orange_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Fauna_Butterfly_Orange_BaseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Fauna_Butterfly_Orange.bin",
+      "byteLength": 12528
+    }
+  ],
+  "materials": [
+    {
+      "name": "Fauna_Butterfly_Orange",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Fauna_Butterfly",
+      "extras": {
+        "targetNames": [
+          "Rest",
+          "Flap_Up",
+          "Flap_Down"
+        ]
+      },
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TANGENT": 4
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0,
+          "targets": [
+            {
+              "POSITION": 5,
+              "NORMAL": 6
+            },
+            {
+              "POSITION": 7,
+              "NORMAL": 8
+            },
+            {
+              "POSITION": 9,
+              "NORMAL": 10
+            }
+          ]
+        }
+      ],
+      "weights": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Fauna_Butterfly_Orange",
+      "translation": [
+        0.0033929385244846344,
+        -0.001042686402797699,
+        0.004248872399330139
+      ],
+      "scale": [
+        0.10192466527223587,
+        0.10192466527223587,
+        0.10192466527223587
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

@@ -1,0 +1,200 @@
+/**
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+import { DEBUG_CONSTANTS } from '../../Constants.js';
+
+export const AssetURLs = {
+	ADDITIONAL_MESH_DIRS: ['assets/models/props/'],
+	MESHES: {
+		BASE_SCENE: DEBUG_CONSTANTS.USE_SANDBOX_ENVIRONMENT
+			? 'assets/models/environment/sandbox.gltf'
+			: 'assets/models/environment/Environment_Terrain_Deliver.gltf',
+		CAMERA: 'assets/models/props/Prop_Camera/Prop_Camera.gltf',
+
+		PLANT_FLOWER: 'assets/models/flora/Flora_Pansy.gltf',
+		PLANT_PANSY_A: 'assets/models/flora/Flora_Pansy_A.gltf',
+		PLANT_PANSY_B: 'assets/models/flora/Flora_Pansy_B.gltf',
+		PLANT_PANSY_C: 'assets/models/flora/Flora_Pansy_C.gltf',
+		PLANT_ROSE_A: 'assets/models/flora/Flora_Rose_A.gltf',
+		PLANT_ROSE_B: 'assets/models/flora/Flora_Rose_B.gltf',
+		PLANT_ROSE_C: 'assets/models/flora/Flora_Rose_C.gltf',
+		PLANT_ROSE_D: 'assets/models/flora/Flora_Rose_D.gltf',
+		PLANT_TULIP_A: 'assets/models/flora/Flora_Tulip_A.gltf',
+		PLANT_TULIP_B: 'assets/models/flora/Flora_Tulip_B.gltf',
+		PLANT_TULIP_C: 'assets/models/flora/Flora_Tulip_C.gltf',
+		PLANT_TULIP_D: 'assets/models/flora/Flora_Tulip_D.gltf',
+		PLANT_CARNATION_A: 'assets/models/flora/Flora_Carnation_A.gltf',
+		PLANT_CARNATION_B: 'assets/models/flora/Flora_Carnation_B.gltf',
+		PLANT_DAFFODIL_A: 'assets/models/flora/Flora_Daffodil_A.gltf',
+		PLANT_DAFFODIL_B: 'assets/models/flora/Flora_Daffodil_B.gltf',
+		PLANT_SUCCULENT_A: 'assets/models/flora/Flora_Succulent_A.gltf',
+		PLANT_SUCCULENT_B: 'assets/models/flora/Flora_Succulent_B.gltf',
+		PLANT_SUCCULENT_C: 'assets/models/flora/Flora_Succulent_C.gltf',
+		PLANT_FIR: 'assets/models/flora/Tree_CedarHedge.gltf',
+		PLANT_SUGARPINE: 'assets/models/flora/Tree_SugarPine.gltf',
+		PLANT_ALLIUM_A: 'assets/models/flora/Flora_Allium_A.gltf',
+		PLANT_ALLIUM_B: 'assets/models/flora/Flora_Allium_B.gltf',
+		PLANT_ALLIUM_C: 'assets/models/flora/Flora_Allium_C.gltf',
+		PLANT_SUNFLOWER_A: 'assets/models/flora/Flora_Sunflower_A.gltf',
+		PLANT_SUNFLOWER_B: 'assets/models/flora/Flora_Sunflower_B.gltf',
+		PLANT_LAVENDER_A: 'assets/models/flora/Flora_Lavender_A.gltf',
+		PLANT_LAVENDER_B: 'assets/models/flora/Flora_Lavender_B.gltf',
+		PLANT_CHERRYBLOSSOM: 'assets/models/flora/Tree_CherryBlossom.gltf',
+		PLANT_OAK: 'assets/models/flora/Tree_Oak.gltf',
+		PLANT_NASTURTIUM_A: 'assets/models/flora/Flora_Nasturtium_A.gltf',
+		PLANT_NASTURTIUM_B: 'assets/models/flora/Flora_Nasturtium_B.gltf',
+		PLANT_NASTURTIUM_C: 'assets/models/flora/Flora_Nasturtium_C.gltf',
+		SEEDBOX: 'assets/models/props/Prop_SeedBox/Prop_SeedBox.gltf',
+
+		SEEDBAG_PANSY_A: 'assets/models/props/Prop_SeedPacket_Pansy_A.gltf',
+		SEEDBAG_PANSY_B: 'assets/models/props/Prop_SeedPacket_Pansy_B.gltf',
+		SEEDBAG_PANSY_C: 'assets/models/props/Prop_SeedPacket_Pansy_C.gltf',
+		SEEDBAG_ROSE_A: 'assets/models/props/Prop_SeedPacket_Rose_A.gltf',
+		SEEDBAG_ROSE_B: 'assets/models/props/Prop_SeedPacket_Rose_B.gltf',
+		SEEDBAG_ROSE_C: 'assets/models/props/Prop_SeedPacket_Rose_C.gltf',
+		SEEDBAG_ROSE_D: 'assets/models/props/Prop_SeedPacket_Rose_D.gltf',
+		SEEDBAG_TULIP_A: 'assets/models/props/Prop_SeedPacket_Tulip_A.gltf',
+		SEEDBAG_TULIP_B: 'assets/models/props/Prop_SeedPacket_Tulip_B.gltf',
+		SEEDBAG_TULIP_C: 'assets/models/props/Prop_SeedPacket_Tulip_C.gltf',
+		SEEDBAG_TULIP_D: 'assets/models/props/Prop_SeedPacket_Tulip_D.gltf',
+		SEEDBAG_CARNATION_A: 'assets/models/props/Prop_SeedPacket_Carnation_A.gltf',
+		SEEDBAG_CARNATION_B: 'assets/models/props/Prop_SeedPacket_Carnation_B.gltf',
+		SEEDBAG_DAFFODIL_A: 'assets/models/props/Prop_SeedPacket_Daffodil_A.gltf',
+		SEEDBAG_DAFFODIL_B: 'assets/models/props/Prop_SeedPacket_Daffodil_B.gltf',
+		SEEDBAG_SUCCULENT_A: 'assets/models/props/Prop_SeedPacket_Succulent_A.gltf',
+		SEEDBAG_SUCCULENT_B: 'assets/models/props/Prop_SeedPacket_Succulent_B.gltf',
+		SEEDBAG_SUCCULENT_C: 'assets/models/props/Prop_SeedPacket_Succulent_C.gltf',
+		SEEDBAG_FIR: 'assets/models/props/Prop_Packet_CedarHedge.gltf',
+		SEEDBAG_SUGARPINE: 'assets/models/props/Prop_Packet_SugarPine.gltf',
+		SEEDBAG_ALLIUM_A: 'assets/models/props/Prop_SeedPacket_Allium_A.gltf',
+		SEEDBAG_ALLIUM_B: 'assets/models/props/Prop_SeedPacket_Allium_B.gltf',
+		SEEDBAG_ALLIUM_C: 'assets/models/props/Prop_SeedPacket_Allium_C.gltf',
+		SEEDBAG_SUNFLOWER_A: 'assets/models/props/Prop_SeedPacket_Sunflower_A.gltf',
+		SEEDBAG_SUNFLOWER_B: 'assets/models/props/Prop_SeedPacket_Sunflower_B.gltf',
+		SEEDBAG_LAVENDER_A: 'assets/models/props/Prop_SeedPacket_Lavender_A.gltf',
+		SEEDBAG_LAVENDER_B: 'assets/models/props/Prop_SeedPacket_Lavender_B.gltf',
+		SEEDBAG_CHERRYBLOSSOM: 'assets/models/props/Prop_Packet_CherryBlossom.gltf',
+		SEEDBAG_OAK: 'assets/models/props/Prop_Packet_Oak.gltf',
+		SEEDBAG_NASTURTIUM_A:
+			'assets/models/props/Prop_SeedPacket_Nasturtium_A.gltf',
+		SEEDBAG_NASTURTIUM_B:
+			'assets/models/props/Prop_SeedPacket_Nasturtium_B.gltf',
+		SEEDBAG_NASTURTIUM_C:
+			'assets/models/props/Prop_SeedPacket_Nasturtium_C.gltf',
+
+		MODE_TILES: 'assets/models/props/Prop_Mode_Tiles/Prop_Mode_tiles.gltf',
+		CAMERA_ACTION_TILES:
+			'assets/models/props/Prop_Camera_Action_Tiles/Prop_Camera_Action_tiles.gltf',
+		WATERING_CAN: 'assets/models/props/Prop_Watering_Can.gltf',
+		FAUNA_BLUE_BUTTERFLY:
+			'assets/models/fauna/butterfly/Blue/Fauna_Butterfly_Blue.gltf',
+		FAUNA_DUCK_A: 'assets/models/fauna/duck/duck_a/Fauna_Duck_A.gltf',
+		FAUNA_DUCK_B: 'assets/models/fauna/duck/duck_b/Fauna_Duck_B.gltf',
+		FAUNA_FISH_A: 'assets/models/fauna/fish/Fish_A/Fauna_Fish_A.gltf',
+		FAUNA_FISH_B: 'assets/models/fauna/fish/Fish_B/Fauna_Fish_B.gltf',
+		FAUNA_ORANGE_BUTTERFLY:
+			'assets/models/fauna/butterfly/Orange/Fauna_Butterfly_Orange.gltf',
+		FAUNA_RABBIT: 'assets/models/fauna/rabbit/Fauna_Rabbit.gltf',
+		FAUNA_SEAGULL_FLYING:
+			'assets/models/fauna/seagull/Flying/Fauna_Seagull_Flying.gltf',
+		FAUNA_SEAGULL_STANDING:
+			'assets/models/fauna/seagull/Standing/Fauna_Seagull_Standing.gltf',
+		FAUNA_SQUIRREL: 'assets/models/fauna/squirrel/Fauna_Squirrel.gltf',
+		HAND_REST_LEFT: 'assets/models/hands/PlayerElement_Hand_Left.gltf',
+
+		UI_BACKGROUND: 'assets/models/NUX/NUXPanel.gltf',
+		UI_LONG_BACKGROUND: 'assets/models/NUX/NUXTallPanel.gltf',
+		UI_TOOLTIP: 'assets/models/NUX/TooltipPanel.gltf',
+
+		DEV_PREVIEW: 'assets/models/preview.gltf',
+	},
+	AUDIO: {
+		/**
+		 * Audio should be added with no extension, because we may need to switch between webm or mp3 on
+		 * different devices
+		 */
+		CAMERA_DELETE: 'assets/audio/sounds/woodland_camera_delete',
+		CAMERA_PICTURE_SLIDING:
+			'assets/audio/sounds/woodland_camera_picture_sliding_out',
+		CAMERA_SAVE: 'assets/audio/sounds/woodland_camera_save',
+		CAMERA_SHUTTER: 'assets/audio/sounds/woodland_camera_shutter',
+		CHOOSING_SEED: 'assets/audio/sounds/woodland_choosing_seed',
+		DIRT_FOOTSTEPS_01: 'assets/audio/sounds/woodland_dirt_footsteps_01',
+		DIRT_FOOTSTEPS_02: 'assets/audio/sounds/woodland_dirt_footsteps_02',
+		DIRT_FOOTSTEPS_03: 'assets/audio/sounds/woodland_dirt_footsteps_03',
+		DIRT_FOOTSTEPS_04: 'assets/audio/sounds/woodland_dirt_footsteps_04',
+		DIRT_FOOTSTEPS_05: 'assets/audio/sounds/woodland_dirt_footsteps_05',
+		DUCKS_LOOP: 'assets/audio/sounds/woodland_ducks_loop_06',
+		GRASS_FOOTSTEPS_01: 'assets/audio/sounds/woodland_grass_footsteps_01',
+		GRASS_FOOTSTEPS_02: 'assets/audio/sounds/woodland_grass_footsteps_02',
+		GRASS_FOOTSTEPS_03: 'assets/audio/sounds/woodland_grass_footsteps_03',
+		GRASS_FOOTSTEPS_04: 'assets/audio/sounds/woodland_grass_footsteps_04',
+		GRASS_FOOTSTEPS_05: 'assets/audio/sounds/woodland_grass_footsteps_05',
+		GRASS_FOOTSTEPS_06: 'assets/audio/sounds/woodland_grass_footsteps_06',
+		HEADLOCKED_AMBIENT_LOOP:
+			'assets/audio/sounds/woodland_headlocked_wind_amb_loop',
+		OCEAN_AMBIENT_LOOP: 'assets/audio/sounds/woodland_ocean_amb_loop',
+		OCEAN_WAVES_LOOP_01: 'assets/audio/sounds/woodland_ocean_waves_loop_01',
+		OCEAN_WAVES_LOOP_02: 'assets/audio/sounds/woodland_ocean_waves_loop_02',
+		OCEAN_WAVES_LOOP_03: 'assets/audio/sounds/woodland_ocean_waves_loop_03',
+		OCEAN_WAVES_LOOP_04: 'assets/audio/sounds/woodland_ocean_waves_loop_04',
+		PLANT_GROWTH_LOOP: 'assets/audio/sounds/woodland_plant_growth_loop',
+		PLANT_GROWTH_LOOP_02: 'assets/audio/sounds/woodland_plant_growth_loop_2',
+		PLANTING_SEED: 'assets/audio/sounds/woodland_planting_seed',
+		MENU_OPEN: 'assets/audio/sounds/woodland_pui_close',
+		MENU_CLOSE: 'assets/audio/sounds/woodland_pui_open',
+		REMOVING_SEED: 'assets/audio/sounds/woodland_removing_seed',
+		SEAGULLS_LOOP_01: 'assets/audio/sounds/woodland_seagulls_loop_01',
+		SEAGULLS_LOOP_02: 'assets/audio/sounds/woodland_seagulls_loop_02',
+		SEAGULLS_LOOP_03: 'assets/audio/sounds/woodland_seagulls_loop_03',
+		SEAGULLS_LOOP_04: 'assets/audio/sounds/woodland_seagulls_loop_04',
+		SEAGULLS_LOOP_05: 'assets/audio/sounds/woodland_seagulls_loop_05',
+		SEEDBOX_OPEN: 'assets/audio/sounds/woodland_seedbox_open',
+		SEEDBOX_PAGINATE_NEXT: 'assets/audio/sounds/woodland_seedbox_paginate_next',
+		SEEDBOX_PAGINATE_PREV:
+			'assets/audio/sounds/woodland_seedbox_paginate_previous',
+		SQUIRRELS_LOOP_01: 'assets/audio/sounds/woodland_squirrels_loop_01',
+		SQUIRRELS_LOOP_02: 'assets/audio/sounds/woodland_squirrels_loop_02',
+		SQUIRRELS_LOOP_03: 'assets/audio/sounds/woodland_squirrels_loop_03',
+		SQUIRRELS_LOOP_04: 'assets/audio/sounds/woodland_squirrels_loop_04',
+		SQUIRRELS_LOOP_05: 'assets/audio/sounds/woodland_squirrels_loop_05',
+		STONE_FOOTSTEPS_01: 'assets/audio/sounds/woodland_stone_footsteps_01',
+		STONE_FOOTSTEPS_02: 'assets/audio/sounds/woodland_stone_footsteps_02',
+		STONE_FOOTSTEPS_03: 'assets/audio/sounds/woodland_stone_footsteps_03',
+		STONE_FOOTSTEPS_04: 'assets/audio/sounds/woodland_stone_footsteps_04',
+		STONE_FOOTSTEPS_05: 'assets/audio/sounds/woodland_stone_footsteps_05',
+		TELEPORT_EXTEND_LINE: 'assets/audio/sounds/woodland_teleport_extend_line',
+		TELEPORT_SNAP_TURN:
+			'assets/audio/sounds/woodland_teleport_snap_turn_rotate',
+		TELEPORT: 'assets/audio/sounds/woodland_teleport',
+		THROW_SEED: 'assets/audio/sounds/woodland_throwing_seed',
+		WATER_FLOW_LOOP_01: 'assets/audio/sounds/woodland_water_flow_loop_01',
+		WATER_FLOW_LOOP_02: 'assets/audio/sounds/woodland_water_flow_loop_02',
+		WATER_FLOW_LOOP_03: 'assets/audio/sounds/woodland_water_flow_loop_03',
+		WATER_FLOW_LOOP_04: 'assets/audio/sounds/woodland_water_flow_loop_04',
+		WATERING_GROUND_LOOP: 'assets/audio/sounds/woodland_watering_ground_loop',
+		WATERING_SEED_LOOP: 'assets/audio/sounds/woodland_watering_seed_loop',
+		WOOD_FOOTSTEPS_01: 'assets/audio/sounds/woodland_wood_footsteps_01',
+		WOOD_FOOTSTEPS_02: 'assets/audio/sounds/woodland_wood_footsteps_02',
+		WOOD_FOOTSTEPS_03: 'assets/audio/sounds/woodland_wood_footsteps_03',
+		WOOD_FOOTSTEPS_04: 'assets/audio/sounds/woodland_wood_footsteps_04',
+		WOOD_FOOTSTEPS_05: 'assets/audio/sounds/woodland_wood_footsteps_05',
+
+		MUSIC_ARABESQUE: 'assets/audio/soundtrack/arabesque',
+		MUSIC_SPINDLE: 'assets/audio/soundtrack/spindle',
+	},
+	UI: {
+		SWITCH_OFF: 'assets/images/ui/switch_off.png',
+		SWITCH_ON: 'assets/images/ui/switch_on.png',
+		SWITCH_HOVER: 'assets/images/ui/switch_hover.png',
+	},
+	SCREENSHOT_CAMERA: {
+		WATER_MARK: 'assets/images/watermark.png',
+		ICON_DELETE: 'assets/images/icon_delete.png',
+		ICON_SAVE: 'assets/images/icon_download.png',
+	},
+};

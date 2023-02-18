@@ -1,0 +1,46 @@
+{
+	"mediaURL": "assets/videos/WelcomeToProjectFlowerbed.mp4",
+	"isVideo": true,
+	"children": [
+		{
+			"name": "Heading",
+			"children": [
+				{
+					"text": "Welcome to Project Flowerbed"
+				}
+			]
+		},
+		{
+			"name": "Body",
+			"children": [
+				{
+					"text": "Project Flowerbed is an immersive VR experience where you can bring the garden of your dreams to life.\nHere's a quick tutorial on the basics of VR gardening."
+				}
+			]
+		},
+		{
+			"name": "Buttons",
+			"children": [
+				{
+					"name": "skip",
+					"type": "button",
+					"backgroundColor": "0xdddddd",
+					"children": [
+						{
+							"text": "Skip"
+						}
+					]
+				},
+				{
+					"name": "continue",
+					"type": "button",
+					"children": [
+						{
+							"text": "Start Tutorial"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,293 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Root"
+        },
+        {
+            "name" : "Flower_01",
+            "rotation" : [
+                0.0008091983618214726,
+                0.021283164620399475,
+                0.021283166483044624,
+                0.9995466470718384
+            ],
+            "scale" : [
+                0.9999999403953552,
+                0.9999999403953552,
+                0.9999999403953552
+            ],
+            "translation" : [
+                -0.0018235559109598398,
+                0.709553599357605,
+                -0.0001861491473391652
+            ]
+        },
+        {
+            "name" : "Leaf_01",
+            "rotation" : [
+                -0.05231335014104843,
+                -0.2777177095413208,
+                -0.2777177095413208,
+                0.9181553721427917
+            ],
+            "scale" : [
+                0.9999999403953552,
+                0.9999998807907104,
+                0.9999998807907104
+            ]
+        },
+        {
+            "name" : "Leaf_02",
+            "rotation" : [
+                -0.057426683604717255,
+                -0.05819163843989372,
+                -0.058191634714603424,
+                0.9949520826339722
+            ],
+            "translation" : [
+                0.0006910536903887987,
+                0.047926127910614014,
+                -0.001930133905261755
+            ]
+        },
+        {
+            "name" : "Leaf_03",
+            "rotation" : [
+                -0.09110081195831299,
+                0.3221500813961029,
+                0.3221501111984253,
+                0.8855164051055908
+            ],
+            "scale" : [
+                0.9999999403953552,
+                0.9999998807907104,
+                1.0000001192092896
+            ],
+            "translation" : [
+                -0.0035680958535522223,
+                0.06548985838890076,
+                -8.605960465501994e-05
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Flora_Tulip",
+            "skin" : 0
+        },
+        {
+            "children" : [
+                5,
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Tulip_Armature",
+            "translation" : [
+                0.0003616251051425934,
+                -0.0011022090911865234,
+                -0.007188207004219294
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "alphaCutoff" : 0.5,
+            "alphaMode" : "MASK",
+            "name" : "SkinnedPlant_Flora_Tulip_A",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Flora_Tulip",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "JOINTS_0" : 3,
+                        "WEIGHTS_0" : 4
+                    },
+                    "indices" : 5,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Tulip_NormalMap",
+            "uri" : "Flora_Tulip_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Tulip_occlusionRoughnessMetallic",
+            "uri" : "Flora_Tulip_occlusionRoughnessMetallic.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Tulip_A_BaseColor",
+            "uri" : "Flora_Tulip_A_BaseColor.png"
+        }
+    ],
+    "skins" : [
+        {
+            "inverseBindMatrices" : 6,
+            "joints" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Tulip_Armature"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 732,
+            "max" : [
+                0.28599002957344055,
+                0.8524703979492188,
+                0.06373254209756851
+            ],
+            "min" : [
+                -0.3323151767253876,
+                -0.0019479835173115134,
+                -0.07214044779539108
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 732,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 732,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5121,
+            "count" : 732,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 732,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5123,
+            "count" : 2322,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 5,
+            "type" : "MAT4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 8784,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8784,
+            "byteOffset" : 8784
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5856,
+            "byteOffset" : 17568
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2928,
+            "byteOffset" : 23424
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 11712,
+            "byteOffset" : 26352
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4644,
+            "byteOffset" : 38064
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 42708
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 43028,
+            "uri" : "Flora_Tulip_A.bin"
+        }
+    ]
+}

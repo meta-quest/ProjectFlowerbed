@@ -1,0 +1,346 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.7.33",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "act" : {
+                    "export_custom_options" : 0,
+                    "custom_export_path" : 1,
+                    "export_path" : "//bakes\\",
+                    "export_dir" : "H:\\Shared drives\\Projects\\Woodland\\Prop_08_Camera\\Prop_08_Camera_UV_Bake_20220511\\bakes/",
+                    "apply_rot" : 1,
+                    "apply_scale" : 1,
+                    "apply_loc" : 1,
+                    "export_target_engine" : 1,
+                    "delete_mats_before_export" : 0,
+                    "fbx_export_mode" : 0
+                },
+                "td" : {
+                    "uv_space" : "53.8554 %",
+                    "density" : "11.125"
+                },
+                "scatter_properties" : {},
+                "b_painter_panels" : [
+                    "BRUSH",
+                    "COLOR",
+                    "TEXTURE",
+                    "STENCIL",
+                    "LAYER"
+                ],
+                "kitops" : {},
+                "bc" : {
+                    "snap" : {
+                        "hit" : 0
+                    }
+                },
+                "MM" : {
+                    "revision" : "6b9140d97c1c89684282504c1b43358bc5142503"
+                },
+                "b_painter_active_tex_brush_category" : "Brush Textures",
+                "vr_landmarks" : [
+                    {
+                        "type" : 0
+                    }
+                ],
+                "bsurfaces" : {
+                    "SURFSK_mesh" : {}
+                },
+                "b_painter_brush" : 0,
+                "b_painter_active_tex_brush" : "None",
+                "b_painter_active_brush" : "Brush Mask",
+                "uuid" : "ace02e76-93ee-49a4-8533-3f950351f8c8",
+                "assets reported" : {}
+            },
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extras" : {
+                "kitops" : {},
+                "MM" : {},
+                "hops" : {},
+                "b_painter_active_material" : 0
+            },
+            "mesh" : 0,
+            "name" : "shutter_release_button",
+            "translation" : [
+                0.09745034575462341,
+                0.11048764735460281,
+                -0.026292355731129646
+            ]
+        },
+        {
+            "extras" : {
+                "kitops" : {},
+                "MM" : {},
+                "hops" : {},
+                "b_painter_active_material" : 0
+            },
+            "mesh" : 1,
+            "name" : "Prop_Camera",
+            "translation" : [
+                0.05259379372000694,
+                0,
+                -0.00870710052549839
+            ]
+        },
+        {
+            "name" : "photo_start",
+            "translation" : [
+                0.010024219751358032,
+                0.05233965069055557,
+                -0.008707096800208092
+            ]
+        },
+        {
+            "name" : "photo_end",
+            "translation" : [
+                -0.10855725407600403,
+                0.05233965069055557,
+                -0.008707107044756413
+            ]
+        },
+        {
+            "name" : "camera_anchor",
+            "translation" : [
+                0.11430972814559937,
+                0.026866137981414795,
+                -0.008707087486982346
+            ]
+        },
+        {
+            "name" : "screen_anchor",
+            "translation" : [
+                0.009436638094484806,
+                0.052028123289346695,
+                0.015322942286729813
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "extras" : {
+                "b_painter" : {}
+            },
+            "name" : "Prop_Camera",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "extras" : {
+                "hops" : {}
+            },
+            "name" : "Prop_Camera",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "extras" : {
+                "hops" : {}
+            },
+            "name" : "Prop_Camera.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Camera_NormalMap",
+            "uri" : "Prop_Camera_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Camera_occlusionRoughnessMetallic",
+            "uri" : "Prop_Camera_occlusionRoughnessMetallic.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Camera_BaseColor",
+            "uri" : "Prop_Camera_BaseColor.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 122,
+            "max" : [
+                0.010365024209022522,
+                0.0025674253702163696,
+                0.010365039110183716
+            ],
+            "min" : [
+                -0.010364983230829239,
+                -0.004351623356342316,
+                -0.010365033522248268
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 122,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 122,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 354,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 4401,
+            "max" : [
+                0.069747693836689,
+                0.11566112190485,
+                0.032303713262081146
+            ],
+            "min" : [
+                -0.11145137995481491,
+                -9.768311429070309e-06,
+                -0.06446223706007004
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 4401,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 4401,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 14346,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 1464,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1464,
+            "byteOffset" : 1464
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 976,
+            "byteOffset" : 2928
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 708,
+            "byteOffset" : 3904
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 52812,
+            "byteOffset" : 4612
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 52812,
+            "byteOffset" : 57424
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 35208,
+            "byteOffset" : 110236
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 28692,
+            "byteOffset" : 145444
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 174136,
+            "uri" : "Prop_Camera.bin"
+        }
+    ]
+}

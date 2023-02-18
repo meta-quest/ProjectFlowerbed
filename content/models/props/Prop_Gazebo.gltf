@@ -1,0 +1,359 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "b_painter_panels" : [
+                    "BRUSH",
+                    "COLOR",
+                    "TEXTURE",
+                    "STENCIL",
+                    "LAYER"
+                ],
+                "bc" : {
+                    "snap" : {
+                        "hit" : 0
+                    }
+                },
+                "MM" : {
+                    "revision" : "6b9140d97c1c89684282504c1b43358bc5142503"
+                },
+                "b_painter_active_tex_brush_category" : "Brush Textures",
+                "vr_landmarks" : [
+                    {
+                        "type" : 0
+                    }
+                ],
+                "b_painter_active_brush" : "Brush Mask",
+                "glTF2ExportSettings" : {
+                    "export_animations" : 0,
+                    "export_apply" : 1,
+                    "export_extras" : 1,
+                    "export_format" : "GLTF_SEPARATE"
+                }
+            },
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extras" : {
+                "MapChannel:1" : "UVChannel_1",
+                "MaxHandle" : 1,
+                "b_painter_active_material" : 0
+            },
+            "mesh" : 0,
+            "name" : "Prop_Gazebo",
+            "scale" : [
+                0.009999999776482582,
+                0.009999999776482582,
+                0.009999999776482582
+            ]
+        },
+        {
+            "extras" : {
+                "collider" : 1,
+                "teleport" : 1
+            },
+            "mesh" : 1,
+            "name" : "gazebo_collider_floor",
+            "scale" : [
+                0.009999999776482582,
+                0.009999999776482582,
+                0.009999999776482582
+            ]
+        },
+        {
+            "extras" : {
+                "collider" : 1
+            },
+            "mesh" : 2,
+            "name" : "gazebo_collider",
+            "scale" : [
+                0.009999999776482582,
+                0.009999999776482582,
+                0.009999999776482582
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "extras" : {},
+            "name" : "Prop_Gazebo",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Mesh.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7
+                }
+            ]
+        },
+        {
+            "name" : "Mesh.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "NORMAL" : 9,
+                        "TEXCOORD_0" : 10
+                    },
+                    "indices" : 11
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Gazebo_NormalMap",
+            "uri" : "Prop_Gazebo_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Gazebo_occlusionRoughnessMetallic",
+            "uri" : "Prop_Gazebo_occlusionRoughnessMetallic.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Gazebo_baseColor",
+            "uri" : "Prop_Gazebo_baseColor.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 16447,
+            "max" : [
+                236.20314025878906,
+                695.7897338867188,
+                252.5413818359375
+            ],
+            "min" : [
+                -236.20314025878906,
+                -3.5316407680511475,
+                -252.5187225341797
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 16447,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 16447,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 60087,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 688,
+            "max" : [
+                213.24301147460938,
+                42.509849548339844,
+                252.5413818359375
+            ],
+            "min" : [
+                -213.24301147460938,
+                0.5845487117767334,
+                -252.5187225341797
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 688,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 688,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 1572,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 6802,
+            "max" : [
+                236.20314025878906,
+                695.2595825195312,
+                232.05181884765625
+            ],
+            "min" : [
+                -236.20314025878906,
+                38.33571243286133,
+                -232.05191040039062
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 6802,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 6802,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5123,
+            "count" : 18975,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 197364,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 197364,
+            "byteOffset" : 197364
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 131576,
+            "byteOffset" : 394728
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 120174,
+            "byteOffset" : 526304
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8256,
+            "byteOffset" : 646480
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8256,
+            "byteOffset" : 654736
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5504,
+            "byteOffset" : 662992
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3144,
+            "byteOffset" : 668496
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 81624,
+            "byteOffset" : 671640
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 81624,
+            "byteOffset" : 753264
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 54416,
+            "byteOffset" : 834888
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 37950,
+            "byteOffset" : 889304
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 927256,
+            "uri" : "Prop_Gazebo.bin"
+        }
+    ]
+}

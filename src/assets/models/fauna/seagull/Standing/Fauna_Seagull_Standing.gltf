@@ -1,0 +1,457 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 3156,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 794,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 794,
+      "max": [
+        9713,
+        32371,
+        32767
+      ],
+      "min": [
+        -8453,
+        -15389,
+        -32767
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 794,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 794,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 794,
+      "max": [
+        16402,
+        0,
+        3144
+      ],
+      "min": [
+        -1728,
+        0,
+        -10097
+      ],
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 794,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 794,
+      "max": [
+        1772,
+        0,
+        2980
+      ],
+      "min": [
+        -16329,
+        0,
+        -10301
+      ],
+      "normalized": true,
+      "bufferView": 3,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 794,
+      "normalized": true,
+      "bufferView": 3,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 794,
+      "max": [
+        0,
+        13761,
+        5716
+      ],
+      "min": [
+        0,
+        -8521,
+        -1632
+      ],
+      "normalized": true,
+      "bufferView": 4,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 794,
+      "normalized": true,
+      "bufferView": 4,
+      "byteOffset": 8
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 6312,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6312,
+      "byteLength": 19056,
+      "byteStride": 24,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 25368,
+      "byteLength": 9528,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 34896,
+      "byteLength": 9528,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 44424,
+      "byteLength": 9528,
+      "byteStride": 12,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Fauna_Seagull_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Fauna_Seagull_NormalMap.ktx2"
+    },
+    {
+      "name": "Fauna_Seagull_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Fauna_Seagull_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Fauna_Seagull_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Fauna_Seagull_BaseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Fauna_Seagull_Standing.bin",
+      "byteLength": 53952
+    }
+  ],
+  "materials": [
+    {
+      "name": "Fauna_Seagull",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Fauna_Seagull_Standing",
+      "extras": {
+        "targetNames": [
+          "Look_Left",
+          "Look_Right",
+          "Relaxed"
+        ]
+      },
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TANGENT": 4
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0,
+          "targets": [
+            {
+              "POSITION": 5,
+              "NORMAL": 6
+            },
+            {
+              "POSITION": 7,
+              "NORMAL": 8
+            },
+            {
+              "POSITION": 9,
+              "NORMAL": 10
+            }
+          ]
+        }
+      ],
+      "weights": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Fauna_Seagull_Standing",
+      "extras": {
+        "currentUVSet": "map1"
+      },
+      "translation": [
+        0.000534646213054657,
+        0.1130443662405014,
+        -0.054358892142772675
+      ],
+      "scale": [
+        0.24162939935922623,
+        0.24162939935922623,
+        0.24162939935922623
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "extras": {
+        "DM": {
+          "revision": "df474acfd29b8014bff4dc0b249ca05ef2b1a013",
+          "export_atlas_texture_channel_packCOL": [
+            {
+              "avoid_update": 0,
+              "name": "ao_curv_height",
+              "red": 2,
+              "green": 3,
+              "blue": 4
+            },
+            {
+              "avoid_update": 0,
+              "name": "masks",
+              "red": 1,
+              "green": 9,
+              "blue": 10
+            }
+          ]
+        },
+        "MM": {
+          "revision": "57ae851e9b0759eef65e265c8eba239ba8391f68"
+        },
+        "gaf_props": {
+          "IsShowingRadius": 0,
+          "IsShowingLabel": 0
+        },
+        "bc": {
+          "snap": {
+            "hit": 0
+          }
+        },
+        "zen_display": {
+          "stacked": 0,
+          "finished": 0,
+          "stretch": 0
+        },
+        "zen_sets_object_list": [
+          {
+            "level": 0,
+            "layer_name": "zen_sets_object_layer_1b498fba-dc2b-4dee-a916-e183247ea7c1",
+            "has_children": 0,
+            "collection": {
+              "name": "Master Collection",
+              "type": "Collection"
+            },
+            "parent_idx": -1
+          }
+        ],
+        "zsts_color_palette": {},
+        "ZBBQ_UserHasDisabledColoredEdgesAtLeastOnce": 0,
+        "zen_sets_object_list_index": 0,
+        "ZBBQ_PresetsIncluded": {
+          "title": "Default cm",
+          "unitSystem": 1,
+          "bevelPresetsIndex": 0,
+          "bevelPresets": [
+            {
+              "unitSystem": 1,
+              "radius": 1,
+              "units": 1,
+              "colorId": "ColorA",
+              "color": [
+                1,
+                0.11100621521472931,
+                0.16977672278881073
+              ]
+            },
+            {
+              "unitSystem": 1,
+              "radius": 2,
+              "units": 1,
+              "colorId": "ColorB",
+              "color": [
+                0.002567382762208581,
+                0.43090468645095825,
+                0.019824344664812088
+              ]
+            },
+            {
+              "unitSystem": 1,
+              "radius": 3,
+              "units": 1,
+              "colorId": "ColorC",
+              "color": [
+                0.02643318846821785,
+                0.21164964139461517,
+                0.6249921321868896
+              ]
+            },
+            {
+              "unitSystem": 1,
+              "radius": 5,
+              "units": 1,
+              "colorId": "ColorD",
+              "color": [
+                0.9321982860565186,
+                0.7369347810745239,
+                0.015988152474164963
+              ]
+            },
+            {
+              "unitSystem": 1,
+              "radius": 7,
+              "units": 1,
+              "colorId": "ColorE",
+              "color": [
+                0.11100621521472931,
+                0.6797053217887878,
+                1
+              ]
+            },
+            {
+              "unitSystem": 1,
+              "radius": 10,
+              "units": 1,
+              "colorId": "ColorF",
+              "color": [
+                0.708004355430603,
+                0.10335222631692886,
+                1
+              ]
+            }
+          ]
+        },
+        "ZBBQ_HasPresetsIncluded": 1,
+        "ZBBQ_ZenBBQOverlayShow": 0,
+        "zen_sets_active_mode": 0,
+        "zen_sets_last_edge_mode": "edge",
+        "zen_sets_last_vert_mode": "vert"
+      },
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

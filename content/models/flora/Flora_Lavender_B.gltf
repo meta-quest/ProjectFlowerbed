@@ -1,0 +1,300 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Flowers_01",
+            "rotation" : [
+                0.047031763941049576,
+                0.03969423845410347,
+                0.03969424217939377,
+                0.9973148107528687
+            ],
+            "scale" : [
+                0.9999999403953552,
+                1.0000001192092896,
+                1
+            ]
+        },
+        {
+            "name" : "Flowers_02",
+            "rotation" : [
+                -0.08197355270385742,
+                0.004286124370992184,
+                0.004286124370992184,
+                0.9966161847114563
+            ],
+            "scale" : [
+                0.9999999403953552,
+                1.0000001192092896,
+                1
+            ],
+            "translation" : [
+                0.005829792469739914,
+                2.3283064365386963e-09,
+                -0.007549895904958248
+            ]
+        },
+        {
+            "name" : "Flowers_03",
+            "rotation" : [
+                -0.0003649620048236102,
+                -0.005341467447578907,
+                -0.00534146698191762,
+                0.9999713897705078
+            ],
+            "scale" : [
+                0.9999999403953552,
+                1,
+                1
+            ],
+            "translation" : [
+                0.0019162551034241915,
+                -8.091741499072214e-09,
+                -0.0056960005313158035
+            ]
+        },
+        {
+            "name" : "Flowers_04",
+            "rotation" : [
+                -0.014096668921411037,
+                0.0014488933375105262,
+                -0.10851475596427917,
+                0.9939939379692078
+            ],
+            "scale" : [
+                1,
+                0.9999999403953552,
+                0.9999999403953552
+            ],
+            "translation" : [
+                0.005725763738155365,
+                3.169529527724535e-09,
+                -0.0015916306292638183
+            ]
+        },
+        {
+            "name" : "Root",
+            "translation" : [
+                0.001916225766763091,
+                -8.119968697428703e-09,
+                -0.0015916331904008985
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Flora_Lavender_Geo",
+            "skin" : 0
+        },
+        {
+            "children" : [
+                5,
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Lavender",
+            "translation" : [
+                -0.001916225766763091,
+                0,
+                0.0015916331904008985
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "alphaCutoff" : 0.5,
+            "alphaMode" : "MASK",
+            "name" : "SkinnedPlant_Flora_Lavender_B",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 2
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "JOINTS_0" : 3,
+                        "WEIGHTS_0" : 4
+                    },
+                    "indices" : 5,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Lavender_NormalMap",
+            "uri" : "Flora_Lavender_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Lavender_B_BaseColor",
+            "uri" : "Flora_Lavender_B_BaseColor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Lavender_occlusionRoughnessMetallic",
+            "uri" : "Flora_Lavender_occlusionRoughnessMetallic.png"
+        }
+    ],
+    "skins" : [
+        {
+            "inverseBindMatrices" : 6,
+            "joints" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Lavender"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 3570,
+            "max" : [
+                0.13264141976833344,
+                0.604280412197113,
+                0.15359950065612793
+            ],
+            "min" : [
+                -0.11693917959928513,
+                -0.0017935538198798895,
+                -0.1517450511455536
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 3570,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 3570,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5121,
+            "count" : 3570,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 3570,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5123,
+            "count" : 14490,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 5,
+            "type" : "MAT4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 42840,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 42840,
+            "byteOffset" : 42840
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 28560,
+            "byteOffset" : 85680
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 14280,
+            "byteOffset" : 114240
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 57120,
+            "byteOffset" : 128520
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 28980,
+            "byteOffset" : 185640
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 214620
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 214940,
+            "uri" : "Flora_Lavender_B.bin"
+        }
+    ]
+}

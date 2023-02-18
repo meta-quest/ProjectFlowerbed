@@ -1,0 +1,307 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Root",
+            "rotation" : [
+                0.006904889829456806,
+                -6.175419226615432e-19,
+                -6.175418709627549e-19,
+                0.9999761581420898
+            ],
+            "scale" : [
+                1,
+                0.9999999403953552,
+                0.9999999403953552
+            ]
+        },
+        {
+            "name" : "Leaves_01",
+            "rotation" : [
+                0.016236135736107826,
+                0.0001725184847600758,
+                -0.010626769624650478,
+                0.9998117089271545
+            ],
+            "scale" : [
+                1,
+                1.0000001192092896,
+                1.0000001192092896
+            ]
+        },
+        {
+            "name" : "Leaves_02",
+            "rotation" : [
+                0.019217118620872498,
+                0.00017551860946696252,
+                -0.009146854281425476,
+                0.9997735023498535
+            ],
+            "scale" : [
+                0.9999999403953552,
+                1.0000001192092896,
+                1.0000001192092896
+            ]
+        },
+        {
+            "name" : "Flowers_01",
+            "rotation" : [
+                0.03279886767268181,
+                -0.3071005642414093,
+                -0.11652672290802002,
+                0.9439465403556824
+            ],
+            "scale" : [
+                0.9999998211860657,
+                0.9999998807907104,
+                0.9999998211860657
+            ],
+            "translation" : [
+                0.03559805825352669,
+                0.49810367822647095,
+                0.03263908252120018
+            ]
+        },
+        {
+            "name" : "Leaves_03",
+            "rotation" : [
+                0.020682716742157936,
+                0.0002773294982034713,
+                -0.013505667448043823,
+                0.99969482421875
+            ],
+            "scale" : [
+                1,
+                0.9999999403953552,
+                0.9999998807907104
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Flora_Allium",
+            "skin" : 0
+        },
+        {
+            "children" : [
+                5,
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Allium_Armature"
+        }
+    ],
+    "materials" : [
+        {
+            "alphaCutoff" : 0.5,
+            "alphaMode" : "MASK",
+            "name" : "SkinnedPlant_Flora_Allium_B",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh.004",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "COLOR_0" : 3,
+                        "JOINTS_0" : 4,
+                        "WEIGHTS_0" : 5
+                    },
+                    "indices" : 6,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Allium_NormalMap",
+            "uri" : "Flora_Allium_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Allium_occlusionRoughnessMetallic",
+            "uri" : "Flora_Allium_occlusionRoughnessMetallic.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Allium_B_BaseColor",
+            "uri" : "Flora_Allium_B_BaseColor.png"
+        }
+    ],
+    "skins" : [
+        {
+            "inverseBindMatrices" : 7,
+            "joints" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Allium_Armature"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 1098,
+            "max" : [
+                0.10587877780199051,
+                0.6016982197761536,
+                0.11654210090637207
+            ],
+            "min" : [
+                -0.10520835965871811,
+                -0.0012621693313121796,
+                -0.11417806893587112
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 1098,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 1098,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 1098,
+            "normalized" : true,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5121,
+            "count" : 1098,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 1098,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5123,
+            "count" : 3366,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 5,
+            "type" : "MAT4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 13176,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 13176,
+            "byteOffset" : 13176
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8784,
+            "byteOffset" : 26352
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8784,
+            "byteOffset" : 35136
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4392,
+            "byteOffset" : 43920
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 17568,
+            "byteOffset" : 48312
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6732,
+            "byteOffset" : 65880
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 72612
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 72932,
+            "uri" : "Flora_Allium_B.bin"
+        }
+    ]
+}

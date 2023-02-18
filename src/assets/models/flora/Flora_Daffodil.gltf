@@ -1,0 +1,299 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 2358,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 817,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 817,
+      "max": [
+        14417,
+        32767,
+        14353
+      ],
+      "min": [
+        -14417,
+        -32767,
+        -14353
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 4
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 817,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 817,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 817,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 817,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 5,
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 4716,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4716,
+      "byteLength": 22876,
+      "byteStride": 28,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 27592,
+      "byteLength": 320
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Flora_Daffodil_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Daffodil_NormalMap.ktx2"
+    },
+    {
+      "name": "Flora_Daffodil_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Daffodil_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Flora_Daffodil_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Daffodil_BaseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Flora_Daffodil.bin",
+      "byteLength": 27912
+    }
+  ],
+  "materials": [
+    {
+      "name": "SkinnedPlant_Flora_Daffodil",
+      "alphaMode": "MASK",
+      "alphaCutoff": 0.5,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Flora_Daffodil",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "WEIGHTS_0": 5,
+            "TANGENT": 6
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root"
+    },
+    {
+      "name": "Flower_03",
+      "translation": [
+        0.01191177312284708,
+        0.7243574261665344,
+        -0.07543928921222687
+      ],
+      "rotation": [
+        -0.7687130570411682,
+        -0.014616955071687698,
+        -0.014578851871192455,
+        0.6392605900764465
+      ]
+    },
+    {
+      "name": "Flower_01",
+      "translation": [
+        -0.06159140169620514,
+        0.7610002160072327,
+        0.012490625493228436
+      ],
+      "rotation": [
+        -0.5112653970718384,
+        0.6233034729957581,
+        0.5527260899543762,
+        0.21117378771305084
+      ]
+    },
+    {
+      "name": "Flower_02",
+      "translation": [
+        0.0015531384851783514,
+        0.6403948664665222,
+        0.015941230580210686
+      ],
+      "rotation": [
+        -0.4380365312099457,
+        -0.6777510643005371,
+        -0.5905379056930542,
+        0.0065270173363387585
+      ]
+    },
+    {
+      "name": "Leaves_01",
+      "rotation": [
+        -0.019596386700868607,
+        0.1896754503250122,
+        -0.005750616081058979,
+        0.9816344380378723
+      ]
+    },
+    {
+      "name": "Flora_Daffodil",
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "Flora_Daffodil_Armature",
+      "children": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "name": "Flora_Daffodil_Armature",
+      "inverseBindMatrices": 7,
+      "joints": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        6
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

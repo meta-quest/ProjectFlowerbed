@@ -1,0 +1,20 @@
+{
+	"children": [
+		{
+			"name": "Heading",
+			"children": [
+				{
+					"text": "Teleporting"
+				}
+			]
+		},
+		{
+			"name": "Body",
+			"children": [
+				{
+					"text": "Push the right thumbstick forward and release to teleport."
+				}
+			]
+		}
+	]
+}

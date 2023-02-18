@@ -1,0 +1,4 @@
+{
+	"description": "This is a bit of a hack to make sure that we can reference AssetURLs in various processing scripts as an ECMA module, not as a CommonJS one.",
+	"type": "module"
+}

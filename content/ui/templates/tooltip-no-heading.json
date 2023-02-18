@@ -1,0 +1,35 @@
+{
+	"width": 170,
+	"height": 72,
+	"backgroundMeshId": "UI_TOOLTIP",
+	"shouldLookAtCamera": false,
+	"interactable": false,
+	"backgroundTextureURL": "",
+	"backgroundOffset": [0, 0, 1],
+	"uiPanelParams": {
+		"alignItems": "center",
+		"justifyContent": "center",
+		"padding": 0,
+		"margin":0
+	},
+
+	"children": [
+		{
+			"name": "Body",
+			"type": "vertical",
+			"size": 40,
+			"alignItems": "start",
+			"justifyContent": "center",
+			"padding": 0,
+			"textAlign": "left",
+			"children": [
+				{
+					"type": "text",
+					"text": "BODY COPY",
+					"bold": false,
+					"fontSize": 12
+				}
+			]
+		}
+	]
+}

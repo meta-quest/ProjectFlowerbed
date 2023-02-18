@@ -1,0 +1,161 @@
+<!-- 
+  Copyright (c) Meta Platforms, Inc. and affiliates.
+  This source code is licensed under the MIT license found in the
+  LICENSE file in the root directory of this source tree.
+-->
+
+<div id="preview-card" class="card bg-transparent text-white">
+	<nav class="navbar navbar-top navbar-dark bg-transparent" id="main-nav">
+		<div id="main-nav-buttons">
+			<a class="btn btn-transparent active" disabled>Home</a>
+			<a class="btn btn-transparent" href="#about">About</a>
+		</div>
+		<a
+			title="View source code on Github"
+			class="btn btn-transparent btn-icon"
+			href="https://github.com/meta-quest/ProjectFlowerbed"
+			><img src="./assets/images/landing-page/github-mark-white.png"
+		/></a>
+	</nav>
+
+	<div id="scene-container" class="card-img">
+		<div id="splash-screen">
+			<video
+				id="splash-trailer"
+				autoplay
+				loop
+				muted
+				poster="./assets/images/landing-page/sizzle_trailer_Moment.jpg"
+			>
+				<source src="./assets/videos/sizzle_trailer.mp4" type="video/mp4" />
+			</video>
+		</div>
+	</div>
+	<div
+		class="card-img-overlay d-flex align-items-center"
+		style="pointer-events: none; padding: 0px"
+	>
+		<div id="preview-action">
+			<h3>
+				<div style="width: 370px">
+					<img
+						id="flowerbed-logo"
+						src="./assets/images/landing-page/logo.png"
+					/>
+				</div>
+			</h3>
+			<p>Grow the garden of your dreams in VR, right from your browser.</p>
+			<div id="garden-action-buttons">
+				<button
+					type="button"
+					id="primary-action-btn"
+					class="btn btn-primary loading-button"
+					disabled
+				>
+					<div id="loading-bar"></div>
+					Loading...
+				</button>
+				<button
+					type="button"
+					id="secondary-action-btn"
+					class="btn btn-secondary"
+					disabled
+					data-bs-toggle="modal"
+					data-bs-target="#create-new-garden-modal"
+				>
+					Create new garden
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div
+	class="row row-cols-1 row-cols-md-3 g-4"
+	style="margin: 20px; display: none"
+>
+	<div class="col" id="garden-card-prototype" style="margin-top: 0px">
+		<div class="card" style="border-radius: 8px">
+			<img
+				src="./assets/images/landing-page/flowerbed-preview.jpg"
+				class="card-img-top"
+				style="border-radius: 6px 6px 0px 0px"
+			/>
+			<div class="card-overlay-buttons card-img-top">
+				<button class="btn btn-primary garden-load">Load</button>
+				<button class="btn btn-primary garden-copy">
+					<img
+						src="./assets/images/copy_Outline_24-3x.png"
+						style="height: 1.3em"
+					/>
+				</button>
+				<button class="btn btn-primary garden-delete">
+					<img
+						src="./assets/images/trash_Outline_24-3x.png"
+						style="height: 1.3em"
+					/>
+				</button>
+				<p class="garden-desc"></p>
+			</div>
+			<div class="card-body">
+				<h5 class="garden-title" style="margin-bottom: 0">
+					<img
+						src="./assets/images/bookmark_filled_24-3x.png"
+						style="height: 1.3em"
+					/>
+				</h5>
+			</div>
+		</div>
+	</div>
+</div>
+
+<nav class="navbar navbar-dark bg-transparent footer footer-main d-flex">
+	<div class="me-auto">
+		<span>
+			<a class="btn btn-transparent" href="#legal">Legal Terms</a>
+			<a class="btn btn-transparent" href="#privacy">Privacy Policy</a>
+		</span>
+	</div>
+	<div class="footer-right">
+		<span class="footer-strong"> A Meta Project </span>
+		<span class="footer-separator">|</span>
+		<span class="copyright"
+			>Copyright © Meta Platforms, Inc. and affiliates</span
+		>
+	</div>
+</nav>
+
+<!--Confirm Create New Garden Modal-->
+<div
+	class="modal fade"
+	id="create-new-garden-modal"
+	tabindex="-1"
+	aria-hidden="true"
+>
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">Replace garden?</div>
+			<div class="modal-body">
+				Creating a new garden will delete your current garden. Are you sure you
+				want to replace your garden?
+			</div>
+			<div class="modal-footer">
+				<button
+					class="btn btn-secondary"
+					data-bs-dismiss="modal"
+					aria-label="Close"
+				>
+					Cancel
+				</button>
+				<button
+					id="create-new-map-btn"
+					class="btn btn-primary"
+					data-bs-dismiss="modal"
+					aria-label="Close"
+				>
+					Replace
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

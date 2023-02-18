@@ -1,0 +1,344 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 1398,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 3030,
+      "bufferView": 0,
+      "byteOffset": 2796
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 325,
+      "max": [
+        6364,
+        32767,
+        6364
+      ],
+      "min": [
+        -6364,
+        -32767,
+        -6364
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 325,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 325,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 325,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 664,
+      "max": [
+        11509,
+        32767,
+        6364
+      ],
+      "min": [
+        -11509,
+        -32767,
+        -6364
+      ],
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 664,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 664,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 664,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 16
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 8856,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8856,
+      "byteLength": 6500,
+      "byteStride": 20,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 15356,
+      "byteLength": 13280,
+      "byteStride": 20,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Prop_Fence_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Fence_NormalMap.ktx2"
+    },
+    {
+      "name": "Prop_Fence_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Fence_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Prop_Fence_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Fence_BaseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Prop_Fence_01_02.bin",
+      "byteLength": 28636
+    }
+  ],
+  "materials": [
+    {
+      "name": "Prop_Fence",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "BezierCurve.002",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "TANGENT": 5
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    },
+    {
+      "name": "BezierCurve.003",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7,
+            "TEXCOORD_0": 8,
+            "TANGENT": 9
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 1
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Prop_Fence_01_02",
+      "translation": [
+        0,
+        0.5152853049745696,
+        0
+      ],
+      "scale": [
+        0.5152853212842805,
+        0.5152853212842805,
+        0.5152853212842805
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "Prop_Fence_01_03",
+      "translation": [
+        0.08087307214736938,
+        0.5152853049745696,
+        0
+      ],
+      "scale": [
+        0.5152853212842805,
+        0.5152853212842805,
+        0.5152853212842805
+      ],
+      "mesh": 1
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "extras": {
+        "b_painter_panels": [
+          "BRUSH",
+          "COLOR",
+          "TEXTURE",
+          "STENCIL",
+          "LAYER"
+        ],
+        "bc": {
+          "snap": {
+            "hit": 0
+          }
+        },
+        "MM": {
+          "revision": "6b9140d97c1c89684282504c1b43358bc5142503"
+        },
+        "b_painter_active_tex_brush_category": "Brush Textures",
+        "vr_landmarks": [
+          {
+            "type": 0
+          }
+        ],
+        "b_painter_active_brush": "Brush Mask",
+        "b_painter_brush": 0,
+        "b_painter_active_tex_brush": "None",
+        "curvetools": {
+          "CurveLength": 1.6705399751663208
+        },
+        "zen_display": {
+          "stacked": 0,
+          "finished": 0,
+          "stretch": 0
+        },
+        "DM": {
+          "revision": "cc8df93aaa3044a610f0d75120f185790c4bb932",
+          "export_atlas_texture_channel_packCOL": [
+            {
+              "avoid_update": 0,
+              "name": "ao_curv_height",
+              "red": 2,
+              "green": 3,
+              "blue": 4
+            },
+            {
+              "avoid_update": 0,
+              "name": "masks",
+              "red": 1,
+              "green": 9,
+              "blue": 10
+            }
+          ]
+        },
+        "glTF2ExportSettings": {
+          "export_extras": 1,
+          "export_format": "GLTF_SEPARATE",
+          "use_visible": 1
+        }
+      },
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+	"children": [
+		{
+			"name": "Heading",
+			"size": 24,
+			"children": [
+				{
+					"text": "Save a photo"
+				}
+			]
+		},
+		{
+			"name": "Body",
+			"size": 48,
+			"interLine": 2,
+			"children": [
+				{
+					"text": "Press the left trigger to grab your photo. You can choose to save or delete it."
+				}
+			]
+		}
+	]
+}

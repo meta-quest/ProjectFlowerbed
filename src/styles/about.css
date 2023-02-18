@@ -1,0 +1,55 @@
+/**
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+#about {
+	width: 100%;
+	min-height: 100vh;
+}
+
+#about .main img {
+	max-width: 240px;
+	width: 100%;
+	height: 240px;
+	border-radius: 16px;
+	object-fit: cover;
+	display: block;
+	margin: auto;
+}
+
+#about .row {
+	align-items: center;
+}
+
+#about .whatis {
+	align-items: normal;
+}
+
+#about .bottom-divider {
+	margin-bottom: 0;
+}
+
+#lightbox-modal .modal-dialog {
+	max-width: calc(100vw - 80px) !important;
+	max-height: calc(100vh - 80px);
+}
+
+#lightbox-modal .modal-content {
+	background: none;
+}
+
+#lightbox-modal .modal-header {
+	text-align: right;
+}
+
+#lightbox-modal .modal-body {
+	padding-bottom: 20px;
+}
+
+#lightbox-modal img {
+	max-width: 100%;
+	border-radius: 25px;
+}

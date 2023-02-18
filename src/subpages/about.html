@@ -1,0 +1,136 @@
+<!-- 
+  Copyright (c) Meta Platforms, Inc. and affiliates.
+  This source code is licensed under the MIT license found in the
+  LICENSE file in the root directory of this source tree.
+-->
+
+<nav class="navbar navbar-top navbar-dark bg-transparent">
+	<div>
+		<a class="btn btn-transparent" href="#">Home</a>
+		<a class="btn btn-transparent active">About</a>
+	</div>
+	<a
+		title="View source code on Github"
+		class="btn btn-transparent btn-icon"
+		href="https://github.com/meta-quest/ProjectFlowerbed"
+		><img src="./assets/images/landing-page/github-mark-white.png"
+	/></a>
+</nav>
+
+<div class="container main" style="margin-bottom: 1rem">
+	<div class="row whatis">
+		<div class="col-sm-8" style="margin-top: 1rem">
+			<h3>What is Project Flowerbed?</h3>
+			<p>
+				Project Flowerbed is an immersive, meditative VR gardening experience.
+				Explore a tranquil island while you plant and grow flowers, trees, and
+				more. Capture pictures of your garden as it comes to life, and share
+				them with friends.
+			</p>
+
+			<p>
+				Project Flowerbed was created to celebrate what’s possible in WebXR. It
+				is
+				<a href="https://github.com/meta-quest/ProjectFlowerbed"
+					>entirely open source</a
+				>, so other creators and developers around the world can take
+				inspiration for their own WebXR projects.
+			</p>
+			<p>We can’t wait to see what new ideas you bring to bloom!</p>
+		</div>
+		<div class="col-sm-4">
+			<img
+				src="./assets/images/landing-page/screenshot1.jpg"
+				alt="Screenshot of Project Flowerbed"
+				role="button"
+				data-bs-toggle="modal"
+				data-bs-target="#lightbox-modal"
+				onclick="document.getElementById('lightbox-image').src = './assets/images/landing-page/screenshot1.jpg'"
+			/>
+		</div>
+	</div>
+	<hr />
+	<div class="row">
+		<div class="col-sm-4">
+			<img
+				src="./assets/images/landing-page/screenshot2.jpg"
+				alt="Screenshot of Project Flowerbed"
+				role="button"
+				data-bs-toggle="modal"
+				data-bs-target="#lightbox-modal"
+				onclick="document.getElementById('lightbox-image').src = './assets/images/landing-page/screenshot2.jpg'"
+			/>
+		</div>
+		<div class="col-sm-8">
+			<h3>Build Great WebXR Experiences</h3>
+			<p>
+				Watch our presentation at Meta Connect 2022 to see the unveiling of
+				Project Flowerbed, and learn about the engines, content pipelines, and
+				tools that are available to help you make high quality and high
+				performance WebXR experiences.
+			</p>
+			<a
+				href="https://metaconnect.com/en-us/program/fbc029"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="btn btn-primary"
+				>Watch presentation</a
+			>
+		</div>
+	</div>
+	<hr />
+	<div class="row">
+		<div class="col-sm-8">
+			<h3>Control Guide</h3>
+			<p>
+				Learn how to get around the garden, bring it to life, and take pictures
+				of your creations.
+			</p>
+		</div>
+		<div class="col-sm-4">
+			<img
+				src="./assets/images/landing-page/controls-cropped.png"
+				alt="Controller layout graphic"
+				role="button"
+				data-bs-toggle="modal"
+				data-bs-target="#lightbox-modal"
+				onclick="document.getElementById('lightbox-image').src = './assets/images/landing-page/controls-landing-page.png'"
+			/>
+		</div>
+	</div>
+</div>
+<nav class="navbar navbar-dark bg-transparent footer d-flex">
+	<div class="me-auto">
+		<span>
+			<a class="btn btn-transparent" href="#legal">Legal Terms</a>
+			<a class="btn btn-transparent" href="#privacy">Privacy Policy</a>
+		</span>
+	</div>
+	<div class="footer-right">
+		<span class="footer-strong"> A Meta Project </span>
+		<span class="footer-separator">|</span>
+		<span class="copyright"
+			>Copyright © Meta Platforms, Inc. and affiliates
+		</span>
+	</div>
+</nav>
+
+<!-- MODALS -->
+<div class="modal lightbox-modal fade" id="lightbox-modal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button
+					type="button"
+					class="btn-close btn-close-white"
+					data-bs-dismiss="modal"
+					aria-label="Close"
+				></button>
+			</div>
+			<div class="modal-body">
+				<img id="lightbox-image" />
+			</div>
+		</div>
+		<div class="modal-footer" />
+	</div>
+</div>

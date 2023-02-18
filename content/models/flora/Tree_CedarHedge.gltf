@@ -1,0 +1,255 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Root"
+        },
+        {
+            "name" : "Branches01",
+            "translation" : [
+                0,
+                0.6999999284744263,
+                0
+            ]
+        },
+        {
+            "name" : "Branches02",
+            "translation" : [
+                0,
+                2.3000001907348633,
+                0
+            ]
+        },
+        {
+            "name" : "Branches03",
+            "translation" : [
+                0,
+                3.9000000953674316,
+                0
+            ]
+        },
+        {
+            "name" : "Branches04",
+            "translation" : [
+                0,
+                5.5,
+                0
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Tree_CedarHedge",
+            "skin" : 0
+        },
+        {
+            "children" : [
+                5,
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "ARM_Tree_CedarHedge"
+        }
+    ],
+    "materials" : [
+        {
+            "alphaCutoff" : 0.5,
+            "alphaMode" : "MASK",
+            "doubleSided" : true,
+            "name" : "M_SkinnedPlant_Tree_CedarHedge",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Tree_CedarHedge",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "JOINTS_0" : 3,
+                        "WEIGHTS_0" : 4
+                    },
+                    "indices" : 5,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Tree_CedarHedge_normal",
+            "uri" : "Tree_CedarHedge_normal.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Tree_CedarHedge_occlusionRoughnessMetallic",
+            "uri" : "Tree_CedarHedge_occlusionRoughnessMetallic.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Tree_CedarHedge_baseColor",
+            "uri" : "Tree_CedarHedge_baseColor.png"
+        }
+    ],
+    "skins" : [
+        {
+            "inverseBindMatrices" : 6,
+            "joints" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "ARM_Tree_CedarHedge"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 1564,
+            "max" : [
+                1.216570258140564,
+                7,
+                1.2806962728500366
+            ],
+            "min" : [
+                -1.1556395292282104,
+                -0.12212081253528595,
+                -1.2464061975479126
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 1564,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 1564,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5121,
+            "count" : 1564,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 1564,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5123,
+            "count" : 5358,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 5,
+            "type" : "MAT4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 18768,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 18768,
+            "byteOffset" : 18768
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12512,
+            "byteOffset" : 37536
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6256,
+            "byteOffset" : 50048
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 25024,
+            "byteOffset" : 56304
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 10716,
+            "byteOffset" : 81328
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 92044
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 92364,
+            "uri" : "Tree_CedarHedge.bin"
+        }
+    ]
+}

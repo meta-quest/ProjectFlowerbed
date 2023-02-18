@@ -1,0 +1,22 @@
+{
+    "name": "asset_pipeline",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Woodland processing pipeline for glTFs",
+    "main": "asset_pipeline.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "private": true,
+    "dependencies": {
+        "@gltf-transform/cli": "^2.4.3",
+        "@gltf-transform/core": "^2.4.3",
+        "@gltf-transform/extensions": "^2.4.3",
+        "@gltf-transform/functions": "^2.4.3",
+        "@squoosh/lib": "^0.4.0",
+        "meshoptimizer": "^0.18.1",
+        "mikktspace": "^1.1.1"
+    }
+}

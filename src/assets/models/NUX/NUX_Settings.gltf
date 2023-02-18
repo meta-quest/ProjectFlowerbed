@@ -1,0 +1,424 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 48,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 48,
+      "bufferView": 0,
+      "byteOffset": 96
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 2520,
+      "bufferView": 0,
+      "byteOffset": 192
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 0,
+      "byteOffset": 5232
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 16,
+      "max": [
+        0.1487303078174591,
+        -0.017548266798257828,
+        0.16299337148666382
+      ],
+      "min": [
+        -0.1487303078174591,
+        -0.017548266798257828,
+        -0.16267430782318115
+      ],
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 16,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 16,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 16,
+      "bufferView": 1,
+      "byteOffset": 32
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 16,
+      "max": [
+        0.1487303078174591,
+        0.019682612270116806,
+        0.16299337148666382
+      ],
+      "min": [
+        -0.1487303078174591,
+        0.019682612270116806,
+        -0.16267430782318115
+      ],
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 16,
+      "bufferView": 2,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 16,
+      "bufferView": 2,
+      "byteOffset": 24
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 16,
+      "bufferView": 2,
+      "byteOffset": 32
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 1685,
+      "max": [
+        0.1585317850112915,
+        0.03030637465417385,
+        0.17188534140586853
+      ],
+      "min": [
+        -0.1585317850112915,
+        -0.030306389555335045,
+        -0.17211659252643585
+      ],
+      "bufferView": 3,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 1685,
+      "bufferView": 3,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 1685,
+      "bufferView": 3,
+      "byteOffset": 24
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 1685,
+      "bufferView": 3,
+      "byteOffset": 32
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 13,
+      "max": [
+        0.1487303078174591,
+        0.020553046837449074,
+        0.021424882113933563
+      ],
+      "min": [
+        -0.1487303078174591,
+        0.019682612270116806,
+        -0.16267430782318115
+      ],
+      "bufferView": 4,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 13,
+      "bufferView": 4,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 13,
+      "bufferView": 4,
+      "byteOffset": 24
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 13,
+      "bufferView": 4,
+      "byteOffset": 32
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 5304,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5304,
+      "byteLength": 768,
+      "byteStride": 48,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6072,
+      "byteLength": 768,
+      "byteStride": 48,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6840,
+      "byteLength": 80880,
+      "byteStride": 48,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 87720,
+      "byteLength": 624,
+      "byteStride": 48,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "menuPanel",
+      "mimeType": "image/ktx2",
+      "uri": "menuPanel.ktx2"
+    },
+    {
+      "name": "woodtexture",
+      "mimeType": "image/ktx2",
+      "uri": "woodtexture.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "NUX_Settings.bin",
+      "byteLength": 88344
+    }
+  ],
+  "materials": [
+    {
+      "name": "Wood",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "roughnessFactor": 0,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        }
+      }
+    },
+    {
+      "name": "Icon",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "roughnessFactor": 0,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "name": "Trim",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {}
+    },
+    {
+      "name": "VideoMask",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "roughnessFactor": 0.5,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "CUBezierCurve.013",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6,
+            "TANGENT": 7
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10,
+            "TANGENT": 11
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 1
+        }
+      ]
+    },
+    {
+      "name": "CUBezierCurve.000",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13,
+            "TEXCOORD_0": 14,
+            "TANGENT": 15
+          },
+          "mode": 4,
+          "material": 2,
+          "indices": 2
+        }
+      ]
+    },
+    {
+      "name": "CUBezierCurve.005",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 16,
+            "NORMAL": 17,
+            "TEXCOORD_0": 18,
+            "TANGENT": 19
+          },
+          "mode": 4,
+          "material": 3,
+          "indices": 3
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "PanelGraphic.001",
+      "rotation": [
+        0.7071068286895752,
+        0,
+        0,
+        0.7071067094802856
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "Trim.001",
+      "rotation": [
+        0.7071068286895752,
+        0,
+        0,
+        0.7071067094802856
+      ],
+      "mesh": 1
+    },
+    {
+      "name": "VideoMask.001",
+      "rotation": [
+        0.7071068286895752,
+        0,
+        0,
+        0.7071067094802856
+      ],
+      "mesh": 2
+    },
+    {
+      "name": "NUXPanel",
+      "children": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        3
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu"
+  ]
+}

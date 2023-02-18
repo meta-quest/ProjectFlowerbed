@@ -1,0 +1,264 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Root"
+        },
+        {
+            "name" : "Branches01",
+            "translation" : [
+                -0.17304746806621552,
+                2.225665330886841,
+                -0.3457624316215515
+            ]
+        },
+        {
+            "name" : "Branches02",
+            "rotation" : [
+                3.725291186640334e-09,
+                -3.725291186640334e-09,
+                -3.725291186640334e-09,
+                1
+            ],
+            "translation" : [
+                0.04951690882444382,
+                2.176496744155884,
+                0.07247869670391083
+            ]
+        },
+        {
+            "name" : "Branches03",
+            "rotation" : [
+                1.862645149230957e-09,
+                0,
+                0,
+                1
+            ],
+            "translation" : [
+                1.8262454271316528,
+                5.054492950439453,
+                0.09878792613744736
+            ]
+        },
+        {
+            "name" : "Branches04",
+            "translation" : [
+                -1.0174980163574219,
+                4.634931564331055,
+                -0.5531359910964966
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Tree_CherryBlossom",
+            "skin" : 0
+        },
+        {
+            "children" : [
+                5,
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "ARM_Tree_CherryBlossom"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "M_SkinnedPlant_Tree_CherryBlossom",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Tree_CherryBlossom",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "JOINTS_0" : 3,
+                        "WEIGHTS_0" : 4
+                    },
+                    "indices" : 5,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "T_Tree_CherryBlossom_N",
+            "uri" : "T_Tree_CherryBlossom_N.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "T_Tree_CherryBlossom_ORM",
+            "uri" : "T_Tree_CherryBlossom_ORM.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "T_Tree_CherryBlossom_D",
+            "uri" : "T_Tree_CherryBlossom_D.png"
+        }
+    ],
+    "skins" : [
+        {
+            "inverseBindMatrices" : 6,
+            "joints" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "ARM_Tree_CherryBlossom"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 2138,
+            "max" : [
+                4.179731369018555,
+                7.594302177429199,
+                2.964702606201172
+            ],
+            "min" : [
+                -3.322357416152954,
+                -0.12702862918376923,
+                -3.657392978668213
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 2138,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 2138,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5121,
+            "count" : 2138,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 2138,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5123,
+            "count" : 9264,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 5,
+            "type" : "MAT4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 25656,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 25656,
+            "byteOffset" : 25656
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 17104,
+            "byteOffset" : 51312
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8552,
+            "byteOffset" : 68416
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 34208,
+            "byteOffset" : 76968
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 18528,
+            "byteOffset" : 111176
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 129704
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 130024,
+            "uri" : "Tree_CherryBlossom.bin"
+        }
+    ]
+}
