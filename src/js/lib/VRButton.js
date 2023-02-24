@@ -38,11 +38,7 @@ export const convertToVRButton = (renderer, button, callbacks = {}) => {
 
 		button.onclick = () => {
 			if (currentSession === null) {
-				let optionalFeatures = [
-					'local-floor',
-					'bounded-floor',
-					'high-fixed-foveation-level',
-				];
+				let optionalFeatures = ['local-floor', 'bounded-floor'];
 
 				const sessionInit = {
 					optionalFeatures: optionalFeatures,
