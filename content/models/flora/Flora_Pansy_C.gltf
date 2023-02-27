@@ -1,0 +1,285 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Root"
+        },
+        {
+            "name" : "Flowers_02",
+            "rotation" : [
+                -0.09451383352279663,
+                0.09030915051698685,
+                0.09030915051698685,
+                0.9872971177101135
+            ],
+            "scale" : [
+                0.9999999403953552,
+                0.9999999403953552,
+                0.9999999403953552
+            ],
+            "translation" : [
+                -0.01584904082119465,
+                0.08735760301351547,
+                -0.0038005916867405176
+            ]
+        },
+        {
+            "name" : "Flowers_01",
+            "rotation" : [
+                -0.056190066039562225,
+                -0.04357495158910751,
+                -0.1975555270910263,
+                0.9777095317840576
+            ],
+            "scale" : [
+                0.9999999403953552,
+                1,
+                1.0000001192092896
+            ],
+            "translation" : [
+                0.015539441257715225,
+                0.10709228366613388,
+                -0.0069850170984864235
+            ]
+        },
+        {
+            "name" : "Flowers_03",
+            "rotation" : [
+                -0.015845417976379395,
+                0.12487735599279404,
+                0.12487735599279404,
+                0.9841545820236206
+            ],
+            "scale" : [
+                1,
+                0.9999999403953552,
+                0.9999999403953552
+            ]
+        },
+        {
+            "name" : "Leaves_01",
+            "rotation" : [
+                0.16263525187969208,
+                -0.2661500871181488,
+                -0.17580154538154602,
+                0.9337064623832703
+            ],
+            "scale" : [
+                0.9999999403953552,
+                1,
+                1
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Flora_Pansy_Mesh",
+            "skin" : 0
+        },
+        {
+            "children" : [
+                5,
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Pansy_Armature"
+        }
+    ],
+    "materials" : [
+        {
+            "alphaCutoff" : 0.5,
+            "alphaMode" : "MASK",
+            "name" : "SkinnedPlant_Pansy_C",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 2
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "JOINTS_0" : 3,
+                        "WEIGHTS_0" : 4
+                    },
+                    "indices" : 5,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Pansy_NormalMap",
+            "uri" : "Prop_Pansy_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Pansy_C_BaseColor",
+            "uri" : "Flora_Pansy_C_BaseColor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Pansy_occlusionRoughnessMetallic",
+            "uri" : "Prop_Pansy_occlusionRoughnessMetallic.png"
+        }
+    ],
+    "skins" : [
+        {
+            "inverseBindMatrices" : 6,
+            "joints" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Pansy_Armature"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 1461,
+            "max" : [
+                0.11997118592262268,
+                0.22405582666397095,
+                0.1273309737443924
+            ],
+            "min" : [
+                -0.11619285494089127,
+                -0.008272183127701283,
+                -0.14610564708709717
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 1461,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 1461,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5121,
+            "count" : 1461,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 1461,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5123,
+            "count" : 3774,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 5,
+            "type" : "MAT4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 17532,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 17532,
+            "byteOffset" : 17532
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 11688,
+            "byteOffset" : 35064
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5844,
+            "byteOffset" : 46752
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 23376,
+            "byteOffset" : 52596
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7548,
+            "byteOffset" : 75972
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 83520
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 83840,
+            "uri" : "Flora_Pansy_C.bin"
+        }
+    ]
+}

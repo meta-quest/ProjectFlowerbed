@@ -1,0 +1,6 @@
+{
+	"dependencies": {
+		"mysql2": "2.3.3",
+		"short-unique-id": "4.4.4"
+	}
+}

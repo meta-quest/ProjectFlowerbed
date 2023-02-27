@@ -1,0 +1,23 @@
+{
+	"width": 48,
+	"height": 26,
+	"shouldLookAtCamera": true,
+	"interactable": false,
+	"backgroundOffset": [0, 0, 1],
+	"uiPanelParams": {
+		"backgroundOpacity": 1,
+		"alignItems": "center",
+		"jusifyContent": "center",
+		"padding": 8,
+		"borderRadius": 8
+	},
+	"children": [
+		{
+			"type": "text",
+			"text": "Seeds",
+			"bold": false,
+			"textAlign": "center",
+			"fontSize": 10
+		}
+	]
+}

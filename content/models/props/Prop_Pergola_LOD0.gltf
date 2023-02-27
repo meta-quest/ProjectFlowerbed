@@ -1,0 +1,232 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "b_painter_panels" : [
+                    "BRUSH",
+                    "COLOR",
+                    "TEXTURE",
+                    "STENCIL",
+                    "LAYER"
+                ],
+                "b_painter_active_tex_brush_category" : "Brush Textures",
+                "bc" : {
+                    "snap" : {
+                        "hit" : 0
+                    }
+                },
+                "MM" : {
+                    "revision" : "6b9140d97c1c89684282504c1b43358bc5142503"
+                },
+                "zen_display" : {
+                    "stacked" : 0,
+                    "finished" : 0,
+                    "stretch" : 0
+                },
+                "vr_landmarks" : [
+                    {
+                        "type" : 0
+                    }
+                ],
+                "DM" : {
+                    "revision" : "cc8df93aaa3044a610f0d75120f185790c4bb932",
+                    "export_atlas_texture_channel_packCOL" : [
+                        {
+                            "avoid_update" : 0,
+                            "name" : "ao_curv_height",
+                            "red" : 2,
+                            "green" : 3,
+                            "blue" : 4
+                        },
+                        {
+                            "avoid_update" : 0,
+                            "name" : "masks",
+                            "red" : 1,
+                            "green" : 9,
+                            "blue" : 10
+                        }
+                    ]
+                },
+                "b_painter_active_brush" : "Brush Mask",
+                "glTF2ExportSettings" : {
+                    "export_animations" : 0,
+                    "export_apply" : 1,
+                    "export_extras" : 1,
+                    "export_format" : "GLTF_SEPARATE",
+                    "export_morph" : 0,
+                    "export_skins" : 0,
+                    "use_visible" : 1
+                }
+            },
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extras" : {
+                "paramrenderwidth" : 2048,
+                "paramrenderheight" : 2048,
+                "paramfacecolor" : [
+                    0.7058823704719543,
+                    0.2078431397676468,
+                    0.09019608050584793
+                ],
+                "paramedgecolor" : [
+                    1,
+                    0.7764706015586853,
+                    0
+                ],
+                "paramedgewidth" : 1,
+                "MapChannel:1" : "map1",
+                "MaxHandle" : 164,
+                "b_painter_active_material" : 0
+            },
+            "mesh" : 0,
+            "name" : "Prop_Pergola_LOD0"
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "extras" : {},
+            "name" : "M_Prop_Pergola",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 2
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "extras" : {},
+            "name" : "Prop_Pergola.gltf",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Pergola_NormalMap",
+            "uri" : "Prop_Pergola_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Pergola_BaseColor",
+            "uri" : "Prop_Pergola_BaseColor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Pergola_occlusionRoughnessMetallic",
+            "uri" : "Prop_Pergola_occlusionRoughnessMetallic.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 6302,
+            "max" : [
+                2.761612892150879,
+                3.1833019256591797,
+                6.684746742248535
+            ],
+            "min" : [
+                -2.2214064598083496,
+                -1.1920928955078125e-06,
+                -7.141711235046387
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 6302,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 6302,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 19002,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 75624,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 75624,
+            "byteOffset" : 75624
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 50416,
+            "byteOffset" : 151248
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 38004,
+            "byteOffset" : 201664
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 239668,
+            "uri" : "Prop_Pergola_LOD0.bin"
+        }
+    ]
+}

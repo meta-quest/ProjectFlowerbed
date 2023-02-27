@@ -1,0 +1,278 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 11037,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 2189,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 2189,
+      "max": [
+        28235,
+        32767,
+        29815
+      ],
+      "min": [
+        -28235,
+        -32767,
+        -29815
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 4
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 2189,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 2189,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 2189,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 2189,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 5,
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 22076,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 22076,
+      "byteLength": 61292,
+      "byteStride": 28,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 83368,
+      "byteLength": 320
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Tree_Oak_Full_M_Tree_Oak_Normal",
+      "mimeType": "image/ktx2",
+      "uri": "Tree_Oak_Full_M_Tree_Oak_Normal.ktx2"
+    },
+    {
+      "name": "Tree_Oak_Full_M_Tree_Oak_OcclusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Tree_Oak_Full_M_Tree_Oak_OcclusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Tree_Oak_Full_M_Tree_Oak_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Tree_Oak_Full_M_Tree_Oak_BaseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Tree_Oak.bin",
+      "byteLength": 83688
+    }
+  ],
+  "materials": [
+    {
+      "name": "M_SkinnedPlant_Tree_Oak",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Tree_Oak",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "WEIGHTS_0": 5,
+            "TANGENT": 6
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root"
+    },
+    {
+      "name": "Branches01",
+      "translation": [
+        0,
+        2.868619203567505,
+        0
+      ]
+    },
+    {
+      "name": "Branches02",
+      "translation": [
+        0,
+        4.121131420135498,
+        0
+      ]
+    },
+    {
+      "name": "Branches03",
+      "translation": [
+        0,
+        5.473369598388672,
+        0
+      ]
+    },
+    {
+      "name": "Branches04",
+      "translation": [
+        0,
+        6.812351226806641,
+        0
+      ]
+    },
+    {
+      "name": "Tree_Oak",
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "ARM_Tree_Oak",
+      "children": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "name": "ARM_Tree_Oak",
+      "inverseBindMatrices": 7,
+      "joints": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        6
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

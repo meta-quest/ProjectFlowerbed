@@ -1,0 +1,229 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.8.19",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "b_painter_panels" : [
+                    "BRUSH",
+                    "COLOR",
+                    "TEXTURE",
+                    "STENCIL",
+                    "LAYER"
+                ],
+                "kitops" : {},
+                "bc" : {
+                    "snap" : {
+                        "hit" : 0
+                    }
+                },
+                "MM" : {
+                    "revision" : "6b9140d97c1c89684282504c1b43358bc5142503"
+                },
+                "b_painter_active_tex_brush_category" : "Brush Textures",
+                "vr_landmarks" : [
+                    {
+                        "type" : 0
+                    }
+                ],
+                "b_painter_active_brush" : "Brush Mask",
+                "b_painter_brush" : 0,
+                "b_painter_active_tex_brush" : "None",
+                "scatter_properties" : {},
+                "td" : {},
+                "curvetools" : {
+                    "CurveLength" : 1.6705399751663208
+                },
+                "zen_display" : {
+                    "stacked" : 0,
+                    "finished" : 0,
+                    "stretch" : 0
+                },
+                "DM" : {
+                    "revision" : "cc8df93aaa3044a610f0d75120f185790c4bb932",
+                    "export_atlas_texture_channel_packCOL" : [
+                        {
+                            "avoid_update" : 0,
+                            "name" : "ao_curv_height",
+                            "red" : 2,
+                            "green" : 3,
+                            "blue" : 4
+                        },
+                        {
+                            "avoid_update" : 0,
+                            "name" : "masks",
+                            "red" : 1,
+                            "green" : 9,
+                            "blue" : 10
+                        }
+                    ]
+                },
+                "M3" : {
+                    "avoid_update" : 0,
+                    "shading_light" : 0,
+                    "use_flat_shadows" : 0
+                }
+            },
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extras" : {
+                "kitops" : {},
+                "MM" : {},
+                "M3" : {},
+                "hops" : {},
+                "DM" : {}
+            },
+            "mesh" : 0,
+            "name" : "Prop_Fence_01_01"
+        }
+    ],
+    "materials" : [
+        {
+            "extras" : {
+                "DM" : {},
+                "b_painter" : {}
+            },
+            "name" : "Prop_Fence",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "BezierCurve.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Fence_NormalMap",
+            "uri" : "Prop_Fence_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Fence_occlusionRoughnessMetallic",
+            "uri" : "Prop_Fence_occlusionRoughnessMetallic.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Fence_BaseColor",
+            "uri" : "Prop_Fence_BaseColor.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 53,
+            "max" : [
+                1.499700665473938,
+                1.0290607213974,
+                0.08562442660331726
+            ],
+            "min" : [
+                -0.10024026036262512,
+                -0.00010439594188937917,
+                -0.08811713010072708
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 53,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 53,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 153,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 636,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 636,
+            "byteOffset" : 636
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 424,
+            "byteOffset" : 1272
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 306,
+            "byteOffset" : 1696
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 2004,
+            "uri" : "Prop_Fence_01_01_LOD1.bin"
+        }
+    ]
+}

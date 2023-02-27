@@ -1,0 +1,410 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 60087,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 1572,
+      "bufferView": 0,
+      "byteOffset": 120176
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 18975,
+      "bufferView": 0,
+      "byteOffset": 123320
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 15884,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 15884,
+      "max": [
+        22134,
+        32767,
+        23666
+      ],
+      "min": [
+        -22134,
+        -32767,
+        -23666
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 15884,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 15884,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 784,
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 784,
+      "max": [
+        27671,
+        2720,
+        32767
+      ],
+      "min": [
+        -27671,
+        -2720,
+        -32767
+      ],
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 784,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 784,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 6998,
+      "bufferView": 3,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 6998,
+      "max": [
+        23562,
+        32767,
+        23150
+      ],
+      "min": [
+        -23562,
+        -32767,
+        -23150
+      ],
+      "normalized": true,
+      "bufferView": 3,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 6998,
+      "normalized": true,
+      "bufferView": 3,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 6998,
+      "normalized": true,
+      "bufferView": 3,
+      "byteOffset": 20
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 161272,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 161272,
+      "byteLength": 381216,
+      "byteStride": 24,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 542488,
+      "byteLength": 18816,
+      "byteStride": 24,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 561304,
+      "byteLength": 167952,
+      "byteStride": 24,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Prop_Gazebo_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Gazebo_NormalMap.ktx2"
+    },
+    {
+      "name": "Prop_Gazebo_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Gazebo_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Prop_Gazebo_baseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Gazebo_baseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Prop_Gazebo.bin",
+      "byteLength": 729256
+    }
+  ],
+  "materials": [
+    {
+      "name": "Prop_Gazebo",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh.001",
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 3,
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TANGENT": 6
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    },
+    {
+      "name": "Mesh.002",
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 7,
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TANGENT": 10
+          },
+          "mode": 4,
+          "indices": 1
+        }
+      ]
+    },
+    {
+      "name": "Mesh.003",
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 11,
+            "POSITION": 12,
+            "NORMAL": 13,
+            "TANGENT": 14
+          },
+          "mode": 4,
+          "indices": 2
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Prop_Gazebo",
+      "extras": {
+        "MapChannel:1": "UVChannel_1",
+        "MaxHandle": 1,
+        "b_painter_active_material": 0
+      },
+      "translation": [
+        0,
+        3.461290388227467,
+        0.00011329650625668819
+      ],
+      "scale": [
+        3.4966067951185957,
+        3.4966067951185957,
+        3.4966067951185957
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "gazebo_collider_floor",
+      "extras": {
+        "collider": 1,
+        "teleport": 1
+      },
+      "translation": [
+        0,
+        0.21547198648440857,
+        0.00011329650625668819
+      ],
+      "scale": [
+        2.5253004654057207,
+        2.5253004654057207,
+        2.5253004654057207
+      ],
+      "mesh": 1
+    },
+    {
+      "name": "gazebo_collider",
+      "extras": {
+        "collider": 1
+      },
+      "translation": [
+        0,
+        3.6679763927763,
+        -4.577636616431846e-7
+      ],
+      "scale": [
+        3.284619277016386,
+        3.284619277016386,
+        3.284619277016386
+      ],
+      "mesh": 2
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "extras": {
+        "b_painter_panels": [
+          "BRUSH",
+          "COLOR",
+          "TEXTURE",
+          "STENCIL",
+          "LAYER"
+        ],
+        "bc": {
+          "snap": {
+            "hit": 0
+          }
+        },
+        "MM": {
+          "revision": "6b9140d97c1c89684282504c1b43358bc5142503"
+        },
+        "b_painter_active_tex_brush_category": "Brush Textures",
+        "vr_landmarks": [
+          {
+            "type": 0
+          }
+        ],
+        "b_painter_active_brush": "Brush Mask",
+        "glTF2ExportSettings": {
+          "export_animations": 0,
+          "export_apply": 1,
+          "export_extras": 1,
+          "export_format": "GLTF_SEPARATE"
+        }
+      },
+      "nodes": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

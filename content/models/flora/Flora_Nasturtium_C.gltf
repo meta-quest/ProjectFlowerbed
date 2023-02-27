@@ -1,0 +1,288 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Root",
+            "rotation" : [
+                -2.980232949312267e-08,
+                1.1920928244535389e-07,
+                -4.235164736271502e-22,
+                1
+            ],
+            "scale" : [
+                1,
+                0.9999999403953552,
+                0.9999999403953552
+            ]
+        },
+        {
+            "name" : "Flowers_02",
+            "rotation" : [
+                0.1266220510005951,
+                0.4553399384021759,
+                0.45533987879753113,
+                0.7545185685157776
+            ]
+        },
+        {
+            "name" : "Flowers_03",
+            "rotation" : [
+                -0.06897515803575516,
+                -0.45200708508491516,
+                -0.4520072042942047,
+                0.7659123539924622
+            ],
+            "scale" : [
+                1,
+                1.0000001192092896,
+                1.0000001192092896
+            ]
+        },
+        {
+            "name" : "Flowers_01",
+            "rotation" : [
+                -0.45248594880104065,
+                0.09250848740339279,
+                0.09250833094120026,
+                0.8821229338645935
+            ],
+            "scale" : [
+                0.9999999403953552,
+                1,
+                0.9999999403953552
+            ]
+        },
+        {
+            "name" : "Flowers_04",
+            "rotation" : [
+                0,
+                1.1920928955078125e-07,
+                0,
+                1
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Flora_Nasturtium_Geo",
+            "skin" : 0
+        },
+        {
+            "children" : [
+                5,
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Nasturtium"
+        }
+    ],
+    "materials" : [
+        {
+            "alphaCutoff" : 0.5,
+            "alphaMode" : "MASK",
+            "name" : "SkinnedPlant_Flora_Nasturtium_C",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 2
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "high_0.004",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "TEXCOORD_1" : 3,
+                        "JOINTS_0" : 4,
+                        "WEIGHTS_0" : 5
+                    },
+                    "indices" : 6,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Nasturtium_NormalMap",
+            "uri" : "Flora_Nasturtium_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Nasturtium_C_BaseColor",
+            "uri" : "Flora_Nasturtium_C_BaseColor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Nasturtium_occlusionRoughnessMetallic",
+            "uri" : "Flora_Nasturtium_occlusionRoughnessMetallic.png"
+        }
+    ],
+    "skins" : [
+        {
+            "inverseBindMatrices" : 7,
+            "joints" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Nasturtium"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 3412,
+            "max" : [
+                0.1406715363264084,
+                0.16500353813171387,
+                0.1604813039302826
+            ],
+            "min" : [
+                -0.14271964132785797,
+                0,
+                -0.1442679911851883
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 3412,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 3412,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 3412,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5121,
+            "count" : 3412,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 3412,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5123,
+            "count" : 11070,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 5,
+            "type" : "MAT4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 40944,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 40944,
+            "byteOffset" : 40944
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 27296,
+            "byteOffset" : 81888
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 27296,
+            "byteOffset" : 109184
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 13648,
+            "byteOffset" : 136480
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 54592,
+            "byteOffset" : 150128
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 22140,
+            "byteOffset" : 204720
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 226860
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 227180,
+            "uri" : "Flora_Nasturtium_C.bin"
+        }
+    ]
+}

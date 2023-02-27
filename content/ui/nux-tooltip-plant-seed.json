@@ -1,0 +1,20 @@
+{
+	"children": [
+		{
+			"name": "Heading",
+			"children": [
+				{
+					"text": "Plant Seed"
+				}
+			]
+		},
+		{
+			"name": "Body",
+			"children": [
+				{
+					"text": "Point at the ground and press the right trigger to plant a seed."
+				}
+			]
+		}
+	]
+}

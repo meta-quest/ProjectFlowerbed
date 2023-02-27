@@ -1,0 +1,291 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 3774,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 1352,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 1352,
+      "max": [
+        28299,
+        27843,
+        32767
+      ],
+      "min": [
+        -28299,
+        -27843,
+        -32767
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 4
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 1352,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 1352,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 1352,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 1352,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 5,
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 7548,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7548,
+      "byteLength": 37856,
+      "byteStride": 28,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 45404,
+      "byteLength": 320
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Prop_Pansy_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Pansy_NormalMap.ktx2"
+    },
+    {
+      "name": "Flora_Pansy_B_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Pansy_B_BaseColor.ktx2"
+    },
+    {
+      "name": "Prop_Pansy_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Pansy_occlusionRoughnessMetallic.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Flora_Pansy_B.bin",
+      "byteLength": 45724
+    }
+  ],
+  "materials": [
+    {
+      "name": "SkinnedPlant_Pansy_B",
+      "alphaMode": "MASK",
+      "alphaCutoff": 0.5,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Plane.002",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "WEIGHTS_0": 5,
+            "TANGENT": 6
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root"
+    },
+    {
+      "name": "Flowers_02",
+      "translation": [
+        -0.01584904082119465,
+        0.08735760301351547,
+        -0.0038005916867405176
+      ],
+      "rotation": [
+        -0.09451383352279663,
+        0.09030915051698685,
+        0.09030915051698685,
+        0.9872971177101135
+      ]
+    },
+    {
+      "name": "Flowers_01",
+      "translation": [
+        0.015539441257715225,
+        0.10709228366613388,
+        -0.0069850170984864235
+      ],
+      "rotation": [
+        -0.056190066039562225,
+        -0.04357495158910751,
+        -0.1975555270910263,
+        0.9777095317840576
+      ]
+    },
+    {
+      "name": "Flowers_03",
+      "rotation": [
+        -0.015845417976379395,
+        0.12487735599279404,
+        0.12487735599279404,
+        0.9841545820236206
+      ]
+    },
+    {
+      "name": "Leaves_01",
+      "rotation": [
+        0.16263525187969208,
+        -0.2661500871181488,
+        -0.17580154538154602,
+        0.9337064623832703
+      ]
+    },
+    {
+      "name": "Flora_Pansy_Mesh",
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "Flora_Pansy_Armature",
+      "children": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "name": "Flora_Pansy_Armature",
+      "inverseBindMatrices": 7,
+      "joints": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        6
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

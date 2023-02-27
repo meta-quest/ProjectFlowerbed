@@ -1,0 +1,414 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "DM" : {
+                    "revision" : "df474acfd29b8014bff4dc0b249ca05ef2b1a013",
+                    "export_atlas_texture_channel_packCOL" : [
+                        {
+                            "avoid_update" : 0,
+                            "name" : "ao_curv_height",
+                            "red" : 2,
+                            "green" : 3,
+                            "blue" : 4
+                        },
+                        {
+                            "avoid_update" : 0,
+                            "name" : "masks",
+                            "red" : 1,
+                            "green" : 9,
+                            "blue" : 10
+                        }
+                    ]
+                },
+                "MM" : {
+                    "revision" : "57ae851e9b0759eef65e265c8eba239ba8391f68"
+                },
+                "gaf_props" : {
+                    "IsShowingRadius" : 0,
+                    "IsShowingLabel" : 0
+                },
+                "bc" : {
+                    "snap" : {
+                        "hit" : 0
+                    }
+                },
+                "zen_display" : {
+                    "stacked" : 0,
+                    "finished" : 0,
+                    "stretch" : 0
+                },
+                "zen_sets_object_list" : [
+                    {
+                        "level" : 0,
+                        "layer_name" : "zen_sets_object_layer_1b498fba-dc2b-4dee-a916-e183247ea7c1",
+                        "has_children" : 0,
+                        "collection" : {
+                            "name" : "Master Collection",
+                            "type" : "Collection"
+                        },
+                        "parent_idx" : -1
+                    }
+                ],
+                "zsts_color_palette" : {},
+                "ZBBQ_UserHasDisabledColoredEdgesAtLeastOnce" : 0,
+                "zen_sets_object_list_index" : 0,
+                "ZBBQ_PresetsIncluded" : {
+                    "title" : "Default cm",
+                    "unitSystem" : 1,
+                    "bevelPresetsIndex" : 0,
+                    "bevelPresets" : [
+                        {
+                            "unitSystem" : 1,
+                            "radius" : 1,
+                            "units" : 1,
+                            "colorId" : "ColorA",
+                            "color" : [
+                                1,
+                                0.11100621521472931,
+                                0.16977672278881073
+                            ]
+                        },
+                        {
+                            "unitSystem" : 1,
+                            "radius" : 2,
+                            "units" : 1,
+                            "colorId" : "ColorB",
+                            "color" : [
+                                0.002567382762208581,
+                                0.43090468645095825,
+                                0.019824344664812088
+                            ]
+                        },
+                        {
+                            "unitSystem" : 1,
+                            "radius" : 3,
+                            "units" : 1,
+                            "colorId" : "ColorC",
+                            "color" : [
+                                0.02643318846821785,
+                                0.21164964139461517,
+                                0.6249921321868896
+                            ]
+                        },
+                        {
+                            "unitSystem" : 1,
+                            "radius" : 5,
+                            "units" : 1,
+                            "colorId" : "ColorD",
+                            "color" : [
+                                0.9321982860565186,
+                                0.7369347810745239,
+                                0.015988152474164963
+                            ]
+                        },
+                        {
+                            "unitSystem" : 1,
+                            "radius" : 7,
+                            "units" : 1,
+                            "colorId" : "ColorE",
+                            "color" : [
+                                0.11100621521472931,
+                                0.6797053217887878,
+                                1
+                            ]
+                        },
+                        {
+                            "unitSystem" : 1,
+                            "radius" : 10,
+                            "units" : 1,
+                            "colorId" : "ColorF",
+                            "color" : [
+                                0.708004355430603,
+                                0.10335222631692886,
+                                1
+                            ]
+                        }
+                    ]
+                },
+                "ZBBQ_HasPresetsIncluded" : 1,
+                "ZBBQ_ZenBBQOverlayShow" : 0,
+                "zen_sets_active_mode" : 0,
+                "zen_sets_last_edge_mode" : "edge",
+                "zen_sets_last_vert_mode" : "vert"
+            },
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extras" : {
+                "currentUVSet" : "map1"
+            },
+            "mesh" : 0,
+            "name" : "Fauna_Seagull_Standing"
+        }
+    ],
+    "materials" : [
+        {
+            "extras" : {},
+            "name" : "Fauna_Seagull",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "extras" : {
+                "targetNames" : [
+                    "Look_Left",
+                    "Look_Right",
+                    "Relaxed"
+                ]
+            },
+            "name" : "Fauna_Seagull_Standing",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0,
+                    "targets" : [
+                        {
+                            "POSITION" : 4,
+                            "NORMAL" : 5
+                        },
+                        {
+                            "POSITION" : 6,
+                            "NORMAL" : 7
+                        },
+                        {
+                            "POSITION" : 8,
+                            "NORMAL" : 9
+                        }
+                    ]
+                }
+            ],
+            "weights" : [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Fauna_Seagull_NormalMap",
+            "uri" : "textures/Fauna_Seagull_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Fauna_Seagull_occlusionRoughnessMetallic",
+            "uri" : "textures/Fauna_Seagull_occlusionRoughnessMetallic.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Fauna_Seagull_BaseColor",
+            "uri" : "textures/Fauna_Seagull_BaseColor.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 800,
+            "max" : [
+                0.07214848697185516,
+                0.3517560362815857,
+                0.18727050721645355
+            ],
+            "min" : [
+                -0.06178286671638489,
+                -0.0004535511543508619,
+                -0.2959882915019989
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 800,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 800,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 3156,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 800,
+            "max" : [
+                0.12095629423856735,
+                4.470348358154297e-07,
+                0.02319067344069481
+            ],
+            "min" : [
+                -0.01273746881633997,
+                -3.2782554626464844e-07,
+                -0.07446783781051636
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 800,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 800,
+            "max" : [
+                0.013058934360742569,
+                4.172325134277344e-07,
+                0.02196783944964409
+            ],
+            "min" : [
+                -0.1204216480255127,
+                -2.7120113372802734e-06,
+                -0.07595726102590561
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 800,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 800,
+            "max" : [
+                3.725290298461914e-09,
+                0.10148504376411438,
+                0.04216733202338219
+            ],
+            "min" : [
+                -3.725290298461914e-09,
+                -0.06283365190029144,
+                -0.012032754719257355
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 800,
+            "type" : "VEC3"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 9600,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 9600,
+            "byteOffset" : 9600
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6400,
+            "byteOffset" : 19200
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6312,
+            "byteOffset" : 25600
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 9600,
+            "byteOffset" : 31912
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 9600,
+            "byteOffset" : 41512
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 9600,
+            "byteOffset" : 51112
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 9600,
+            "byteOffset" : 60712
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 9600,
+            "byteOffset" : 70312
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 9600,
+            "byteOffset" : 79912
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 89512,
+            "uri" : "Fauna_Seagull_Standing.bin"
+        }
+    ]
+}

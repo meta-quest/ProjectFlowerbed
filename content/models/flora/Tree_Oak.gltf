@@ -1,0 +1,252 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Root"
+        },
+        {
+            "name" : "Branches01",
+            "translation" : [
+                0,
+                2.868619203567505,
+                0
+            ]
+        },
+        {
+            "name" : "Branches02",
+            "translation" : [
+                0,
+                4.121131420135498,
+                0
+            ]
+        },
+        {
+            "name" : "Branches03",
+            "translation" : [
+                0,
+                5.473369598388672,
+                0
+            ]
+        },
+        {
+            "name" : "Branches04",
+            "translation" : [
+                0,
+                6.812351226806641,
+                0
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Tree_Oak",
+            "skin" : 0
+        },
+        {
+            "children" : [
+                5,
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "ARM_Tree_Oak"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "M_SkinnedPlant_Tree_Oak",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Tree_Oak",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "JOINTS_0" : 3,
+                        "WEIGHTS_0" : 4
+                    },
+                    "indices" : 5,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Tree_Oak_Full_M_Tree_Oak_Normal",
+            "uri" : "Tree_Oak_Full_M_Tree_Oak_Normal.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Tree_Oak_Full_M_Tree_Oak_OcclusionRoughnessMetallic",
+            "uri" : "Tree_Oak_Full_M_Tree_Oak_OcclusionRoughnessMetallic.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Tree_Oak_Full_M_Tree_Oak_BaseColor",
+            "uri" : "Tree_Oak_Full_M_Tree_Oak_BaseColor.png"
+        }
+    ],
+    "skins" : [
+        {
+            "inverseBindMatrices" : 6,
+            "joints" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "ARM_Tree_Oak"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 2189,
+            "max" : [
+                4.273534774780273,
+                9.602375030517578,
+                4.544452667236328
+            ],
+            "min" : [
+                -4.230395793914795,
+                -0.26661741733551025,
+                -4.435427665710449
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 2189,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 2189,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5121,
+            "count" : 2189,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 2189,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5123,
+            "count" : 11037,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 5,
+            "type" : "MAT4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 26268,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 26268,
+            "byteOffset" : 26268
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 17512,
+            "byteOffset" : 52536
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8756,
+            "byteOffset" : 70048
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 35024,
+            "byteOffset" : 78804
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 22074,
+            "byteOffset" : 113828
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 135904
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 136224,
+            "uri" : "Tree_Oak.bin"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+	"mediaURL": "assets/videos/Teleport.mp4",
+	"isVideo": true,
+	"children": [
+		{
+			"name": "Heading",
+			"children": [
+				{
+					"text": "Getting around"
+				}
+			]
+		},
+		{
+			"name": "Body",
+			"children": [
+				{
+					"text": "First, let's learn how to move and look around your new garden."
+				}
+			]
+		},
+		{
+			"name": "Buttons",
+			"children": [
+				{
+					"name": "skip",
+					"type": "button",
+					"backgroundColor": "0xdddddd",
+					"children": [
+						{
+							"text": "Skip"
+						}
+					]
+				},
+				{
+					"name": "continue",
+					"type": "button",
+					"children": [
+						{
+							"text": "Continue"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,68 @@
+{
+	"width": 400,
+	"height": 420,
+	"backgroundMeshId": "UI_BACKGROUND",
+	"shouldLookAtCamera": false,
+	"interactable": true,
+	"backgroundTextureURL": "",
+	"backgroundOffset": [0, 20, 1],
+
+	"uiPanelParams": {
+		"backgroundOpacity": 0,
+		"alignItems": "center",
+		"justifyContent": "space-between"
+	},
+
+	"children": [
+		{
+			"name": "Image",
+			"type": "vertical",
+			"size": 250,
+			"alignItems": "center",
+			"justifyContent": "center",
+			"padding": 0,
+			"textAlign": "center",
+			"children": [
+				{
+					"type": "imageBlock",
+					"url": "assets/images/ui/quest2_controller.png"
+				}
+			]
+		},
+		{
+			"name": "Heading",
+			"type": "vertical",
+			"size": 50,
+			"alignItems": "start",
+			"justifyContent": "start",
+			"padding": 0,
+			"textAlign": "center",
+			"children": [
+				{
+					"type": "text",
+					"text": "Connect both controllers",
+					"bold": true,
+					"textAlign": "center",
+					"fontSize": 24
+				}
+			]
+		},
+		{
+			"name": "Body",
+			"type": "vertical",
+			"size": 120,
+			"alignItems": "start",
+			"justifyContent": "start",
+			"padding": 0,
+			"textAlign": "center",
+			"children": [
+				{
+					"type": "text",
+					"text": "Gardening in VR is a hands-on experience, so you'll need to connect both controllers to play Project Flowerbed.\n\nPlease connect both controllers to continue.",
+					"bold": false,
+					"fontSize": 18
+				}
+			]
+		}
+	]
+}

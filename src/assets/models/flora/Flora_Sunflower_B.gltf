@@ -1,0 +1,308 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 2748,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 1074,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 1074,
+      "max": [
+        15093,
+        32767,
+        17706
+      ],
+      "min": [
+        -15093,
+        -32767,
+        -17706
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 4
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 1074,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 1074,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 1074,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 1074,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 5,
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 5496,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5496,
+      "byteLength": 30072,
+      "byteStride": 28,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 35568,
+      "byteLength": 320
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Flora_Sunflower_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Sunflower_NormalMap.ktx2"
+    },
+    {
+      "name": "Flora_Sunflower_B_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Sunflower_B_BaseColor.ktx2"
+    },
+    {
+      "name": "Flora_Sunflower_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Sunflower_occlusionRoughnessMetallic.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Flora_Sunflower_B.bin",
+      "byteLength": 35888
+    }
+  ],
+  "materials": [
+    {
+      "name": "SkinnedPlant_Flora_Sunflower_B",
+      "alphaMode": "MASK",
+      "alphaCutoff": 0.5,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1,
+        "scale": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Flora_Sunflower",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "WEIGHTS_0": 5,
+            "TANGENT": 6
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root",
+      "rotation": [
+        0.051913317292928696,
+        0.07246554642915726,
+        0.07246553897857666,
+        0.9933794736862183
+      ]
+    },
+    {
+      "name": "Leaves_03",
+      "translation": [
+        -0.007097491528838873,
+        0.12408722192049026,
+        0.005528310313820839
+      ],
+      "rotation": [
+        -0.04884384199976921,
+        -0.04666965454816818,
+        -0.04289649799466133,
+        0.9967929720878601
+      ]
+    },
+    {
+      "name": "Flower_01",
+      "translation": [
+        0.02159351110458374,
+        0.3149932026863098,
+        -0.001725425012409687
+      ],
+      "rotation": [
+        -0.07377143204212189,
+        -0.3102544844150543,
+        -0.3102544844150543,
+        0.8955680727958679
+      ]
+    },
+    {
+      "name": "Leaves_02",
+      "translation": [
+        -0.0028017801232635975,
+        0.17596039175987244,
+        0.001359394984319806
+      ],
+      "rotation": [
+        -0.046661995351314545,
+        -0.01391542423516512,
+        -0.03363830968737602,
+        0.9982472062110901
+      ]
+    },
+    {
+      "name": "Leaves_01",
+      "translation": [
+        0.002334681572392583,
+        0.23868203163146973,
+        -0.004081368912011385
+      ],
+      "rotation": [
+        0.021046409383416176,
+        0.20854142308235168,
+        0.00787119846791029,
+        0.9777554273605347
+      ]
+    },
+    {
+      "name": "Flora_Sunflower",
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "Flora_Sunflower_Armature",
+      "children": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "name": "Flora_Sunflower_Armature",
+      "inverseBindMatrices": 7,
+      "joints": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        6
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

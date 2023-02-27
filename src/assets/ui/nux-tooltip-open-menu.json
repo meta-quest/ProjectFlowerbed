@@ -1,0 +1,1 @@
+{"children":[{"name":"Heading","children":[{"text":"Open Menu"}]},{"name":"Body","children":[{"type":"text","text":"Press the ","bold":false,"fontSize":12},{"type":"image","url":"assets/images/ui/bt-a.png","width":14,"height":14},{"type":"text","text":" button to open the menu.","bold":false,"fontSize":12}]}]}

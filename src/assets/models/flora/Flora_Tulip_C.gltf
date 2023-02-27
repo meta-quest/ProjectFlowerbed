@@ -1,0 +1,301 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 2322,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 713,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 713,
+      "max": [
+        23710,
+        32767,
+        5212
+      ],
+      "min": [
+        -23710,
+        -32767,
+        -5212
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 4
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 713,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 713,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 713,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 713,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 5,
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 4644,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4644,
+      "byteLength": 19964,
+      "byteStride": 28,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 24608,
+      "byteLength": 320
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Flora_Tulip_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Tulip_NormalMap.ktx2"
+    },
+    {
+      "name": "Flora_Tulip_c_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Tulip_c_BaseColor.ktx2"
+    },
+    {
+      "name": "Flora_Tulip_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Tulip_occlusionRoughnessMetallic.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Flora_Tulip_C.bin",
+      "byteLength": 24928
+    }
+  ],
+  "materials": [
+    {
+      "name": "SkinnedPlant_Flora_Tulip_C",
+      "alphaMode": "MASK",
+      "alphaCutoff": 0.5,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Flora_Tulip",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "WEIGHTS_0": 5,
+            "TANGENT": 6
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root"
+    },
+    {
+      "name": "Flower_01",
+      "translation": [
+        -0.0018235559109598398,
+        0.709553599357605,
+        -0.0001861491473391652
+      ],
+      "rotation": [
+        0.0008091983618214726,
+        0.021283164620399475,
+        0.021283166483044624,
+        0.9995466470718384
+      ]
+    },
+    {
+      "name": "Leaf_01",
+      "rotation": [
+        -0.05231335014104843,
+        -0.2777177095413208,
+        -0.2777177095413208,
+        0.9181553721427917
+      ]
+    },
+    {
+      "name": "Leaf_02",
+      "translation": [
+        0.0006910536903887987,
+        0.047926127910614014,
+        -0.001930133905261755
+      ],
+      "rotation": [
+        -0.057426683604717255,
+        -0.05819163843989372,
+        -0.058191634714603424,
+        0.9949520826339722
+      ]
+    },
+    {
+      "name": "Leaf_03",
+      "translation": [
+        -0.0035680958535522223,
+        0.06548985838890076,
+        -0.00008605960465501994
+      ],
+      "rotation": [
+        -0.09110081195831299,
+        0.3221500813961029,
+        0.3221501111984253,
+        0.8855164051055908
+      ]
+    },
+    {
+      "name": "Flora_Tulip",
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "Flora_Tulip_Armature",
+      "translation": [
+        0.0003616251051425934,
+        -0.0011022090911865234,
+        -0.007188207004219294
+      ],
+      "children": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "name": "Flora_Tulip_Armature",
+      "inverseBindMatrices": 7,
+      "joints": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        6
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

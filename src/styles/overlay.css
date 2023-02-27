@@ -1,0 +1,13 @@
+/**
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** Make sure this CSS gets included at the end so the other CSS files load first */
+.fouc-overlay {
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s;
+}

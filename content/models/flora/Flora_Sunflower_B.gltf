@@ -1,0 +1,302 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.8.19",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Root",
+            "rotation" : [
+                0.051913317292928696,
+                0.07246554642915726,
+                0.07246553897857666,
+                0.9933794736862183
+            ],
+            "scale" : [
+                0.9999998211860657,
+                0.9999998807907104,
+                0.9999999403953552
+            ]
+        },
+        {
+            "name" : "Leaves_03",
+            "rotation" : [
+                -0.04884384199976921,
+                -0.04666965454816818,
+                -0.04289649799466133,
+                0.9967929720878601
+            ],
+            "translation" : [
+                -0.007097491528838873,
+                0.12408722192049026,
+                0.005528310313820839
+            ]
+        },
+        {
+            "name" : "Flower_01",
+            "rotation" : [
+                -0.07377143204212189,
+                -0.3102544844150543,
+                -0.3102544844150543,
+                0.8955680727958679
+            ],
+            "scale" : [
+                0.9999999403953552,
+                1,
+                1
+            ],
+            "translation" : [
+                0.02159351110458374,
+                0.3149932026863098,
+                -0.001725425012409687
+            ]
+        },
+        {
+            "name" : "Leaves_02",
+            "rotation" : [
+                -0.046661995351314545,
+                -0.01391542423516512,
+                -0.03363830968737602,
+                0.9982472062110901
+            ],
+            "scale" : [
+                1,
+                1.0000001192092896,
+                0.9999999403953552
+            ],
+            "translation" : [
+                -0.0028017801232635975,
+                0.17596039175987244,
+                0.001359394984319806
+            ]
+        },
+        {
+            "name" : "Leaves_01",
+            "rotation" : [
+                0.021046409383416176,
+                0.20854142308235168,
+                0.00787119846791029,
+                0.9777554273605347
+            ],
+            "scale" : [
+                0.9999999403953552,
+                1,
+                1
+            ],
+            "translation" : [
+                0.002334681572392583,
+                0.23868203163146973,
+                -0.004081368912011385
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Flora_Sunflower",
+            "skin" : 0
+        },
+        {
+            "children" : [
+                5,
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Sunflower_Armature"
+        }
+    ],
+    "materials" : [
+        {
+            "alphaCutoff" : 0.5,
+            "alphaMode" : "MASK",
+            "name" : "SkinnedPlant_Flora_Sunflower_B",
+            "normalTexture" : {
+                "index" : 0,
+                "scale" : 2
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 2
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Flora_Sunflower",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "JOINTS_0" : 3,
+                        "WEIGHTS_0" : 4
+                    },
+                    "indices" : 5,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Sunflower_NormalMap",
+            "uri" : "Flora_Sunflower_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Sunflower_B_BaseColor",
+            "uri" : "Flora_Sunflower_B_BaseColor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Flora_Sunflower_occlusionRoughnessMetallic",
+            "uri" : "Flora_Sunflower_occlusionRoughnessMetallic.png"
+        }
+    ],
+    "skins" : [
+        {
+            "inverseBindMatrices" : 6,
+            "joints" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Flora_Sunflower_Armature"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 1079,
+            "max" : [
+                0.0877523422241211,
+                0.3766038417816162,
+                0.0965200811624527
+            ],
+            "min" : [
+                -0.08571847528219223,
+                -7.054647421789184e-10,
+                -0.1069653108716011
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 1079,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 1079,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5121,
+            "count" : 1079,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 1079,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5123,
+            "count" : 2748,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 5,
+            "type" : "MAT4"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 12948,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12948,
+            "byteOffset" : 12948
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8632,
+            "byteOffset" : 25896
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4316,
+            "byteOffset" : 34528
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 17264,
+            "byteOffset" : 38844
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5496,
+            "byteOffset" : 56108
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 61604
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 61924,
+            "uri" : "Flora_Sunflower_B.bin"
+        }
+    ]
+}

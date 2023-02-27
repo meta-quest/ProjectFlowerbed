@@ -1,0 +1,274 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 318,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 318,
+      "max": [
+        32767,
+        30171,
+        32767
+      ],
+      "min": [
+        -32767,
+        -30171,
+        -32767
+      ],
+      "normalized": true,
+      "bufferView": 0,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 318,
+      "normalized": true,
+      "bufferView": 0,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 318,
+      "normalized": true,
+      "bufferView": 0,
+      "byteOffset": 20
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 1041,
+      "bufferView": 1,
+      "byteOffset": 0
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 7632,
+      "byteStride": 24,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7632,
+      "byteLength": 2084,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "T_Prop_Planter_N",
+      "mimeType": "image/ktx2",
+      "uri": "T_Prop_Planter_N.ktx2"
+    },
+    {
+      "name": "T_Prop_Planter_ORM",
+      "mimeType": "image/ktx2",
+      "uri": "T_Prop_Planter_ORM.ktx2"
+    },
+    {
+      "name": "T_Prop_Planter_D",
+      "mimeType": "image/ktx2",
+      "uri": "T_Prop_Planter_D.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Prop_Planter_Circular_02_LOD0.bin",
+      "byteLength": 9716
+    }
+  ],
+  "materials": [
+    {
+      "name": "M_Prop_Planter",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Prop_Planter_Circular_02.003",
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 0,
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TANGENT": 3
+          },
+          "mode": 4,
+          "indices": 4
+        }
+      ]
+    },
+    {
+      "name": "Prop_Planter_Circular_02",
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 0,
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TANGENT": 3
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Prop_Planter_Circular_02",
+      "extras": {
+        "currentUVSet": "map1",
+        "b_painter_active_material": 0
+      },
+      "translation": [
+        0,
+        0.08724316954612732,
+        7.450580596923828e-8
+      ],
+      "scale": [
+        0.4021426737308502,
+        0.4021426737308502,
+        0.4021426737308502
+      ],
+      "mesh": 1
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "extras": {
+        "b_painter_panels": [
+          "BRUSH",
+          "COLOR",
+          "TEXTURE",
+          "STENCIL",
+          "LAYER"
+        ],
+        "bc": {
+          "snap": {
+            "hit": 0
+          }
+        },
+        "MM": {
+          "revision": "6b9140d97c1c89684282504c1b43358bc5142503"
+        },
+        "M3": {},
+        "b_painter_active_tex_brush_category": "Brush Textures",
+        "zen_display": {
+          "stacked": 0,
+          "finished": 0,
+          "stretch": 0
+        },
+        "vr_landmarks": [
+          {
+            "type": 0
+          }
+        ],
+        "DM": {
+          "revision": "cc8df93aaa3044a610f0d75120f185790c4bb932",
+          "export_atlas_texture_channel_packCOL": [
+            {
+              "avoid_update": 0,
+              "name": "ao_curv_height",
+              "red": 2,
+              "green": 3,
+              "blue": 4
+            },
+            {
+              "avoid_update": 0,
+              "name": "masks",
+              "red": 1,
+              "green": 9,
+              "blue": 10
+            }
+          ]
+        },
+        "b_painter_active_brush": "Brush Mask",
+        "b_painter_brush": 0,
+        "b_painter_active_tex_brush": "None",
+        "glTF2ExportSettings": {
+          "export_animations": 0,
+          "export_extras": 1,
+          "export_format": "GLTF_SEPARATE",
+          "use_visible": 1
+        }
+      },
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_mesh_quantization",
+    "KHR_texture_basisu"
+  ],
+  "extensionsRequired": [
+    "KHR_mesh_quantization",
+    "KHR_texture_basisu"
+  ]
+}

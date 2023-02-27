@@ -1,0 +1,311 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "extensionsUsed" : [
+        "KHR_materials_clearcoat"
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "b_painter_panels" : [
+                    "BRUSH",
+                    "COLOR",
+                    "TEXTURE",
+                    "STENCIL",
+                    "LAYER"
+                ],
+                "b_painter_active_tex_brush_category" : "Brush Textures",
+                "bc" : {
+                    "snap" : {
+                        "hit" : 0
+                    }
+                },
+                "MM" : {
+                    "revision" : "6b9140d97c1c89684282504c1b43358bc5142503"
+                },
+                "vr_landmarks" : [
+                    {
+                        "type" : 0
+                    }
+                ],
+                "b_painter_active_brush" : "Brush Mask",
+                "b_painter_brush" : 0,
+                "b_painter_active_tex_brush" : "None",
+                "glTF2ExportSettings" : {
+                    "export_animations" : 0,
+                    "export_extras" : 1,
+                    "export_format" : "GLTF_SEPARATE",
+                    "export_morph" : 0,
+                    "export_skins" : 0
+                }
+            },
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extras" : {
+                "b_painter_active_material" : 0
+            },
+            "mesh" : 0,
+            "name" : "Prop_Fountain_Water"
+        },
+        {
+            "extras" : {
+                "paramrenderwidth" : 2048,
+                "paramrenderheight" : 2048,
+                "paramfacecolor" : [
+                    0.7058823704719543,
+                    0.2078431397676468,
+                    0.09019608050584793
+                ],
+                "paramedgecolor" : [
+                    1,
+                    0.7764706015586853,
+                    0
+                ],
+                "paramedgewidth" : 1,
+                "MapChannel:1" : "UVMap",
+                "MapChannel:2" : "map1",
+                "MaxHandle" : 2,
+                "b_painter_active_material" : 0
+            },
+            "mesh" : 1,
+            "name" : "Prop_Fountain"
+        }
+    ],
+    "materials" : [
+        {
+            "alphaMode" : "BLEND",
+            "extensions" : {
+                "KHR_materials_clearcoat" : {
+                    "clearcoatFactor" : 0.05369126796722412,
+                    "clearcoatRoughnessFactor" : 0.3454362452030182
+                }
+            },
+            "extras" : {},
+            "name" : "Prop_Fountain_Water",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.45465925335884094,
+                    0.5784834027290344,
+                    0.6738471388816833,
+                    0.25
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.21749046444892883
+            }
+        },
+        {
+            "extras" : {},
+            "name" : "Prop_Fountain",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "extras" : {},
+            "name" : "Prop_Fountain_Water",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Prop_Fontain",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Fountain_NormalMap",
+            "uri" : "Prop_Fountain_NormalMap.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Fountain_occlusionRoughnessMetallic",
+            "uri" : "Prop_Fountain_occlusionRoughnessMetallic.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Prop_Fountain_BaseColor",
+            "uri" : "Prop_Fountain_BaseColor.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 132,
+            "max" : [
+                2.4877824783325195,
+                2.7676665782928467,
+                2.4877824783325195
+            ],
+            "min" : [
+                -2.4877824783325195,
+                0.5002099871635437,
+                -2.4877824783325195
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 132,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 132,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 384,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 9559,
+            "max" : [
+                2.867215394973755,
+                2.8005974292755127,
+                2.867215394973755
+            ],
+            "min" : [
+                -2.867215394973755,
+                -1.9154294932377525e-06,
+                -2.867215394973755
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 9559,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 9559,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 14082,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 1584,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1584,
+            "byteOffset" : 1584
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1056,
+            "byteOffset" : 3168
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 768,
+            "byteOffset" : 4224
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 114708,
+            "byteOffset" : 4992
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 114708,
+            "byteOffset" : 119700
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 76472,
+            "byteOffset" : 234408
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 28164,
+            "byteOffset" : 310880
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 339044,
+            "uri" : "Prop_Fountain.bin"
+        }
+    ]
+}

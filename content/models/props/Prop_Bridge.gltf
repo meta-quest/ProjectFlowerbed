@@ -1,0 +1,337 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.3.32",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "scatter_properties" : {},
+                "curvetools" : {},
+                "b_painter_panels" : [
+                    "BRUSH",
+                    "COLOR",
+                    "TEXTURE",
+                    "STENCIL",
+                    "LAYER"
+                ],
+                "b_painter_active_tex_brush_category" : "Brush Textures",
+                "kitops" : {},
+                "bc" : {
+                    "snap" : {
+                        "hit" : 0
+                    }
+                },
+                "MM" : {
+                    "revision" : "6b9140d97c1c89684282504c1b43358bc5142503"
+                },
+                "vr_landmarks" : [
+                    {
+                        "type" : 0
+                    }
+                ],
+                "DM" : {
+                    "revision" : "cc8df93aaa3044a610f0d75120f185790c4bb932",
+                    "export_atlas_texture_channel_packCOL" : [
+                        {
+                            "avoid_update" : 0,
+                            "name" : "ao_curv_height",
+                            "red" : 2,
+                            "green" : 3,
+                            "blue" : 4
+                        },
+                        {
+                            "avoid_update" : 0,
+                            "name" : "masks",
+                            "red" : 1,
+                            "green" : 9,
+                            "blue" : 10
+                        }
+                    ],
+                    "register_panel_creation" : 1,
+                    "create_type" : 2,
+                    "show_panel_utils" : 1,
+                    "show_panel_tools" : 0,
+                    "show_panel_defaults" : 0,
+                    "create_trim_import_keep_sheet_uuid" : 1
+                },
+                "b_painter_brush" : 0,
+                "b_painter_active_tex_brush" : "None",
+                "b_painter_active_brush" : "Brush Mask",
+                "zen_uv" : {
+                    "tr_mode" : 2,
+                    "tr_pivot_mode" : 1
+                },
+                "bsurfaces" : {
+                    "SURFSK_mesh" : {}
+                },
+                "uvpm3_props" : {
+                    "scripted_pipeline_props" : {}
+                },
+                "td" : {},
+                "print_3d" : {},
+                "zen_display" : {
+                    "stacked" : 0,
+                    "finished" : 0,
+                    "stretch" : 0
+                },
+                "M3" : {}
+            },
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extras" : {
+                "b_painter_active_material" : 0,
+                "kitops" : {},
+                "MM" : {},
+                "hops" : {},
+                "DM" : {},
+                "speedretopo_ref_object" : {},
+                "M3" : {}
+            },
+            "mesh" : 0,
+            "name" : "Prop_Bridge"
+        },
+        {
+            "extras" : {
+                "collider" : 1.0,
+                "teleport" : 1.0
+            },
+            "mesh" : 1,
+            "name" : "Bridge_Collider"
+        }
+    ],
+    "materials" : [
+        {
+            "extras" : {
+                "DM" : {
+                    "istrimsheetmat" : 1,
+                    "trimsheetname" : "T_Bridge",
+                    "version" : "2.1.0",
+                    "trimsheetuuid" : "49d7842b-73c7-4ce4-9469-c12f6429cbbe"
+                },
+                "b_painter" : {}
+            },
+            "name" : "M_Bridge",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "extras" : {
+                "hops" : {}
+            },
+            "name" : "Mesh.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "extras" : {
+                "hops" : {}
+            },
+            "name" : "Mesh.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Bridge_combined_nrm",
+            "uri" : "Bridge_combined_nrm.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Bridge_combined_orm",
+            "uri" : "Bridge_combined_orm.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Bridge_combined_color",
+            "uri" : "Bridge_combined_color.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 1343,
+            "max" : [
+                7.093581199645996,
+                1.4122469425201416,
+                1.7007551193237305
+            ],
+            "min" : [
+                -7.093581199645996,
+                -2.0504343509674072,
+                -1.7007553577423096
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 1343,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 1343,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 5100,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 1369,
+            "max" : [
+                7.093581199645996,
+                1.4122469425201416,
+                1.7007551193237305
+            ],
+            "min" : [
+                -7.093581199645996,
+                -2.0504343509674072,
+                -1.7007553577423096
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 1369,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 1369,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 5172,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 16116,
+            "byteOffset" : 0,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 16116,
+            "byteOffset" : 16116,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 10744,
+            "byteOffset" : 32232,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 10200,
+            "byteOffset" : 42976,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 16428,
+            "byteOffset" : 53176,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 16428,
+            "byteOffset" : 69604,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 10952,
+            "byteOffset" : 86032,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 10344,
+            "byteOffset" : 96984,
+            "target" : 34963
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 107328,
+            "uri" : "Prop_Bridge.bin"
+        }
+    ]
+}

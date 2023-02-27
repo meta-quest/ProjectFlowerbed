@@ -1,0 +1,368 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 38016,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 15960,
+      "bufferView": 0,
+      "byteOffset": 76032
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 9054,
+      "max": [
+        11809,
+        7544,
+        32767
+      ],
+      "min": [
+        -11809,
+        -7544,
+        -32767
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 9054,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 9054,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 9054,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 4619,
+      "max": [
+        11809,
+        7544,
+        32767
+      ],
+      "min": [
+        -11809,
+        -7544,
+        -32767
+      ],
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 4619,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 4619,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 4619,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 16
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 107952,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 107952,
+      "byteLength": 181080,
+      "byteStride": 20,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 289032,
+      "byteLength": 92380,
+      "byteStride": 20,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Prop_Pergola_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Pergola_NormalMap.ktx2"
+    },
+    {
+      "name": "Prop_Pergola_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Pergola_BaseColor.ktx2"
+    },
+    {
+      "name": "Prop_Pergola_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Pergola_occlusionRoughnessMetallic.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Prop_Pergola.bin",
+      "byteLength": 381412
+    }
+  ],
+  "materials": [
+    {
+      "name": "M_Prop_Pergola",
+      "extras": {
+        "b_painter": {},
+        "DM": {}
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Prop_Pergola.gltf",
+      "extras": {
+        "hops": {}
+      },
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "TANGENT": 5
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    },
+    {
+      "name": "Prop_Pergola.gltf.002",
+      "extras": {
+        "hops": {}
+      },
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7,
+            "TEXCOORD_0": 8,
+            "TANGENT": 9
+          },
+          "mode": 4,
+          "indices": 1
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Prop_Pergola",
+      "extras": {
+        "paramrenderwidth": 2048,
+        "paramrenderheight": 2048,
+        "paramfacecolor": [
+          0.7058823704719543,
+          0.2078431397676468,
+          0.09019608050584793
+        ],
+        "paramedgecolor": [
+          1,
+          0.7764706015586853,
+          0
+        ],
+        "paramedgewidth": 1,
+        "MapChannel:1": "map1",
+        "MaxHandle": 164,
+        "b_painter_active_material": 0,
+        "kitops": {},
+        "MM": {},
+        "hops": {},
+        "DM": {},
+        "M3": {}
+      },
+      "translation": [
+        0.27010321617126465,
+        1.591650366783142,
+        -0.22848224639892578
+      ],
+      "scale": [
+        6.913228988647461,
+        6.913228988647461,
+        6.913228988647461
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "Prop_Pergola_collider",
+      "extras": {
+        "collider": 1
+      },
+      "translation": [
+        0.27010321617126465,
+        1.591650366783142,
+        -0.22848224639892578
+      ],
+      "scale": [
+        6.913228988647461,
+        6.913228988647461,
+        6.913228988647461
+      ],
+      "mesh": 1
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "extras": {
+        "b_painter_panels": [
+          "BRUSH",
+          "COLOR",
+          "TEXTURE",
+          "STENCIL",
+          "LAYER"
+        ],
+        "b_painter_active_tex_brush_category": "Brush Textures",
+        "kitops": {},
+        "bc": {
+          "snap": {
+            "hit": 0
+          }
+        },
+        "MM": {
+          "revision": "6b9140d97c1c89684282504c1b43358bc5142503"
+        },
+        "zen_display": {
+          "stacked": 0,
+          "finished": 0,
+          "stretch": 0
+        },
+        "vr_landmarks": [
+          {
+            "type": 0
+          }
+        ],
+        "DM": {
+          "revision": "cc8df93aaa3044a610f0d75120f185790c4bb932",
+          "export_atlas_texture_channel_packCOL": [
+            {
+              "avoid_update": 0,
+              "name": "ao_curv_height",
+              "red": 2,
+              "green": 3,
+              "blue": 4
+            },
+            {
+              "avoid_update": 0,
+              "name": "masks",
+              "red": 1,
+              "green": 9,
+              "blue": 10
+            }
+          ]
+        },
+        "b_painter_active_brush": "Brush Mask",
+        "M3": {}
+      },
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

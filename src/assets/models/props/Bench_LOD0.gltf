@@ -1,0 +1,306 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 1364,
+      "max": [
+        13149,
+        17186,
+        32767
+      ],
+      "min": [
+        -13149,
+        -17186,
+        -32767
+      ],
+      "normalized": true,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 1364,
+      "normalized": true,
+      "bufferView": 0,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 1364,
+      "normalized": true,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 1364,
+      "normalized": true,
+      "bufferView": 0,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 24,
+      "max": [
+        13493,
+        17102,
+        32767
+      ],
+      "min": [
+        -13493,
+        -17102,
+        -32767
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 24,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 24,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 24,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 4662,
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 2,
+      "byteOffset": 9324
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 27280,
+      "byteStride": 20,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 27280,
+      "byteLength": 480,
+      "byteStride": 20,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 27760,
+      "byteLength": 9396,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Prop_04_Bench_normal",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_04_Bench_normal.ktx2"
+    },
+    {
+      "name": "Prop_04_Bench_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_04_Bench_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Prop_04_Bench_baseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_04_Bench_baseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Bench_LOD0.bin",
+      "byteLength": 37156
+    }
+  ],
+  "materials": [
+    {
+      "name": "Prop_04_Bench",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Prop_Bench",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2,
+            "TANGENT": 3
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 8
+        }
+      ]
+    },
+    {
+      "name": "collider",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6,
+            "TANGENT": 7
+          },
+          "mode": 4,
+          "indices": 9
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Prop_Bench",
+      "extras": {
+        "b_painter_active_material": 0
+      },
+      "translation": [
+        0.03334799408912659,
+        0.45971334348546655,
+        -2.9802322387695312e-8
+      ],
+      "scale": [
+        0.8765242397785187,
+        0.8765242397785187,
+        0.8765242397785187
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "extras": {
+        "b_painter_panels": [
+          "BRUSH",
+          "COLOR",
+          "TEXTURE",
+          "STENCIL",
+          "LAYER"
+        ],
+        "b_painter_active_tex_brush_category": "Brush Textures",
+        "bc": {
+          "snap": {
+            "hit": 0
+          }
+        },
+        "MM": {
+          "revision": "6b9140d97c1c89684282504c1b43358bc5142503"
+        },
+        "vr_landmarks": [
+          {
+            "type": 0
+          }
+        ],
+        "b_painter_brush": 0,
+        "b_painter_active_tex_brush": "None",
+        "b_painter_active_brush": "Brush Mask",
+        "glTF2ExportSettings": {
+          "export_animations": 0,
+          "export_extras": 1,
+          "export_format": "GLTF_SEPARATE",
+          "export_morph": 0,
+          "export_skins": 0
+        }
+      },
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_mesh_quantization",
+    "KHR_texture_basisu"
+  ],
+  "extensionsRequired": [
+    "KHR_mesh_quantization",
+    "KHR_texture_basisu"
+  ]
+}

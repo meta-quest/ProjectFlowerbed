@@ -1,0 +1,101 @@
+{
+	"width": 450,
+	"height": 500,
+	"backgroundMeshId": "UI_BACKGROUND",
+	"shouldLookAtCamera": false,
+	"interactable": true,
+	"backgroundTextureURL": "",
+	"backgroundOffset": [0, 0, 1],
+
+	"uiPanelParams": {
+		"backgroundOpacity": 0,
+		"alignItems": "center",
+		"justifyContent": "space-between"
+	},
+
+	"children": [
+		{
+			"name": "Heading",
+			"type": "vertical",
+			"size": 50,
+			"alignItems": "start",
+			"justifyContent": "start",
+			"padding": 0,
+			"textAlign": "center",
+			"children": [
+				{
+					"type": "text",
+					"text": "Controls",
+					"bold": true,
+					"textAlign": "center",
+					"fontSize": 24
+				}
+			]
+		},
+		{
+			"name": "Image",
+			"type": "vertical",
+			"size": 250,
+			"alignItems": "center",
+			"justifyContent": "center",
+			"padding": 0,
+			"textAlign": "center",
+			"children": [
+				{
+					"type": "imageBlock",
+					"url": "assets/images/ui/controls.png"
+				}
+			]
+		},
+		{
+			"name": "Body",
+			"type": "vertical",
+			"size": 24,
+			"alignItems": "start",
+			"justifyContent": "start",
+			"padding": 0,
+			"textAlign": "center",
+			"children": [
+				{
+					"type": "text",
+					"text": "Right Trigger actions include: ",
+					"bold": true,
+					"fontSize": 18
+				},
+				{
+					"type": "text",
+					"text": "plant, photo, pick, water",
+					"bold": false,
+					"fontSize": 18
+				}
+			]
+		},
+		{
+			"name": "Buttons",
+			"type": "vertical",
+			"size": 60,
+			"alignItems": "center",
+			"contentDirection": "row",
+			"justifyContent": "center",
+			"padding": 0,
+			"textAlign": "center",
+			"children": [
+				{
+					"name": "close",
+					"type": "button",
+					"width": 180,
+					"margin": 10,
+					"children": [
+						{
+							"type": "text",
+							"text": "Close",
+							"fontColor": "0xFFFFFF",
+							"bold": false,
+							"textAlign": "center"
+						}
+					]
+				}
+			]
+		}
+	]
+}
