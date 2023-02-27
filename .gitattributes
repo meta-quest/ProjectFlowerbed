@@ -1,1 +1,6 @@
 /.yarn/** linguist-vendored
+**/*.blend filter=lfs diff=lfs merge=lfs -text
+**/*.glb filter=lfs diff=lfs merge=lfs -text
+**/*.ktx2 filter=lfs diff=lfs merge=lfs -text
+**/*.png filter=lfs diff=lfs merge=lfs -text
+**/*.wav filter=lfs diff=lfs merge=lfs -text
