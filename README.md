@@ -2,6 +2,10 @@
 
 An immersive WebXR gardening experience written on top of THREE.JS.
 
+![Project Flowerbed Screenshot](./content/images/landing-page/screenshot1.jpg)
+
+[Technical Deep-Dive Blog Post](https://developer.oculus.com/blog/project-flowerbed-a-webxr-case-study/) | [Meta Connect 2023 Talk](https://metaconnect.com/en-us/program/fbc029)
+
 ## Running the Project
 
 This project uses `yarn 1` as the package manager, and `webpack 5` as the build tool. Run:
