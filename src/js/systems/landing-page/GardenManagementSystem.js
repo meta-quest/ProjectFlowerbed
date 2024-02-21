@@ -54,6 +54,25 @@ export class GardenManagementSystem extends System {
 							sessionComponent.useVR = true;
 						}
 					});
+
+					const primaryActionButton = document.getElementById(
+						'primary-action-btn',
+					);
+					const secondaryActionButton = document.getElementById(
+						'secondary-action-btn',
+					);
+
+					renderer.xr.addEventListener('sessionstart', () => {
+						this._primaryButtonDisplay = primaryActionButton.style.display;
+						this._secondaryButtonDisplay = secondaryActionButton.style.display;
+						primaryActionButton.style.display = 'none';
+						secondaryActionButton.style.display = 'none';
+					});
+
+					renderer.xr.addEventListener('sessionend', () => {
+						primaryActionButton.style.display = this._primaryButtonDisplay;
+						secondaryActionButton.style.display = this._secondaryButtonDisplay;
+					});
 				} else {
 					sessionComponent.useVR = false;
 					this._xrNotAvailable(loadingScreen);
