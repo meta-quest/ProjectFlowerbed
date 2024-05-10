@@ -194,11 +194,30 @@ export class XPlatControlSystem extends System {
 			if (document.pointerLockElement) {
 				this._pointerLocked = true;
 				document.addEventListener('mousemove', onDocumentMouseMove);
+				window.dispatchEvent(new Event('resize'));
 			} else {
 				this._pointerLocked = false;
 				document.removeEventListener('mousemove', onDocumentMouseMove);
 			}
 		});
+
+		const onResize = () => {
+			if (this._canvas) {
+				const width = window.innerWidth;
+				const height = window.innerHeight;
+				const pixelRatio = renderer.getPixelRatio();
+
+				this._canvas.width = Math.floor(width * pixelRatio);
+				this._canvas.height = Math.floor(height * pixelRatio);
+
+				this._canvas.style.width = width + 'px';
+				this._canvas.style.height = height + 'px';
+
+				renderer.setViewport(0, 0, width, height);
+			}
+		};
+
+		window.addEventListener('resize', onResize);
 
 		renderer.xr.addEventListener('sessionstart', () => {
 			this._canvas = renderer.xr.getBaseLayer().context.canvas;
