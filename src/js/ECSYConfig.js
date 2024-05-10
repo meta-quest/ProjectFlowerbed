@@ -101,10 +101,6 @@ import { CollisionWorldSystem } from './systems/collisions/CollisionSystem';
 import { ControlsPanelSystem } from './systems/settings/ControlsPanelSystem';
 import { DEBUG_CONSTANTS } from './Constants';
 import { DebugClearFlagsSystem } from './systems/landing-page/DebugClearFlagsSystem';
-import { DesktopAppOverlaySystem } from './systems/ui/DesktopAppOverlaySystem';
-import { DesktopExitSessionSystem } from './systems/core/DesktopExitSessionSystem';
-import { DesktopFirstPersonMouselookSystem } from './systems/locomotion/DesktopFirstPersonMouselookSystem';
-import { DesktopPointerLockComponent } from './components/DesktopPointerLockComponent';
 import { EnterVRTransitionSystem } from './systems/locomotion/EnterVRTransitionSystem';
 import { FaunaAnimationComponent } from './components/FaunaAnimationComponent';
 import { FaunaAnimationSystem } from './systems/fauna/FaunaAnimationSystem';
@@ -124,8 +120,6 @@ import { HandPoseExtractionSystem } from './devTools/HandPoseExtractorSystem';
 import { IndicatorRingComponent } from './components/IndicatorRingComponent';
 import { IndicatorRingSystem } from './systems/ui/IndicatorRingSystem';
 import { JoystickMovementSystem } from './systems/locomotion/JoystickMovementSystem';
-import { KeyboardModeSwitchingSystem } from './systems/locomotion/KeyboardModeSwitchingSystem';
-import { KeyboardMovementSystem } from './systems/locomotion/KeyboardMovementSystem';
 import { LoadingScreenComponent } from './components/LoadingScreenComponent';
 import { LoadingScreenSystem } from './systems/landing-page/LoadingScreenSystem';
 import { LocalSaveDataSystem } from './systems/saveLoad/SaveDataSystem';
@@ -133,8 +127,6 @@ import { LocomotionVignetteSystem } from './systems/locomotion/LocomotionVignett
 import { MeshIdComponent } from './components/AssetReplacementComponents';
 import { MeshInstancingSystem } from './systems/mesh/MeshInstancingSystem';
 import { MeshPreviewObject } from './components/MeshPreviewObjectComponent';
-import { MobileLocomotionSystem } from './systems/locomotion/MobileLocomotionSystem';
-import { MobileRotationSystem } from './systems/locomotion/MobileRotationSystem';
 import { ModelOptimizeSystem } from './systems/mesh/ModelOptimizeSystem';
 import { MorphTargetAnimationSystem } from './systems/fauna/MorphTargetAnimationSystem';
 import { MovableFaunaComponent } from './components/MovableFaunaComponent';
@@ -303,7 +295,6 @@ const registerComponents = (world) => {
 	world.registerComponent(AerialFaunaMovementComponent);
 	world.registerComponent(AerialFaunaGroupComponent);
 	world.registerComponent(SessionComponent);
-	world.registerComponent(DesktopPointerLockComponent);
 };
 
 /**
@@ -371,7 +362,6 @@ export const registerSystemsAfterLoad = (world) => {
 	// GameStateUpdateSystem resets the interactionModeOverridden flag every frame
 	// It needs to be executed before mode selection and teleportaion
 	world.registerSystem(GameStateUpdateSystem);
-	world.registerSystem(KeyboardModeSwitchingSystem);
 	world.registerSystem(SelectionWheelSystem);
 	world.registerSystem(IndicatorRingSystem);
 	world.registerSystem(SnapTurnSystem);
@@ -383,8 +373,6 @@ export const registerSystemsAfterLoad = (world) => {
 	if (ENABLE_HAND_POSER) {
 		// hand poser and keyboard movement are using the same keys, enable only one
 		world.registerSystem(HandPoseExtractionSystem);
-	} else {
-		world.registerSystem(KeyboardMovementSystem);
 	}
 
 	world.registerSystem(GazeFollowSystem);
@@ -438,15 +426,8 @@ export const registerSystemsAfterLoad = (world) => {
  * @param {World} world
  */
 export const registerSystemsAfterReady = (world) => {
-	world.registerSystem(DesktopFirstPersonMouselookSystem);
-	world.registerSystem(DesktopExitSessionSystem);
-
 	// needs to be registered after first person mouselook
 	// so that the pointerlock component is created.
-	world.registerSystem(DesktopAppOverlaySystem);
-
-	world.registerSystem(MobileLocomotionSystem);
-	world.registerSystem(MobileRotationSystem);
 
 	world.registerSystem(AudioSystem);
 

@@ -17,7 +17,6 @@ import { GazeFollowSystem } from '../systems/ui/GazeFollowSystem';
 import { IndicatorRingSystem } from '../systems/ui/IndicatorRingSystem';
 import { InteractionSystem } from '../lib/InteractionSystem';
 import { JoystickMovementSystem } from '../systems/locomotion/JoystickMovementSystem';
-import { KeyboardModeSwitchingSystem } from '../systems/locomotion/KeyboardModeSwitchingSystem';
 import { LocalSaveDataSystem } from '../systems/saveLoad/SaveDataSystem';
 import { MeshIdComponent } from '../components/AssetReplacementComponents';
 import { MovableFaunaSystem } from '../systems/fauna/MovableFaunaSystem';
@@ -176,7 +175,6 @@ export class PropsCalibrationSystem extends InteractionSystem {
 
 	onEnterDevTool() {
 		this.disableSystem(GameStateUpdateSystem);
-		this.disableSystem(KeyboardModeSwitchingSystem);
 		this.disableSystem(SelectionWheelSystem);
 		this.disableSystem(IndicatorRingSystem);
 		this.disableSystem(NUXSystem);

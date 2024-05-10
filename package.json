@@ -3,7 +3,6 @@
 	"private": true,
 	"type": "module",
 	"devDependencies": {
-		"@squoosh/lib": "^0.4.0",
 		"copy-webpack-plugin": "^9.0.0",
 		"css-loader": "5.2.7",
 		"eslint": "7.32.0",
@@ -18,6 +17,7 @@
 	},
 	"scripts": {
 		"build": "webpack",
+		"ci-build": "NODE_ENV=development yarn install && NODE_ENV=production yarn run build",
 		"serve": "webpack serve",
 		"lint": "eslint ./src",
 		"format": "prettier --write ./src/**/*",
@@ -35,6 +35,7 @@
 		"ecsy": "^0.4.2",
 		"howler": "^2.2.3",
 		"html-loader": "^4.1.0",
+		"iwer": "^0.0.2",
 		"jquery": "^3.6.0",
 		"localforage": "^1.10.0",
 		"lodash.merge": "^4.6.2",

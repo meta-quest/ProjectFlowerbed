@@ -6,6 +6,7 @@
  */
 
 import { Component, TagComponent, Types } from 'ecsy';
+
 import { StorageInterface } from '../lib/StorageInterface';
 import { changedSettingsEvent } from '../lib/CustomEvents';
 

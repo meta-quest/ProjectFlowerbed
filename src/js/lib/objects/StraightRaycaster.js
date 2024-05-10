@@ -12,6 +12,7 @@ import { RAY_CONSTANTS } from '../../Constants';
 export class StraightRaycaster extends Raycaster {
 	constructor() {
 		super();
+		this.firstHitOnly = true;
 		this.far = RAY_CONSTANTS.STRAIGHT_RAY_MAX_LENGTH;
 		this._pNear = new Vector3();
 		this._pFar = new Vector3();

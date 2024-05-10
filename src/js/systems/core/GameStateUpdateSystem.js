@@ -8,25 +8,24 @@
 import { GameStateComponent } from '../../components/GameStateComponent';
 import { System } from 'ecsy';
 import { THREEGlobalComponent } from '../../components/THREEGlobalComponent';
+import { getOnlyEntity } from 'src/js/utils/entityUtils';
 
 export class GameStateUpdateSystem extends System {
-	execute(/*delta, time*/) {
-		let gameStateComponent, xrSession;
-		this.queries.gameManager.results.forEach((entity) => {
-			gameStateComponent = entity.getMutableComponent(GameStateComponent);
-			xrSession = entity
-				.getComponent(THREEGlobalComponent)
-				.renderer.xr.getSession();
-		});
+	init() {
+		const gameManager = getOnlyEntity(this.queries.gameManager);
+		this.gameStateComponent = gameManager.getMutableComponent(
+			GameStateComponent,
+		);
+		this.renderer = gameManager.getComponent(THREEGlobalComponent).renderer;
+	}
 
-		if (!gameStateComponent) return;
-
-		gameStateComponent.interactionModeOverridden = false;
-
+	execute() {
+		this.gameStateComponent.interactionModeOverridden = false;
+		const xrSession = this.renderer.xr.getSession();
 		if (!xrSession) {
 			Array.from(document.getElementsByClassName('vr-button')).forEach(
 				(button) => {
-					button.disabled = !gameStateComponent.allAssetsLoaded;
+					button.disabled = !this.gameStateComponent.allAssetsLoaded;
 				},
 			);
 		}

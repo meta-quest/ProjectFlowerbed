@@ -221,7 +221,7 @@ export class ControllerInterface {
 
 	pulse(intensity, duration) {
 		if (this._gamepad.hapticActuators) {
-			this._gamepad.hapticActuators[0].pulse(intensity, duration);
+			this._gamepad.hapticActuators[0]?.pulse(intensity, duration);
 		} else {
 			console.warn(`Haptic Actuators not found in gamepad object`);
 		}

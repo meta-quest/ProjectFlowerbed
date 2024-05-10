@@ -24,6 +24,7 @@ export class CurvedRaycaster {
 		this.shootingSpeed = shootingSpeed;
 		this.minY = minY;
 		this.raycaster = new THREE.Raycaster(origin, direction);
+		this.raycaster.firstHitOnly = true;
 
 		this.isCurved = true;
 	}
