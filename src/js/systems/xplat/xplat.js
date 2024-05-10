@@ -25,6 +25,7 @@ export class XPlatControlSystem extends System {
 		const { scene, renderer } = gameManager.getComponent(THREEGlobalComponent);
 		this._gameState = gameManager.getComponent(GameStateComponent);
 		this._scene = scene;
+		this._renderer = renderer;
 		this._xrdevice = attributes.xrdevice;
 
 		this._quat = new Quaternion();
@@ -299,6 +300,11 @@ export class XPlatControlSystem extends System {
 		}
 		this._syncProxyTransforms(delta);
 		this._handleJoystickMovement();
+
+		document.getElementById('app-overlay').style.visibility =
+			this._renderer.xr.isPresenting && !this._pointerLocked
+				? 'visible'
+				: 'hidden';
 	}
 }
 
