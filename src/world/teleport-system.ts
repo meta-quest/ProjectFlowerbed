@@ -37,9 +37,15 @@ import { audio } from '../core/audio.js';
 import { gamepad, rayBusy } from '../core/input.js';
 import { handTracked, jointPosition, palmPose } from '../core/hands.js';
 import { Tool, blink, isToolLive, openPanel, teleporting, toolDialOpen } from '../core/state.js';
-import { teleportCount } from './island-state.js';
+import { islandReady, teleportCount } from './island-state.js';
 import { holdTeleport, holdTurning, syncLocomotionHolds, teleportHeld } from '../core/locomotion-holds.js';
-import { appTeleportAt, locomotionInternals, warnLocomotionMissing } from '../core/locomotion-bridge.js';
+import {
+  appTeleportAt,
+  locomotionInternals,
+  playerSpawn,
+  teleportPlayer,
+  warnLocomotionMissing,
+} from '../core/locomotion-bridge.js';
 
 /** Quest hand-gamepad buttons for thumb microgestures. */
 const MICRO = { swipeLeft: 5, swipeRight: 6, swipeForward: 7, swipeBackward: 8, tap: 9 } as const;
@@ -67,6 +73,8 @@ export class FlowerbedTeleportSystem extends createSystem({}) {
   private needsRecenter = false;
   private lastPosition = new Vector3();
   private lastGround = new Vector3();
+  /** The island's floor has just arrived; put the player back on the spawn point. */
+  private settle = false;
   private head = new Vector3();
   private palmCenter = new Vector3();
   private palmNormal = new Vector3();
@@ -82,6 +90,17 @@ export class FlowerbedTeleportSystem extends createSystem({}) {
       componentId: InputComponent.Thumbstick,
       state: AxesState.Up,
     });
+    // Native runtimes enter XR as soon as the page loads, before the island's
+    // colliders exist, and IWSDK's spawn placement has already woken the
+    // locomotor's gravity: the player falls into the void before there is
+    // anything to land on. Once the island (and its LocomotionEnvironment) is
+    // in, start again from the spawn point. In the browser the landing page
+    // waits for the island, so this lands where the player already stands.
+    this.cleanupFuncs.push(
+      islandReady.subscribe((ready) => {
+        if (ready) this.settle = true;
+      }),
+    );
   }
 
   override update(delta: number): void {
@@ -96,8 +115,15 @@ export class FlowerbedTeleportSystem extends createSystem({}) {
     }
     if (!this.attached) {
       this.attached = true;
-      this.lastPosition.copy(this.player.position);
-      this.lastGround.copy(this.player.position);
+      // The spawn point, not where the player is: they may already be falling.
+      playerSpawn(this.world, this.lastGround);
+      this.lastPosition.copy(this.lastGround);
+    }
+    if (this.settle) {
+      this.settle = false;
+      playerSpawn(this.world, this.lastGround);
+      this.lastPosition.copy(this.lastGround);
+      teleportPlayer(this.world, this.lastGround);
     }
 
     this.recoverFall(locomotor);

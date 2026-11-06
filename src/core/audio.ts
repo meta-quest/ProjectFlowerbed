@@ -50,8 +50,21 @@ class FlowerbedAudio {
   private effectsVolume = 1;
   private musicVolume = 1;
   private musicEnabled = false;
-  private musicElement: HTMLAudioElement | null = null;
   private musicGain: GainNode | null = null;
+  /** The playing track; a buffer source plays once, so pause and resume make a new one. */
+  private musicSource: AudioBufferSourceNode | null = null;
+  /**
+   * The current track, decoded. Only one is kept: a 4-minute stereo track is
+   * about 85 MB of PCM. (Streaming through an <audio> element and
+   * createMediaElementSource would use less, but not every WebXR runtime has
+   * media elements in Web Audio.)
+   */
+  private musicTrack: { index: number; buffer: Promise<AudioBuffer | null> } | null = null;
+  /** Where in the track playback resumes, in seconds. */
+  private musicOffset = 0;
+  private musicStartedAt = 0;
+  /** Bumped on every pause, so a decode that finishes late doesn't start stale music. */
+  private musicToken = 0;
   /** Legacy playlist: shuffled once, then played in that order. */
   private order = shuffle(SOUNDTRACK.map((_, i) => i));
   private orderIndex = 0;
@@ -95,7 +108,7 @@ class FlowerbedAudio {
   setSuspended(suspended: boolean): void {
     this.suspended = suspended;
     if (!suspended) return;
-    this.musicElement?.pause();
+    // Suspending the context holds the music too, at its place in the track.
     const ctx = this.context;
     if (ctx?.state === 'running') void ctx.suspend();
   }
@@ -283,42 +296,70 @@ class FlowerbedAudio {
       this.musicGain.gain.setTargetAtTime(dbToGain(MUSIC_DB) * volume * this.musicDuck, ctx.currentTime, 0.4);
     }
     if (enabled) this.startMusic();
-    else this.musicElement?.pause();
+    else this.pauseMusic();
   }
 
   nextTrack(): void {
     this.orderIndex = (this.orderIndex + 1) % this.order.length;
-    if (this.musicElement) {
-      this.musicElement.src = this.trackUrl();
-      if (this.musicEnabled) void this.musicElement.play().catch(() => {});
-    }
+    this.pauseMusic();
+    this.musicOffset = 0;
+    if (this.musicEnabled) this.startMusic();
     this.onTrackChange?.(this.currentTrackTitle);
   }
 
-  private trackUrl(): string {
-    return `${import.meta.env.BASE_URL}flowerbed/audio/${SOUNDTRACK[this.trackIndex].file}`;
+  private trackUrl(index: number): string {
+    return `${import.meta.env.BASE_URL}flowerbed/audio/${SOUNDTRACK[index].file}`;
   }
 
   private startMusic(): void {
     const ctx = this.context;
     if (!ctx) return;
-    if (!this.musicElement) {
-      const element = new window.Audio();
-      element.crossOrigin = 'anonymous';
-      element.preload = 'auto';
-      element.src = this.trackUrl();
-      element.addEventListener('ended', () => this.nextTrack());
-      const source = ctx.createMediaElementSource(element);
+    this.resume();
+    if (this.musicSource) return;
+    if (!this.musicGain) {
       this.musicGain = ctx.createGain();
-      this.musicGain.gain.value = dbToGain(MUSIC_DB) * this.musicVolume;
-      source.connect(this.musicGain).connect(ctx.destination);
-      this.musicElement = element;
+      this.musicGain.gain.value = dbToGain(MUSIC_DB) * this.musicVolume * this.musicDuck;
+      this.musicGain.connect(ctx.destination);
       this.onTrackChange?.(this.currentTrackTitle);
     }
-    this.resume();
-    void this.musicElement.play().catch(() => {
-      // Autoplay is blocked until a user gesture; retried on next resume.
+    const index = this.trackIndex;
+    if (this.musicTrack?.index !== index) this.musicTrack = { index, buffer: this.decodeTrack(ctx, index) };
+    const token = this.musicToken;
+    void this.musicTrack.buffer.then((buffer) => {
+      if (!buffer || !this.musicGain || token !== this.musicToken || this.musicSource || !this.musicEnabled) return;
+      const source = ctx.createBufferSource();
+      source.buffer = buffer;
+      source.connect(this.musicGain);
+      source.onended = () => {
+        // stop() from pauseMusic also ends the source; only a track that played out advances.
+        if (this.musicSource !== source) return;
+        this.musicSource = null;
+        this.nextTrack();
+      };
+      const offset = this.musicOffset % buffer.duration;
+      source.start(0, offset);
+      this.musicStartedAt = ctx.currentTime - offset;
+      this.musicSource = source;
     });
+  }
+
+  private pauseMusic(): void {
+    this.musicToken++;
+    const source = this.musicSource;
+    if (!source) return;
+    this.musicSource = null;
+    this.musicOffset = source.context.currentTime - this.musicStartedAt;
+    source.stop();
+  }
+
+  private async decodeTrack(ctx: AudioContext, index: number): Promise<AudioBuffer | null> {
+    try {
+      const response = await fetch(this.trackUrl(index));
+      return await ctx.decodeAudioData(await response.arrayBuffer());
+    } catch (error) {
+      console.warn('[flowerbed] music unavailable', error);
+      return null;
+    }
   }
 }
 

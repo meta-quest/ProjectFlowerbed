@@ -57,3 +57,9 @@ export function teleportPlayer(world: World, position: Vector3): boolean {
   locomotor.teleport(position);
   return true;
 }
+
+/** The authored player spawn (the scene's spawn point, or the configured start). */
+export function playerSpawn(world: World, out: Vector3): Vector3 {
+  const value = world.getSystem(LocomotionSystem)?.config.initialPlayerPosition.value;
+  return value ? out.fromArray(value) : out.set(0, 0, 0);
+}

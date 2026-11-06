@@ -40,6 +40,7 @@ import { gamepad, haptic, rayBusy, selectDown, selectUp, selectValue } from '../
 import { Tool, activeTool, isToolLive, showToast } from '../core/state.js';
 import { spawnPanel, type SpawnedPanel } from '../ui/panels.js';
 import { toolEnvMap } from '../world/island-state.js';
+import { renderWithStandIns } from './viewfinder-materials.js';
 import { finishOn, onFinishChange, record } from '../gardening/progress.js';
 import { activeGarden } from '../gardening/garden-system.js';
 import { BURST_STYLES, bursts } from '../core/bursts.js';
@@ -291,7 +292,7 @@ export class CameraSystem extends createSystem({}) {
     // A throwing render must not leave XR disabled or the eyes drawing offscreen.
     try {
       renderer.setRenderTarget(target);
-      renderer.render(this.scene, camera);
+      renderWithStandIns(renderer, this.scene, camera);
     } finally {
       renderer.setRenderTarget(previous);
       this.scene.matrixWorldAutoUpdate = sceneAuto;
