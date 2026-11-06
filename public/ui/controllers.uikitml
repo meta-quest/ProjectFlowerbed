@@ -1,0 +1,43 @@
+<!--
+  Shown while fewer than two controllers are connected in XR (legacy
+  controller-only panel). Gardening is a two-handed activity.
+-->
+<style>
+  .root {
+    border-radius: 28;
+    flex-direction: column;
+    align-items: center;
+    width: 440;
+    padding-top: 24;
+    padding-bottom: 24;
+    padding-left: 24;
+    padding-right: 24;
+    gap: 12;
+    background-color: #111a16;
+    border-color: #2b3d34;
+    border-width: 1.5;
+  }
+
+  .art {
+    width: 260;
+    height: 170;
+  }
+
+  .title {
+    color: #f6f3ea;
+    font-size: 26;
+    font-weight: 700;
+  }
+
+  .body {
+    color: #c9d6ce;
+    font-size: 16;
+    line-height: 1.45;
+    text-align: center;
+  }
+</style>
+<div class="root">
+  <img class="art" src="./flowerbed/images/ui/quest2_controller.png" object-fit="cover"></img>
+  <span class="title">Pick up both controllers</span>
+  <span class="body">Gardening is a hands-on activity: the left hand holds your seedbox and the right hand plants, waters and takes photos.</span>
+</div>

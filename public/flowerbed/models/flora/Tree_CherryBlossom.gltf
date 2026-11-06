@@ -1,0 +1,278 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 9264,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 2136,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 2136,
+      "max": [
+        31835,
+        32767,
+        28103
+      ],
+      "min": [
+        -31835,
+        -32767,
+        -28103
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 4
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 2136,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 2136,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 2136,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 2136,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 5,
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 18528,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 18528,
+      "byteLength": 59808,
+      "byteStride": 28,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 78336,
+      "byteLength": 320
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "T_Tree_CherryBlossom_N",
+      "mimeType": "image/ktx2",
+      "uri": "T_Tree_CherryBlossom_N.ktx2"
+    },
+    {
+      "name": "T_Tree_CherryBlossom_ORM",
+      "mimeType": "image/ktx2",
+      "uri": "T_Tree_CherryBlossom_ORM.ktx2"
+    },
+    {
+      "name": "T_Tree_CherryBlossom_D",
+      "mimeType": "image/ktx2",
+      "uri": "T_Tree_CherryBlossom_D.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Tree_CherryBlossom.bin",
+      "byteLength": 78656
+    }
+  ],
+  "materials": [
+    {
+      "name": "M_SkinnedPlant_Tree_CherryBlossom",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Tree_CherryBlossom",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "WEIGHTS_0": 5,
+            "TANGENT": 6
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root"
+    },
+    {
+      "name": "Branches01",
+      "translation": [
+        -0.17304746806621552,
+        2.225665330886841,
+        -0.3457624316215515
+      ]
+    },
+    {
+      "name": "Branches02",
+      "translation": [
+        0.04951690882444382,
+        2.176496744155884,
+        0.07247869670391083
+      ]
+    },
+    {
+      "name": "Branches03",
+      "translation": [
+        1.8262454271316528,
+        5.054492950439453,
+        0.09878792613744736
+      ]
+    },
+    {
+      "name": "Branches04",
+      "translation": [
+        -1.0174980163574219,
+        4.634931564331055,
+        -0.5531359910964966
+      ]
+    },
+    {
+      "name": "Tree_CherryBlossom",
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "ARM_Tree_CherryBlossom",
+      "children": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "name": "ARM_Tree_CherryBlossom",
+      "inverseBindMatrices": 7,
+      "joints": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        6
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

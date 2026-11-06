@@ -1,0 +1,79 @@
+{
+  "name": "project-flowerbed",
+  "version": "2.0.0",
+  "description": "Open-source WebXR virtual reality gardening game built with Meta's Immersive Web SDK (IWSDK).",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Meta Platforms, Inc. and affiliates",
+  "homepage": "https://github.com/meta-quest/project-flowerbed#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meta-quest/project-flowerbed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meta-quest/project-flowerbed/issues"
+  },
+  "keywords": [
+    "iwsdk",
+    "webxr",
+    "virtual-reality",
+    "meta-quest",
+    "gardening",
+    "game"
+  ],
+  "packageManager": "npm@11.13.0",
+  "scripts": {
+    "dev": "iwsdk dev restart --open --foreground",
+    "dev:runtime": "vite",
+    "dev:down": "iwsdk dev down",
+    "dev:status": "iwsdk dev status",
+    "reference:status": "iwsdk reference status",
+    "reference:warmup": "iwsdk reference warmup",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src scripts vite.config.ts vitest.config.ts eslint.config.js --max-warnings=0",
+    "format": "prettier --write \"src/**/*.ts\" \"scripts/**/*.mjs\" \"*.{json,ts,js,html,md}\" \".github/**/*.yml\"",
+    "format:check": "prettier --check \"src/**/*.ts\" \"scripts/**/*.mjs\" \"*.{json,ts,js,html,md}\" \".github/**/*.yml\"",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test:run",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "audit:production": "npm audit --omit=dev"
+  },
+  "dependencies": {
+    "@iwsdk/core": "1.1.0-rc.2",
+    "@pmndrs/uikit": "^1.0.74",
+    "@pmndrs/uikit-horizon": "^1.0.74",
+    "@pmndrs/uikit-lucide": "^1.0.74",
+    "iwer": "^2.7.0",
+    "meshoptimizer": "^1.1.1",
+    "three": "npm:super-three@0.185.0"
+  },
+  "devDependencies": {
+    "@drawcall/uikitml": "0.1.8",
+    "@eslint/js": "^9.39.2",
+    "@iwsdk/cli": "1.1.0-rc.2",
+    "@iwsdk/reference": "1.1.0-rc.2",
+    "@iwsdk/vite-plugin-dev": "1.1.0-rc.2",
+    "@types/node": "^24.10.0",
+    "@types/three": "^0.185.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "eslint": "^9.39.2",
+    "happy-dom": "^20.11.0",
+    "prettier": "^3.9.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.65.0",
+    "vite": "^7.3.6",
+    "vitest": "^4.1.11"
+  },
+  "overrides": {
+    "sharp": "0.35.4",
+    "three": "npm:super-three@0.185.0"
+  },
+  "engines": {
+    "node": ">=22.12.0 <23.0.0-0 || >=24.0.0"
+  }
+}

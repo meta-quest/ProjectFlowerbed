@@ -1,0 +1,281 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 5358,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 1577,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 1577,
+      "max": [
+        10913,
+        32767,
+        11625
+      ],
+      "min": [
+        -10913,
+        -32767,
+        -11625
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 4
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 1577,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 1577,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 1577,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 1577,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 5,
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 10716,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10716,
+      "byteLength": 44156,
+      "byteStride": 28,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 54872,
+      "byteLength": 320
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Tree_CedarHedge_normal",
+      "mimeType": "image/ktx2",
+      "uri": "Tree_CedarHedge_normal.ktx2"
+    },
+    {
+      "name": "Tree_CedarHedge_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Tree_CedarHedge_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Tree_CedarHedge_baseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Tree_CedarHedge_baseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Tree_CedarHedge.bin",
+      "byteLength": 55192
+    }
+  ],
+  "materials": [
+    {
+      "name": "M_SkinnedPlant_Tree_CedarHedge",
+      "alphaMode": "MASK",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Tree_CedarHedge",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "WEIGHTS_0": 5,
+            "TANGENT": 6
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root"
+    },
+    {
+      "name": "Branches01",
+      "translation": [
+        0,
+        0.6999999284744263,
+        0
+      ]
+    },
+    {
+      "name": "Branches02",
+      "translation": [
+        0,
+        2.3000001907348633,
+        0
+      ]
+    },
+    {
+      "name": "Branches03",
+      "translation": [
+        0,
+        3.9000000953674316,
+        0
+      ]
+    },
+    {
+      "name": "Branches04",
+      "translation": [
+        0,
+        5.5,
+        0
+      ]
+    },
+    {
+      "name": "Tree_CedarHedge",
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "ARM_Tree_CedarHedge",
+      "children": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "name": "ARM_Tree_CedarHedge",
+      "inverseBindMatrices": 7,
+      "joints": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        6
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

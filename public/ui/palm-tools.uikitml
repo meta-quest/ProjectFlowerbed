@@ -1,0 +1,39 @@
+<!--
+  Hand tracking: a round "Tools" button on the inner left wrist, shown when
+  the wrist faces the player. Tap it (or pinch it with the right hand's ray)
+  to open or close the tool dial. Driven by src/ui/tool-dial-system.ts.
+-->
+<style>
+  .button {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2;
+    width: 64;
+    height: 64;
+    border-radius: 32;
+    background-color: #15211b;
+    border-width: 2;
+    border-color: #86dc3d;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #24382d;
+  }
+
+  .icon {
+    width: 17;
+    height: 17;
+  }
+
+  .label {
+    color: #f6f3ea;
+    font-size: 12;
+    font-weight: 700;
+  }
+</style>
+<div class="button" id="palm-tools">
+  <LayoutGrid class="icon" id="palm-tools-icon" color="#86dc3d"></LayoutGrid>
+  <span class="label" id="palm-tools-label">Tools</span>
+</div>

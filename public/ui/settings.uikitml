@@ -1,0 +1,1047 @@
+<!--
+  Settings: one panel with four tabs (Garden, Comfort, Sound, Help).
+  Replaces the legacy settings + controls panels and the 2D-only garden
+  management. Authored at Horizon kit scale (px-like units) and scaled
+  down in src/ui/settings-system.ts. Every addressable element has an id.
+-->
+<style>
+  .root {
+    border-radius: 28;
+    flex-direction: column;
+    width: 620;
+    padding-top: 22;
+    padding-bottom: 22;
+    padding-left: 24;
+    padding-right: 24;
+    gap: 16;
+    background-color: #111a16;
+    border-color: #2b3d34;
+    border-width: 1.5;
+  }
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    gap: 12;
+  }
+
+  .title-block {
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 2;
+  }
+
+  .title {
+    color: #f6f3ea;
+    font-size: 28;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    color: #9fb3a7;
+    font-size: 16;
+  }
+
+  .tabs {
+    flex-direction: row;
+    gap: 6;
+    padding-top: 4;
+    padding-bottom: 4;
+    padding-left: 4;
+    padding-right: 4;
+    border-radius: 14;
+    background-color: #1a2620;
+  }
+
+  .tab {
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6;
+    height: 40;
+    border-radius: 11;
+    cursor: pointer;
+  }
+
+  .tab:hover {
+    background-color: #24342c;
+  }
+
+  .tab-label {
+    color: #c9d6ce;
+    font-size: 16;
+    font-weight: 600;
+  }
+
+  .tab-icon {
+    width: 13;
+    height: 13;
+  }
+
+  .page {
+    flex-direction: column;
+    gap: 10;
+    min-height: 480;
+  }
+
+  .card {
+    flex-direction: column;
+    gap: 6;
+    padding-top: 14;
+    padding-bottom: 14;
+    padding-left: 16;
+    padding-right: 16;
+    border-radius: 14;
+    background-color: #18241e;
+  }
+
+  .row {
+    flex-direction: row;
+    align-items: center;
+    gap: 14;
+  }
+
+  .row-text {
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 3;
+  }
+
+  .label {
+    color: #f6f3ea;
+    font-size: 18;
+    font-weight: 600;
+  }
+
+  .hint {
+    color: #9fb3a7;
+    font-size: 15;
+    line-height: 1.35;
+  }
+
+  .stat {
+    color: #86dc3d;
+    font-size: 14;
+    font-weight: 700;
+  }
+
+  .chips {
+    flex-direction: row;
+    gap: 6;
+  }
+
+  .chip {
+    width: 58;
+    height: 34;
+    border-radius: 10;
+    align-items: center;
+    justify-content: center;
+    background-color: #24342c;
+    cursor: pointer;
+  }
+
+  .wide {
+    width: 96;
+  }
+
+  .chip:hover {
+    background-color: #2f4639;
+  }
+
+  .chip-label {
+    color: #e8efe9;
+    font-size: 15;
+    font-weight: 600;
+  }
+
+  .garden-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 10;
+    height: 46;
+    padding-left: 14;
+    padding-right: 8;
+    border-radius: 12;
+    background-color: #1d2b24;
+  }
+
+  .garden-name {
+    color: #e8efe9;
+    font-size: 15;
+    font-weight: 600;
+    flex-grow: 1;
+  }
+
+  .garden-meta {
+    color: #9fb3a7;
+    font-size: 14;
+  }
+
+  .icon-button {
+    width: 34;
+    height: 34;
+    border-radius: 10;
+    align-items: center;
+    justify-content: center;
+    background-color: #24342c;
+    cursor: pointer;
+  }
+
+  .icon-button:hover {
+    background-color: #3a2a26;
+  }
+
+  .button-icon {
+    width: 14;
+    height: 14;
+  }
+
+  .small-icon {
+    width: 14;
+    height: 14;
+  }
+
+  .control-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 12;
+    height: 30;
+  }
+
+  .key {
+    width: 108;
+    height: 26;
+    border-radius: 8;
+    align-items: center;
+    justify-content: center;
+    background-color: #24342c;
+  }
+
+  .key-label {
+    color: #f6f3ea;
+    font-size: 14;
+    font-weight: 700;
+  }
+
+  .control-text {
+    color: #c9d6ce;
+    font-size: 15;
+  }
+
+  .section {
+    color: #86dc3d;
+    font-size: 14;
+    font-weight: 700;
+  }
+
+  .confirm {
+    flex-direction: column;
+    gap: 10;
+    padding-top: 14;
+    padding-bottom: 14;
+    padding-left: 16;
+    padding-right: 16;
+    border-radius: 14;
+    background-color: #2a1d1a;
+    border-width: 1;
+    border-color: #6b3a30;
+  }
+
+  .progress-track {
+    height: 8;
+    border-radius: 4;
+    background-color: #24342c;
+  }
+
+  .progress-fill {
+    height: 8;
+    width: 0;
+    border-radius: 4;
+    background-color: #86dc3d;
+  }
+
+  .album {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10;
+  }
+
+  .shot {
+    width: 180;
+    height: 120;
+    border-radius: 12;
+    border-width: 3;
+    border-color: #18241e;
+    cursor: pointer;
+  }
+
+  .shot:hover {
+    border-color: #6f9a80;
+  }
+
+  .empty-state {
+    flex-direction: column;
+    align-items: center;
+    gap: 10;
+    padding-top: 40;
+    padding-bottom: 40;
+    border-radius: 16;
+    background-color: #18241e;
+  }
+
+  .empty-icon {
+    width: 36;
+    height: 36;
+  }
+
+  .viewer {
+    flex-direction: column;
+    gap: 10;
+  }
+
+  .viewer-frame {
+    width: 568;
+    height: 300;
+    border-radius: 14;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c1310;
+  }
+
+  .viewer-image {
+    width: 450;
+    height: 300;
+    border-radius: 14;
+  }
+
+  .album-empty {
+    text-align: center;
+    color: #9fb3a7;
+    font-size: 15;
+    line-height: 1.45;
+  }
+
+  .section {
+    color: #c9d6ce;
+    font-size: 15;
+    font-weight: 700;
+    letter-spacing: 0.6;
+  }
+
+  .goal-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10;
+  }
+
+  .goal-card {
+    flex-direction: column;
+    gap: 4;
+    padding-top: 9;
+    padding-bottom: 9;
+    padding-left: 14;
+    padding-right: 14;
+    border-radius: 14;
+    background-color: #18241e;
+  }
+
+  .third {
+    width: 182;
+  }
+
+  .half {
+    width: 279;
+  }
+
+  .goal-head {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .goal-dot {
+    width: 14;
+    height: 14;
+    border-radius: 7;
+    background-color: #2f4639;
+  }
+
+  .goal-title {
+    flex-grow: 1;
+    color: #f6f3ea;
+    font-size: 16;
+    font-weight: 600;
+  }
+
+  .stats {
+    flex-direction: row;
+    gap: 8;
+  }
+
+  .stat-tile {
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-direction: column;
+    gap: 2;
+    padding-top: 10;
+    padding-bottom: 10;
+    padding-left: 12;
+    border-radius: 12;
+    background-color: #18241e;
+  }
+
+  .stat-value {
+    color: #f6f3ea;
+    font-size: 22;
+    font-weight: 700;
+  }
+
+  .small {
+    font-size: 16;
+    color: #86dc3d;
+  }
+
+  .stat-label {
+    color: #a9bcb0;
+    font-size: 13;
+  }
+
+  .no-shrink {
+    flex-shrink: 0;
+  }
+
+  .weekly-strip {
+    flex-direction: column;
+    gap: 4;
+    padding-top: 6;
+    padding-bottom: 6;
+    padding-left: 14;
+    padding-right: 14;
+    border-radius: 14;
+    background-color: #18241e;
+  }
+
+  .ribbon {
+    width: 22;
+    height: 22;
+  }
+
+  .champion {
+    width: 26;
+    height: 26;
+  }
+
+  .goal-icon {
+    width: 30;
+    height: 30;
+    border-radius: 9;
+    align-items: center;
+    justify-content: center;
+    background-color: #223129;
+  }
+
+  .goal-status {
+    flex-direction: row;
+    align-items: center;
+    gap: 5;
+  }
+
+  .icon-sm {
+    width: 15;
+    height: 15;
+  }
+
+  .icon-xs {
+    width: 12;
+    height: 12;
+  }
+
+  .grow {
+    flex-grow: 1;
+  }
+
+  .goal-track {
+    height: 6;
+    border-radius: 3;
+    background-color: #2a3a31;
+  }
+
+  .goal-fill {
+    height: 6;
+    width: 0;
+    border-radius: 3;
+    background-color: #f6c443;
+  }
+
+  .goal-reward {
+    min-width: 0;
+    flex-shrink: 1;
+    color: #a9bcb0;
+    font-size: 14;
+  }
+
+  .goal-count {
+    color: #f6c443;
+    font-size: 15;
+    font-weight: 700;
+  }
+
+  .goal-foot {
+    flex-direction: row;
+    align-items: center;
+    gap: 6;
+  }
+
+  .goal-equip {
+    flex-shrink: 0;
+    height: 26;
+    padding-left: 9;
+    padding-right: 9;
+    border-radius: 9;
+    align-items: center;
+    justify-content: center;
+    background-color: #24342c;
+    cursor: pointer;
+  }
+
+  .goal-equip:hover {
+    background-color: #2f4639;
+  }
+
+  .goal-equip-label {
+    color: #e8efe9;
+    font-size: 14;
+    font-weight: 600;
+  }
+
+  .button-row {
+    flex-direction: row;
+    gap: 10;
+  }
+</style>
+<div class="root" id="settings-root">
+  <div class="header">
+    <div class="title-block">
+      <span class="title">Settings</span>
+      <span class="subtitle" id="settings-subtitle">Garden 1 - 0 plants</span>
+    </div>
+    <Button id="settings-close" variant="secondary" size="sm">
+      <ButtonIcon>
+        <X class="button-icon"></X>
+      </ButtonIcon>
+      <ButtonLabel>Close</ButtonLabel>
+    </Button>
+  </div>
+
+  <div class="tabs">
+    <div class="tab" id="tab-garden">
+      <Sprout class="tab-icon" color="#c9d6ce"></Sprout>
+      <span class="tab-label" id="tab-garden-label">Garden</span>
+    </div>
+    <div class="tab" id="tab-photos">
+      <Images class="tab-icon" color="#c9d6ce"></Images>
+      <span class="tab-label" id="tab-photos-label">Photos</span>
+    </div>
+    <div class="tab" id="tab-goals">
+      <Trophy class="tab-icon" color="#c9d6ce"></Trophy>
+      <span class="tab-label" id="tab-goals-label">Goals</span>
+    </div>
+    <div class="tab" id="tab-comfort">
+      <Footprints class="tab-icon" color="#c9d6ce"></Footprints>
+      <span class="tab-label" id="tab-comfort-label">Comfort</span>
+    </div>
+    <div class="tab" id="tab-sound">
+      <Music class="tab-icon" color="#c9d6ce"></Music>
+      <span class="tab-label" id="tab-sound-label">Sound</span>
+    </div>
+    <div class="tab" id="tab-help">
+      <CircleHelp class="tab-icon" color="#c9d6ce"></CircleHelp>
+      <span class="tab-label" id="tab-help-label">Help</span>
+    </div>
+  </div>
+
+  <!-- Garden -->
+  <div class="page" id="page-garden">
+    <div class="stats">
+      <div class="stat-tile"><span class="stat-value" id="stat-plants">0</span><span class="stat-label">Plants here</span></div>
+      <div class="stat-tile"><span class="stat-value" id="stat-varieties">0</span><span class="stat-label">Varieties grown</span></div>
+      <div class="stat-tile"><span class="stat-value" id="stat-photos">0</span><span class="stat-label">Photos kept</span></div>
+      <div class="stat-tile"><span class="stat-value" id="stat-finishes">0 / 12</span><span class="stat-label">Finishes</span></div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="row-text">
+          <span class="label" id="garden-current-name">Garden 1</span>
+          <span class="hint" id="garden-current-meta">0 plants - saved just now</span>
+        </div>
+        <Button id="garden-save" variant="secondary" size="sm">
+          <ButtonLabel>Save now</ButtonLabel>
+        </Button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="row-text">
+          <span class="label" id="progress-title">Seed collection - 1 of 4 pages</span>
+          <span class="hint" id="progress-next">Next: Plant 3 seeds (0 / 3)</span>
+        </div>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+    </div>
+    <div class="card">
+      <span class="label">Time of day</span>
+      <div class="chips">
+        <div class="chip wide" id="time-morning"><span class="chip-label" id="time-morning-label">Morning</span></div>
+        <div class="chip wide" id="time-sunset"><span class="chip-label" id="time-sunset-label">Sunset</span></div>
+        <div class="chip wide" id="time-night"><span class="chip-label" id="time-night-label">Night</span></div>
+        <div class="chip wide" id="time-auto"><span class="chip-label" id="time-auto-label">Auto</span></div>
+      </div>
+    </div>
+    <span class="section" id="garden-list-title">OTHER GARDENS</span>
+    <span class="hint" id="garden-empty">This is your only garden so far. Start another any time - each one saves on its own.</span>
+    <div class="garden-row" id="garden-row-0" style="display: none">
+      <span class="garden-name" id="garden-row-0-name">-</span>
+      <span class="garden-meta" id="garden-row-0-meta">-</span>
+      <div class="icon-button" id="garden-row-0-open"><FolderOpen class="small-icon" color="#e8efe9"></FolderOpen></div>
+      <div class="icon-button" id="garden-row-0-delete"><Trash2 class="small-icon" color="#ef8a6f"></Trash2></div>
+    </div>
+    <div class="garden-row" id="garden-row-1" style="display: none">
+      <span class="garden-name" id="garden-row-1-name">-</span>
+      <span class="garden-meta" id="garden-row-1-meta">-</span>
+      <div class="icon-button" id="garden-row-1-open"><FolderOpen class="small-icon" color="#e8efe9"></FolderOpen></div>
+      <div class="icon-button" id="garden-row-1-delete"><Trash2 class="small-icon" color="#ef8a6f"></Trash2></div>
+    </div>
+    <div class="confirm" id="garden-confirm">
+      <span class="label" id="garden-confirm-title">Delete this garden?</span>
+      <span class="hint" id="garden-confirm-text">Its plants will be gone for good.</span>
+      <div class="button-row">
+        <Button id="garden-confirm-yes" variant="negative" size="sm">
+          <ButtonLabel>Delete</ButtonLabel>
+        </Button>
+        <Button id="garden-confirm-no" variant="secondary" size="sm">
+          <ButtonLabel>Cancel</ButtonLabel>
+        </Button>
+      </div>
+    </div>
+    <Button id="garden-new" variant="secondary">
+      <ButtonIcon>
+        <Plus class="button-icon"></Plus>
+      </ButtonIcon>
+      <ButtonLabel>Start a new garden</ButtonLabel>
+    </Button>
+  </div>
+
+  <!-- Photos -->
+  <div class="page" id="page-photos">
+    <div class="row">
+      <span class="hint grow" id="album-count">Photos you keep from the camera live here.</span>
+      <Button id="album-tour" variant="secondary" size="sm">
+        <ButtonLabel>Garden tour</ButtonLabel>
+      </Button>
+    </div>
+    <div class="viewer" id="album-viewer" style="display: none">
+      <div class="viewer-frame">
+        <img class="viewer-image" id="album-view" src="./flowerbed/images/landing-page/card-preview.jpg" object-fit="cover"></img>
+      </div>
+      <div class="row">
+        <Button id="album-view-prev" variant="secondary" size="sm" icon>
+          <ButtonIcon><ChevronLeft class="icon-sm"></ChevronLeft></ButtonIcon>
+        </Button>
+        <span class="hint grow" id="album-view-date">Taken today</span>
+        <Button id="album-view-next" variant="secondary" size="sm" icon>
+          <ButtonIcon><ChevronRight class="icon-sm"></ChevronRight></ButtonIcon>
+        </Button>
+      </div>
+      <div class="button-row">
+        <Button id="album-back" variant="secondary" size="sm" icon>
+          <ButtonIcon><LayoutGrid></LayoutGrid></ButtonIcon>
+        </Button>
+        <Button id="album-display" variant="primary" size="sm">
+          <ButtonLabel id="album-display-label">Display in garden</ButtonLabel>
+        </Button>
+        <Button id="album-goto" variant="secondary" size="sm">
+          <ButtonLabel>Go to easel</ButtonLabel>
+        </Button>
+        <Button id="album-download" variant="secondary" size="sm" icon>
+          <ButtonIcon><Download></Download></ButtonIcon>
+        </Button>
+        <Button id="album-delete" variant="negative" size="sm" width="140" flex-shrink="0">
+          <ButtonLabel id="album-delete-label">Delete</ButtonLabel>
+        </Button>
+      </div>
+    </div>
+    <div class="album" id="album-grid">
+      <img class="shot" id="album-0" src="./flowerbed/images/landing-page/card-preview.jpg" object-fit="cover"></img>
+      <img class="shot" id="album-1" src="./flowerbed/images/landing-page/card-preview.jpg" object-fit="cover"></img>
+      <img class="shot" id="album-2" src="./flowerbed/images/landing-page/card-preview.jpg" object-fit="cover"></img>
+      <img class="shot" id="album-3" src="./flowerbed/images/landing-page/card-preview.jpg" object-fit="cover"></img>
+      <img class="shot" id="album-4" src="./flowerbed/images/landing-page/card-preview.jpg" object-fit="cover"></img>
+      <img class="shot" id="album-5" src="./flowerbed/images/landing-page/card-preview.jpg" object-fit="cover"></img>
+    </div>
+    <div class="empty-state" id="album-empty">
+      <Camera class="empty-icon" color="#f6c443"></Camera>
+      <span class="label">No photos yet</span>
+      <span class="album-empty">Shoot with the Camera tool, then press Keep on the print. Your favourites land here.</span>
+      <Button id="album-camera" variant="primary" size="sm">
+        <ButtonLabel>Open the camera</ButtonLabel>
+      </Button>
+    </div>
+    <div class="button-row" id="album-pager">
+      <Button id="album-prev" variant="secondary" size="sm" icon>
+        <ButtonIcon><ChevronLeft></ChevronLeft></ButtonIcon>
+      </Button>
+      <Button id="album-next" variant="secondary" size="sm" icon>
+        <ButtonIcon><ChevronRight></ChevronRight></ButtonIcon>
+      </Button>
+    </div>
+  </div>
+
+  <!-- Goals -->
+  <div class="page" id="page-goals">
+    <div class="row">
+      <span class="section grow no-shrink">Seed pages</span>
+      <span class="goal-reward" id="goals-master">All 12 finishes: golden gloves</span>
+    </div>
+    <div class="goal-grid">
+      <div class="goal-card third" id="goal-0">
+        <div class="goal-head">
+          <div class="goal-dot" id="goal-0-dot"></div>
+          <span class="goal-count" id="goal-0-count">0 / 1</span>
+        </div>
+        <span class="goal-title" id="goal-0-title">Goal</span>
+        <div class="goal-track"><div class="goal-fill" id="goal-0-fill"></div></div>
+        <span class="goal-reward" id="goal-0-reward">Reward</span>
+      </div>
+      <div class="goal-card third" id="goal-1">
+        <div class="goal-head">
+          <div class="goal-dot" id="goal-1-dot"></div>
+          <span class="goal-count" id="goal-1-count">0 / 1</span>
+        </div>
+        <span class="goal-title" id="goal-1-title">Goal</span>
+        <div class="goal-track"><div class="goal-fill" id="goal-1-fill"></div></div>
+        <span class="goal-reward" id="goal-1-reward">Reward</span>
+      </div>
+      <div class="goal-card third" id="goal-2">
+        <div class="goal-head">
+          <div class="goal-dot" id="goal-2-dot"></div>
+          <span class="goal-count" id="goal-2-count">0 / 1</span>
+        </div>
+        <span class="goal-title" id="goal-2-title">Goal</span>
+        <div class="goal-track"><div class="goal-fill" id="goal-2-fill"></div></div>
+        <span class="goal-reward" id="goal-2-reward">Reward</span>
+      </div>
+    </div>
+    <div class="row">
+      <span class="section grow no-shrink" id="goals-section">Finishes</span>
+      <div class="chips">
+        <div class="chip wide" id="goals-set-tools"><span class="chip-label" id="goals-set-tools-label">Tools</span></div>
+        <div class="chip wide" id="goals-set-garden"><span class="chip-label" id="goals-set-garden-label">Garden</span></div>
+        <div class="chip wide" id="goals-set-weekly"><span class="chip-label" id="goals-set-weekly-label">Weekly</span></div>
+      </div>
+    </div>
+    <div class="goal-grid">
+      <div class="goal-card third" id="goal-3">
+        <div class="goal-head">
+          <div class="goal-icon" id="goal-3-badge">
+            <Droplets class="icon-sm" id="goal-3-icon-tools" color="#6f8277"></Droplets>
+            <Sprout class="icon-sm" id="goal-3-icon-w-sprout" color="#6f8277"></Sprout>
+            <Droplet class="icon-sm" id="goal-3-icon-w-water" color="#6f8277"></Droplet>
+            <Camera class="icon-sm" id="goal-3-icon-w-camera" color="#6f8277"></Camera>
+            <Frame class="icon-sm" id="goal-3-icon-garden" color="#6f8277"></Frame>
+          </div>
+          <div class="goal-status">
+            <Lock class="icon-xs" id="goal-3-lock" color="#8a9d92"></Lock>
+            <span class="goal-count" id="goal-3-count">0 / 1</span>
+          </div>
+        </div>
+        <span class="goal-title" id="goal-3-title">Goal</span>
+        <div class="goal-track"><div class="goal-fill" id="goal-3-fill"></div></div>
+        <div class="goal-foot">
+          <span class="goal-reward grow" id="goal-3-reward">Reward</span>
+          <div class="goal-equip" id="goal-3-equip"><span class="goal-equip-label" id="goal-3-equip-label">Equip</span></div>
+        </div>
+      </div>
+      <div class="goal-card third" id="goal-4">
+        <div class="goal-head">
+          <div class="goal-icon" id="goal-4-badge">
+            <Droplets class="icon-sm" id="goal-4-icon-tools" color="#6f8277"></Droplets>
+            <Sprout class="icon-sm" id="goal-4-icon-w-sprout" color="#6f8277"></Sprout>
+            <Droplet class="icon-sm" id="goal-4-icon-w-water" color="#6f8277"></Droplet>
+            <Camera class="icon-sm" id="goal-4-icon-w-camera" color="#6f8277"></Camera>
+            <Image class="icon-sm" id="goal-4-icon-garden" color="#6f8277"></Image>
+          </div>
+          <div class="goal-status">
+            <Lock class="icon-xs" id="goal-4-lock" color="#8a9d92"></Lock>
+            <span class="goal-count" id="goal-4-count">0 / 1</span>
+          </div>
+        </div>
+        <span class="goal-title" id="goal-4-title">Goal</span>
+        <div class="goal-track"><div class="goal-fill" id="goal-4-fill"></div></div>
+        <div class="goal-foot">
+          <span class="goal-reward grow" id="goal-4-reward">Reward</span>
+          <div class="goal-equip" id="goal-4-equip"><span class="goal-equip-label" id="goal-4-equip-label">Equip</span></div>
+        </div>
+      </div>
+      <div class="goal-card third" id="goal-5">
+        <div class="goal-head">
+          <div class="goal-icon" id="goal-5-badge">
+            <Droplets class="icon-sm" id="goal-5-icon-tools" color="#6f8277"></Droplets>
+            <Sprout class="icon-sm" id="goal-5-icon-w-sprout" color="#6f8277"></Sprout>
+            <Droplet class="icon-sm" id="goal-5-icon-w-water" color="#6f8277"></Droplet>
+            <Camera class="icon-sm" id="goal-5-icon-w-camera" color="#6f8277"></Camera>
+            <Sparkles class="icon-sm" id="goal-5-icon-garden" color="#6f8277"></Sparkles>
+          </div>
+          <div class="goal-status">
+            <Lock class="icon-xs" id="goal-5-lock" color="#8a9d92"></Lock>
+            <span class="goal-count" id="goal-5-count">0 / 1</span>
+          </div>
+        </div>
+        <span class="goal-title" id="goal-5-title">Goal</span>
+        <div class="goal-track"><div class="goal-fill" id="goal-5-fill"></div></div>
+        <div class="goal-foot">
+          <span class="goal-reward grow" id="goal-5-reward">Reward</span>
+          <div class="goal-equip" id="goal-5-equip"><span class="goal-equip-label" id="goal-5-equip-label">Equip</span></div>
+        </div>
+      </div>
+      <div class="goal-card third" id="goal-6">
+        <div class="goal-head">
+          <div class="goal-icon" id="goal-6-badge">
+            <Camera class="icon-sm" id="goal-6-icon-tools" color="#6f8277"></Camera>
+            <Lamp class="icon-sm" id="goal-6-icon-garden" color="#6f8277"></Lamp>
+          </div>
+          <div class="goal-status">
+            <Lock class="icon-xs" id="goal-6-lock" color="#8a9d92"></Lock>
+            <span class="goal-count" id="goal-6-count">0 / 1</span>
+          </div>
+        </div>
+        <span class="goal-title" id="goal-6-title">Goal</span>
+        <div class="goal-track"><div class="goal-fill" id="goal-6-fill"></div></div>
+        <div class="goal-foot">
+          <span class="goal-reward grow" id="goal-6-reward">Reward</span>
+          <div class="goal-equip" id="goal-6-equip"><span class="goal-equip-label" id="goal-6-equip-label">Equip</span></div>
+        </div>
+      </div>
+      <div class="goal-card third" id="goal-7">
+        <div class="goal-head">
+          <div class="goal-icon" id="goal-7-badge">
+            <Camera class="icon-sm" id="goal-7-icon-tools" color="#6f8277"></Camera>
+            <Flower2 class="icon-sm" id="goal-7-icon-garden" color="#6f8277"></Flower2>
+          </div>
+          <div class="goal-status">
+            <Lock class="icon-xs" id="goal-7-lock" color="#8a9d92"></Lock>
+            <span class="goal-count" id="goal-7-count">0 / 1</span>
+          </div>
+        </div>
+        <span class="goal-title" id="goal-7-title">Goal</span>
+        <div class="goal-track"><div class="goal-fill" id="goal-7-fill"></div></div>
+        <div class="goal-foot">
+          <span class="goal-reward grow" id="goal-7-reward">Reward</span>
+          <div class="goal-equip" id="goal-7-equip"><span class="goal-equip-label" id="goal-7-equip-label">Equip</span></div>
+        </div>
+      </div>
+      <div class="goal-card third" id="goal-8">
+        <div class="goal-head">
+          <div class="goal-icon" id="goal-8-badge">
+            <Package class="icon-sm" id="goal-8-icon-tools" color="#6f8277"></Package>
+            <Flower2 class="icon-sm" id="goal-8-icon-garden" color="#6f8277"></Flower2>
+          </div>
+          <div class="goal-status">
+            <Lock class="icon-xs" id="goal-8-lock" color="#8a9d92"></Lock>
+            <span class="goal-count" id="goal-8-count">0 / 1</span>
+          </div>
+        </div>
+        <span class="goal-title" id="goal-8-title">Goal</span>
+        <div class="goal-track"><div class="goal-fill" id="goal-8-fill"></div></div>
+        <div class="goal-foot">
+          <span class="goal-reward grow" id="goal-8-reward">Reward</span>
+          <div class="goal-equip" id="goal-8-equip"><span class="goal-equip-label" id="goal-8-equip-label">Equip</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="weekly-strip" id="weekly-strip">
+      <div class="row">
+        <span class="label grow" id="weekly-title">Weekly ribbons</span>
+        <span class="goal-count" id="weekly-left">7 days left</span>
+      </div>
+      <div class="row" id="weekly-ribbons">
+        <Award class="ribbon" id="weekly-ribbon-0" color="#3a4d42"></Award>
+        <Award class="ribbon" id="weekly-ribbon-1" color="#3a4d42"></Award>
+        <Award class="ribbon" id="weekly-ribbon-2" color="#3a4d42"></Award>
+        <Award class="ribbon" id="weekly-ribbon-3" color="#3a4d42"></Award>
+        <Trophy class="ribbon champion" id="weekly-ribbon-4" color="#3a4d42"></Trophy>
+        <Award class="ribbon" id="weekly-ribbon-5" color="#3a4d42"></Award>
+        <Award class="ribbon" id="weekly-ribbon-6" color="#3a4d42"></Award>
+        <Award class="ribbon" id="weekly-ribbon-7" color="#3a4d42"></Award>
+        <Award class="ribbon" id="weekly-ribbon-8" color="#3a4d42"></Award>
+        <Trophy class="ribbon champion" id="weekly-ribbon-9" color="#3a4d42"></Trophy>
+        <Award class="ribbon" id="weekly-ribbon-10" color="#3a4d42"></Award>
+        <Award class="ribbon" id="weekly-ribbon-11" color="#3a4d42"></Award>
+      </div>
+      <div class="row">
+        <span class="goal-reward grow" id="weekly-hint">Ribbons hang on the gazebo. Next: 5 raise a pennant.</span>
+        <div class="goal-equip" id="weekly-visit"><span class="goal-equip-label">Visit gazebo</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comfort -->
+  <div class="page" id="page-comfort">
+    <div class="card">
+      <div class="row">
+        <div class="row-text">
+          <span class="label">Vignette</span>
+          <span class="hint">Darken the edges of your view while you glide with the stick.</span>
+        </div>
+        <Toggle id="toggle-vignette"></Toggle>
+      </div>
+    </div>
+    <div class="card">
+      <span class="label">Turning</span>
+      <span class="hint">Right stick: snap in steps, or turn smoothly.</span>
+      <div class="chips">
+        <div class="chip wide" id="turnstyle-snap"><span class="chip-label" id="turnstyle-snap-label">Snap</span></div>
+        <div class="chip wide" id="turnstyle-smooth"><span class="chip-label" id="turnstyle-smooth-label">Smooth</span></div>
+        <div class="chips" id="turn-angles" margin-left="12">
+        <div class="chip" id="turn-30"><span class="chip-label" id="turn-30-label">30°</span></div>
+        <div class="chip" id="turn-45"><span class="chip-label" id="turn-45-label">45°</span></div>
+        <div class="chip" id="turn-60"><span class="chip-label" id="turn-60-label">60°</span></div>
+        <div class="chip" id="turn-90"><span class="chip-label" id="turn-90-label">90°</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <span class="label">Walking speed</span>
+      <span class="hint">Left stick glide speed.</span>
+      <div class="chips">
+        <div class="chip" id="speed-2"><span class="chip-label" id="speed-2-label">Slow</span></div>
+        <div class="chip" id="speed-3"><span class="chip-label" id="speed-3-label">Normal</span></div>
+        <div class="chip" id="speed-4.5"><span class="chip-label" id="speed-4.5-label">Fast</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="row-text">
+          <span class="label">Teleport blink</span>
+          <span class="hint">Briefly fade to dark as you teleport.</span>
+        </div>
+        <Toggle id="toggle-blink"></Toggle>
+      </div>
+    </div>
+    <div class="row" justify-content="flex-end">
+      <Button id="comfort-reset" variant="secondary" size="sm">
+        <ButtonLabel>Reset comfort settings</ButtonLabel>
+      </Button>
+    </div>
+  </div>
+
+  <!-- Sound -->
+  <div class="page" id="page-sound">
+    <div class="card">
+      <div class="row">
+        <div class="row-text">
+          <span class="label">Music</span>
+          <span class="hint" id="music-now">Now playing: -</span>
+        </div>
+        <Button id="music-next" variant="secondary" size="sm" icon>
+          <ButtonIcon>
+            <SkipForward></SkipForward>
+          </ButtonIcon>
+        </Button>
+        <Toggle id="toggle-music"></Toggle>
+      </div>
+    </div>
+    <div class="card">
+      <span class="label">Music volume</span>
+      <div class="chips"><div class="chip" id="music-vol-0"><span class="chip-label" id="music-vol-0-label">Off</span></div><div class="chip" id="music-vol-25"><span class="chip-label" id="music-vol-25-label">25%</span></div><div class="chip" id="music-vol-50"><span class="chip-label" id="music-vol-50-label">50%</span></div><div class="chip" id="music-vol-75"><span class="chip-label" id="music-vol-75-label">75%</span></div><div class="chip" id="music-vol-100"><span class="chip-label" id="music-vol-100-label">100%</span></div></div>
+    </div>
+    <div class="card">
+      <span class="label">Effects volume</span>
+      <span class="hint">Garden sounds: water, birds, footsteps, tools.</span>
+      <div class="chips"><div class="chip" id="effects-vol-0"><span class="chip-label" id="effects-vol-0-label">Off</span></div><div class="chip" id="effects-vol-25"><span class="chip-label" id="effects-vol-25-label">25%</span></div><div class="chip" id="effects-vol-50"><span class="chip-label" id="effects-vol-50-label">50%</span></div><div class="chip" id="effects-vol-75"><span class="chip-label" id="effects-vol-75-label">75%</span></div><div class="chip" id="effects-vol-100"><span class="chip-label" id="effects-vol-100-label">100%</span></div></div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="row-text">
+          <span class="label">Interface sounds</span>
+          <span class="hint">Soft ticks and chimes when you point at and press buttons.</span>
+        </div>
+        <Toggle id="toggle-uisounds"></Toggle>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help -->
+  <div class="page" id="page-help">
+    <div class="card">
+      <div class="row">
+        <div class="row-text">
+          <span class="label">Tutorial</span>
+          <span class="hint">Learn the basics of VR gardening again.</span>
+        </div>
+        <Button id="help-tutorial" variant="secondary" size="sm">
+          <ButtonIcon>
+            <GraduationCap class="button-icon"></GraduationCap>
+          </ButtonIcon>
+          <ButtonLabel>Replay</ButtonLabel>
+        </Button>
+      </div>
+    </div>
+    <div class="card" id="help-controllers">
+      <span class="section">RIGHT CONTROLLER</span>
+      <div class="control-row">
+        <div class="key"><span class="key-label">A</span></div>
+        <span class="control-text">Open the tool dial</span>
+      </div>
+      <div class="control-row">
+        <div class="key"><span class="key-label">Trigger</span></div>
+        <span class="control-text">Use tool: plant, water, remove, photo</span>
+      </div>
+      <div class="control-row">
+        <div class="key"><span class="key-label">Stick</span></div>
+        <span class="control-text">Push forward to teleport, left/right to turn</span>
+      </div>
+      <div class="control-row">
+        <div class="key"><span class="key-label">B</span></div>
+        <span class="control-text">Undo the last removed plant</span>
+      </div>
+      <span class="section">LEFT CONTROLLER</span>
+      <div class="control-row">
+        <div class="key"><span class="key-label">Stick</span></div>
+        <span class="control-text">Glide around - click it to save your garden</span>
+      </div>
+      <div class="control-row">
+        <div class="key"><span class="key-label">X / Y</span></div>
+        <span class="control-text">Seed pages - camera zoom</span>
+      </div>
+      <div class="control-row">
+        <div class="key"><span class="key-label">Trigger</span></div>
+        <span class="control-text">Grab a print, drop it on Keep or Discard</span>
+      </div>
+    </div>
+    <div class="card" id="help-hands" style="display: none">
+      <span class="section">HAND TRACKING</span>
+      <div class="control-row">
+        <div class="key"><span class="key-label">Wrist</span></div>
+        <span class="control-text">Turn your left wrist up, tap Tools for the dial</span>
+      </div>
+      <div class="control-row">
+        <div class="key"><span class="key-label">Pinch</span></div>
+        <span class="control-text">Use a tool: plant, water, remove, photo</span>
+      </div>
+      <div class="control-row">
+        <div class="key"><span class="key-label">Swipe</span></div>
+        <span class="control-text">Right thumb forward to aim a teleport, tap to jump</span>
+      </div>
+      <div class="control-row">
+        <div class="key"><span class="key-label">Turn</span></div>
+        <span class="control-text">Right thumb left or right to snap turn</span>
+      </div>
+      <div class="control-row">
+        <div class="key"><span class="key-label">Pages</span></div>
+        <span class="control-text">Left thumb left or right: seed pages - fwd/back: zoom</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,131 @@
+<!--
+  Tutorial card (legacy NUX welcome / locomotion / seedbox / ending panels).
+  One card whose text, video and buttons are swapped per step by
+  src/ui/tutorial-system.ts. Follows the player's gaze at 1.5 m.
+-->
+<style>
+  .root {
+    border-radius: 28;
+    flex-direction: column;
+    width: 520;
+    padding-top: 22;
+    padding-bottom: 22;
+    padding-left: 24;
+    padding-right: 24;
+    gap: 14;
+    background-color: #111a16;
+    border-color: #2b3d34;
+    border-width: 1.5;
+  }
+
+  .eyebrow {
+    flex-direction: row;
+    align-items: center;
+    gap: 8;
+  }
+
+  .eyebrow-text {
+    color: #86dc3d;
+    font-size: 14;
+    font-weight: 700;
+    flex-grow: 1;
+  }
+
+  .dots {
+    flex-direction: row;
+    gap: 6;
+  }
+
+  .dot {
+    width: 8;
+    height: 8;
+    border-radius: 4;
+    background-color: #2f4639;
+  }
+
+  .title {
+    color: #f6f3ea;
+    font-size: 30;
+    font-weight: 700;
+  }
+
+  .body {
+    color: #c9d6ce;
+    font-size: 20;
+    line-height: 1.45;
+  }
+
+  .media {
+    width: 472;
+    height: 266;
+    border-radius: 16;
+    background-color: #0b110e;
+  }
+
+  .tips {
+    flex-direction: column;
+    gap: 8;
+  }
+
+  .tip {
+    flex-direction: row;
+    gap: 10;
+    align-items: center;
+  }
+
+  .tip-icon {
+    width: 15;
+    height: 15;
+  }
+
+  .tip-text {
+    color: #c9d6ce;
+    font-size: 17;
+    flex-shrink: 1;
+  }
+
+  .buttons {
+    flex-direction: row;
+    gap: 10;
+    justify-content: flex-end;
+  }
+</style>
+<div class="root" id="tutorial-root">
+  <div class="eyebrow">
+    <span class="eyebrow-text" id="tutorial-step">WELCOME</span>
+    <div class="dots">
+      <div class="dot" id="tutorial-dot-0"></div>
+      <div class="dot" id="tutorial-dot-1"></div>
+      <div class="dot" id="tutorial-dot-2"></div>
+      <div class="dot" id="tutorial-dot-3"></div>
+    </div>
+  </div>
+  <span class="title" id="tutorial-title">Welcome to Project Flowerbed</span>
+  <span class="body" id="tutorial-body">Body</span>
+  <video class="media" id="tutorial-video" src="./flowerbed/videos/sizzle_trailer.mp4" autoplay loop muted></video>
+  <div class="tips" id="tutorial-tips">
+    <div class="tip">
+      <Footprints class="tip-icon" color="#8fb8de"></Footprints>
+      <span class="tip-text">Pick Explore on the tool dial to simply wander and soak in the scenery.</span>
+    </div>
+    <div class="tip">
+      <Settings class="tip-icon" color="#c3a6ea"></Settings>
+      <span class="tip-text">Comfort, sound, gardens and controls live in Settings.</span>
+    </div>
+    <div class="tip">
+      <LogOut class="tip-icon" color="#ef8a6f"></LogOut>
+      <span class="tip-text">To leave your garden, press the Meta button. It saves as you go.</span>
+    </div>
+  </div>
+  <div class="buttons">
+    <Button id="tutorial-skip" variant="secondary">
+      <ButtonLabel>Skip</ButtonLabel>
+    </Button>
+    <Button id="tutorial-next" variant="primary">
+      <ButtonLabel id="tutorial-next-label">Start tutorial</ButtonLabel>
+      <ButtonIcon>
+        <ArrowRight></ArrowRight>
+      </ButtonIcon>
+    </Button>
+  </div>
+</div>

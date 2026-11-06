@@ -1,0 +1,107 @@
+<!--
+  Brief "Undo" pill that appears above the right hand after a plant is
+  removed. Driven by src/gardening/remove-system.ts.
+-->
+<style>
+  .pill {
+    flex-direction: column;
+    gap: 6;
+    padding-top: 10;
+    padding-bottom: 10;
+    padding-left: 14;
+    padding-right: 14;
+    border-radius: 22;
+    background-color: #15211b;
+    border-width: 1.5;
+    border-color: #ef8a6f;
+  }
+
+  .row {
+    flex-direction: row;
+    align-items: center;
+    gap: 12;
+  }
+
+  .text {
+    flex-direction: column;
+    gap: 2;
+  }
+
+  .title {
+    color: #f6f3ea;
+    font-size: 18;
+    font-weight: 700;
+  }
+
+  .sub {
+    color: #b9c9bf;
+    font-size: 14;
+  }
+
+  .button {
+    flex-direction: row;
+    align-items: center;
+    gap: 6;
+    height: 40;
+    padding-left: 14;
+    padding-right: 16;
+    border-radius: 20;
+    background-color: #ef8a6f;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #ffa58c;
+  }
+
+  .label {
+    color: #2a120c;
+    font-size: 16;
+    font-weight: 700;
+  }
+
+  .icon {
+    width: 15;
+    height: 15;
+  }
+
+  .key {
+    width: 22;
+    height: 22;
+    border-radius: 11;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a120c;
+  }
+  .key-label {
+    color: #ffd2c4;
+    font-size: 13;
+    font-weight: 700;
+  }
+  .track {
+    height: 5;
+    border-radius: 3;
+    background-color: #2a3c33;
+  }
+
+  .fill {
+    height: 5;
+    width: 260;
+    border-radius: 3;
+    background-color: #ef8a6f;
+  }
+</style>
+<div class="pill" id="undo-root">
+  <div class="row">
+    <div class="text">
+      <span class="title" id="undo-title">Plant removed</span>
+      <span class="sub" id="undo-sub">Changed your mind? Press B</span>
+    </div>
+    <div class="button" id="undo-button">
+      <RotateCcw class="icon" color="#2a120c"></RotateCcw>
+      <span class="label">Undo</span>
+      <div class="key"><span class="key-label">B</span></div>
+    </div>
+  </div>
+  <div class="track"><div class="fill" id="undo-fill"></div></div>
+</div>

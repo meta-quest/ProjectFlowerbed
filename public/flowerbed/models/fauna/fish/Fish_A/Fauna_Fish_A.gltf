@@ -1,0 +1,323 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 540,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 158,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 158,
+      "max": [
+        9073,
+        9573,
+        28131
+      ],
+      "min": [
+        -8028,
+        -9573,
+        -28131
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 158,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 158,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 158,
+      "max": [
+        288,
+        600,
+        328
+      ],
+      "min": [
+        -276,
+        -496,
+        -2148
+      ],
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 158,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 158,
+      "max": [
+        16197,
+        288,
+        3896
+      ],
+      "min": [
+        0,
+        -16,
+        -956
+      ],
+      "normalized": true,
+      "bufferView": 3,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 158,
+      "normalized": true,
+      "bufferView": 3,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 158,
+      "max": [
+        0,
+        40,
+        4040
+      ],
+      "min": [
+        -16570,
+        -8,
+        -792
+      ],
+      "normalized": true,
+      "bufferView": 4,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 158,
+      "normalized": true,
+      "bufferView": 4,
+      "byteOffset": 8
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1080,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1080,
+      "byteLength": 3792,
+      "byteStride": 24,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4872,
+      "byteLength": 1896,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6768,
+      "byteLength": 1896,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8664,
+      "byteLength": 1896,
+      "byteStride": 12,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Fauna_Fish_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Fauna_Fish_NormalMap.ktx2"
+    },
+    {
+      "name": "Fauna_Fish_A_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Fauna_Fish_A_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Fauna_Fish_A_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Fauna_Fish_A_BaseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Fauna_Fish_A.bin",
+      "byteLength": 10560
+    }
+  ],
+  "materials": [
+    {
+      "name": "Fauna_Fish_A",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Fauna_Fish",
+      "extras": {
+        "targetNames": [
+          "Breathing",
+          "Twist_Left",
+          "Twist_Right"
+        ]
+      },
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TANGENT": 4
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0,
+          "targets": [
+            {
+              "POSITION": 5,
+              "NORMAL": 6
+            },
+            {
+              "POSITION": 7,
+              "NORMAL": 8
+            },
+            {
+              "POSITION": 9,
+              "NORMAL": 10
+            }
+          ]
+        }
+      ],
+      "weights": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Fauna_Fish_A",
+      "translation": [
+        -0.001955784857273102,
+        0.008164392784237862,
+        0.0026198476552963257
+      ],
+      "scale": [
+        0.1713159903883934,
+        0.1713159903883934,
+        0.1713159903883934
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

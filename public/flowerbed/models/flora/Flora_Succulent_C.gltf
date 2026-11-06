@@ -1,0 +1,258 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 2880,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 740,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 740,
+      "max": [
+        32647,
+        19042,
+        32767
+      ],
+      "min": [
+        -32647,
+        -19042,
+        -32767
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 4
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 740,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 740,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 740,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 740,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 5,
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 5760,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5760,
+      "byteLength": 20720,
+      "byteStride": 28,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 26480,
+      "byteLength": 320
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Flora_Succulent_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Succulent_NormalMap.ktx2"
+    },
+    {
+      "name": "Flora_Succulent_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Succulent_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Flora_Succulent_C_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Succulent_C_BaseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Flora_Succulent_C.bin",
+      "byteLength": 26800
+    }
+  ],
+  "materials": [
+    {
+      "name": "SkinnedPlant_Flora_Succulent_A",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Flora_Succulent",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "WEIGHTS_0": 5,
+            "TANGENT": 6
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root"
+    },
+    {
+      "name": "Leaves_01"
+    },
+    {
+      "name": "Leaves_02"
+    },
+    {
+      "name": "Leaves_03"
+    },
+    {
+      "name": "Leaves_04"
+    },
+    {
+      "name": "Flora_Succulent",
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "Flora_Succulent_Armature",
+      "children": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "name": "Flora_Succulent_Armature",
+      "inverseBindMatrices": 7,
+      "joints": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        6
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

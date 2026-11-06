@@ -1,0 +1,199 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 2880,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 559,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 559,
+      "max": [
+        32767,
+        32767,
+        32767
+      ],
+      "min": [
+        -32767,
+        -32767,
+        -32767
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 8
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 5760,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5760,
+      "byteLength": 8944,
+      "byteStride": 16,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "T_Sky_Clouds",
+      "mimeType": "image/ktx2",
+      "uri": "T_Sky_Clouds.ktx2"
+    },
+    {
+      "name": "T_Sky_Base",
+      "mimeType": "image/ktx2",
+      "uri": "T_Sky_Base.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Prop_Sky.bin",
+      "byteLength": 14704
+    }
+  ],
+  "materials": [
+    {
+      "name": "M_Sky_Clouds.001",
+      "alphaMode": "BLEND",
+      "pbrMetallicRoughness": {
+        "roughnessFactor": 0.5,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        }
+      }
+    },
+    {
+      "name": "M_Sky_Base.001",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 1
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Sphere.002",
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 1,
+            "POSITION": 2
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    },
+    {
+      "name": "Sphere.003",
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 1,
+            "POSITION": 2
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Sky_Clouds.001",
+      "translation": [
+        0.0000762939453125,
+        0,
+        0.0001068115234375
+      ],
+      "scale": [
+        298.6373291015625,
+        298.6373291015625,
+        298.6373291015625
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "Sky_Base.001",
+      "translation": [
+        0.0000762939453125,
+        0,
+        0.0001068115234375
+      ],
+      "scale": [
+        298.6373291015625,
+        298.6373291015625,
+        298.6373291015625
+      ],
+      "mesh": 1
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

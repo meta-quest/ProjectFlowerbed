@@ -1,0 +1,3186 @@
+{
+  "version": "iwsdk.scene.v1",
+  "units": "meters",
+  "components": {
+    "com.iwsdk.components.IBLGradient": {
+      "sky": [
+        1,
+        0.933,
+        0.867,
+        1
+      ],
+      "equator": [
+        0.75,
+        0.84,
+        0.68,
+        1
+      ],
+      "ground": [
+        0.502,
+        0.753,
+        0.502,
+        1
+      ],
+      "intensity": 0.35
+    }
+  },
+  "environment": {
+    "fog": {
+      "type": "exponential",
+      "color": "#f6eaea",
+      "density": 0.0042
+    },
+    "toneMapping": "none",
+    "exposure": 1,
+    "shadows": true,
+    "shadowMapType": "pcf-soft"
+  },
+  "resources": {},
+  "nodes": [
+    {
+      "id": "island",
+      "name": "Island",
+      "framingRole": "support",
+      "content": {
+        "type": "asset",
+        "asset": "island",
+        "receiveShadow": true
+      }
+    },
+    {
+      "id": "sun",
+      "name": "Sun",
+      "transform": {
+        "position": [
+          -36.86,
+          62.76,
+          84.32
+        ],
+        "rotationDeg": [
+          -38.66,
+          -15.286,
+          0
+        ]
+      },
+      "components": {
+        "com.iwsdk.components.DirectionalLight": {
+          "color": [
+            1,
+            0.467,
+            0.333,
+            1
+          ],
+          "intensity": 3.77,
+          "castShadow": true,
+          "shadowMapSize": "2048",
+          "shadowCameraSize": 160,
+          "shadowBias": -0.00015,
+          "shadowCameraNear": 1,
+          "shadowCameraFar": 260
+        }
+      }
+    },
+    {
+      "id": "hemisphere",
+      "name": "Sky Fill",
+      "components": {
+        "com.iwsdk.components.HemisphereLight": {
+          "skyColor": [
+            1,
+            0.933,
+            0.867,
+            1
+          ],
+          "groundColor": [
+            0.502,
+            0.753,
+            0.502,
+            1
+          ],
+          "intensity": 0.94
+        }
+      }
+    },
+    {
+      "id": "island-props",
+      "name": "Island Props",
+      "content": {
+        "type": "group"
+      },
+      "children": [
+        {
+          "id": "prop-bench-01",
+          "name": "Bench 01",
+          "content": {
+            "type": "asset",
+            "asset": "prop-bench",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              43.46785,
+              0.31994,
+              -22.05238
+            ],
+            "rotationDeg": [
+              0,
+              36.456,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-bench-02",
+          "name": "Bench 02",
+          "content": {
+            "type": "asset",
+            "asset": "prop-bench",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -29.5066,
+              1.7592,
+              16.65726
+            ],
+            "rotationDeg": [
+              0,
+              21.621,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-bench-03",
+          "name": "Bench 03",
+          "content": {
+            "type": "asset",
+            "asset": "prop-bench",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -26.11452,
+              1.31725,
+              21.81003
+            ],
+            "rotationDeg": [
+              0,
+              49.057,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-bench-04",
+          "name": "Bench 04",
+          "content": {
+            "type": "asset",
+            "asset": "prop-bench",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              23.0529,
+              4.08998,
+              -46.40838
+            ],
+            "rotationDeg": [
+              0,
+              74.416,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-bench-05",
+          "name": "Bench 05",
+          "content": {
+            "type": "asset",
+            "asset": "prop-bench",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              21.63936,
+              4.13845,
+              -57.72192
+            ],
+            "rotationDeg": [
+              0,
+              -79,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-bench-06",
+          "name": "Bench 06",
+          "content": {
+            "type": "asset",
+            "asset": "prop-bench",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -17.54892,
+              1.75538,
+              -41.68293
+            ],
+            "rotationDeg": [
+              0,
+              -55.606,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-bench-07",
+          "name": "Bench 07",
+          "content": {
+            "type": "asset",
+            "asset": "prop-bench",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -66.47987,
+              4.30752,
+              -10.24038
+            ],
+            "rotationDeg": [
+              -1.554,
+              -39.428,
+              -3.192
+            ]
+          }
+        },
+        {
+          "id": "prop-bench-08",
+          "name": "Bench 08",
+          "content": {
+            "type": "asset",
+            "asset": "prop-bench",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -15.58028,
+              0.44309,
+              39.44877
+            ],
+            "rotationDeg": [
+              0,
+              60.189,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-bench-09",
+          "name": "Bench 09",
+          "content": {
+            "type": "asset",
+            "asset": "prop-bench",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              22.1726,
+              0.14863,
+              19.5276
+            ],
+            "rotationDeg": [
+              0.348,
+              16.134,
+              0.27
+            ]
+          }
+        },
+        {
+          "id": "prop-bench-10",
+          "name": "Bench 10",
+          "content": {
+            "type": "asset",
+            "asset": "prop-bench",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              37.42665,
+              0.57628,
+              -27.79425
+            ],
+            "rotationDeg": [
+              0,
+              54.626,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-bridge-01",
+          "name": "Bridge 01",
+          "content": {
+            "type": "asset",
+            "asset": "prop-bridge",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -49.28483,
+              2.28644,
+              0.68077
+            ],
+            "rotationDeg": [
+              -0.637,
+              -9.991,
+              -4.226
+            ]
+          }
+        },
+        {
+          "id": "prop-bridge-02",
+          "name": "Bridge 02",
+          "content": {
+            "type": "asset",
+            "asset": "prop-bridge",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              0.74882,
+              1.04416,
+              23.0357
+            ],
+            "rotationDeg": [
+              0,
+              -54.345,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-01",
+          "name": "Fence 01 01 01",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              37.30198,
+              0.6339,
+              39.77415
+            ],
+            "rotationDeg": [
+              180,
+              -19.343,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-02",
+          "name": "Fence 01 01 02",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              35.87742,
+              0.6339,
+              40.27152
+            ],
+            "rotationDeg": [
+              180,
+              -17.518,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-03",
+          "name": "Fence 01 01 03",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              34.44308,
+              0.6339,
+              40.72556
+            ],
+            "rotationDeg": [
+              180,
+              -13.172,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-04",
+          "name": "Fence 01 01 04",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              32.96798,
+              0.6339,
+              41.06918
+            ],
+            "rotationDeg": [
+              180,
+              -9.23,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-05",
+          "name": "Fence 01 01 05",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              31.46866,
+              0.6339,
+              41.3117
+            ],
+            "rotationDeg": [
+              180,
+              -7.025,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-06",
+          "name": "Fence 01 01 06",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              29.98463,
+              0.6339,
+              41.49136
+            ],
+            "rotationDeg": [
+              180,
+              -5.195,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-07",
+          "name": "Fence 01 01 07",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              28.49508,
+              0.6339,
+              41.626
+            ],
+            "rotationDeg": [
+              180,
+              -5.046,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-08",
+          "name": "Fence 01 01 08",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              27.01912,
+              0.6339,
+              41.753
+            ],
+            "rotationDeg": [
+              180,
+              -4.34,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-09",
+          "name": "Fence 01 01 09",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              25.52448,
+              0.6339,
+              41.86343
+            ],
+            "rotationDeg": [
+              180,
+              -4.34,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-10",
+          "name": "Fence 01 01 10",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              24.05022,
+              0.6339,
+              41.97556
+            ],
+            "rotationDeg": [
+              180,
+              -4.34,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-11",
+          "name": "Fence 01 01 11",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              22.55897,
+              0.6339,
+              42.08896
+            ],
+            "rotationDeg": [
+              180,
+              -5.346,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-12",
+          "name": "Fence 01 01 12",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              21.08726,
+              0.6339,
+              42.22615
+            ],
+            "rotationDeg": [
+              180,
+              -6.146,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-13",
+          "name": "Fence 01 01 13",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              19.61257,
+              0.6339,
+              42.38458
+            ],
+            "rotationDeg": [
+              180,
+              -6.146,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-14",
+          "name": "Fence 01 01 14",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              18.13619,
+              0.6339,
+              42.5481
+            ],
+            "rotationDeg": [
+              180,
+              -4.969,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-15",
+          "name": "Fence 01 01 15",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              16.64919,
+              0.6339,
+              42.67765
+            ],
+            "rotationDeg": [
+              180,
+              -4.969,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-16",
+          "name": "Fence 01 01 16",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              15.13755,
+              0.6339,
+              42.80549
+            ],
+            "rotationDeg": [
+              180,
+              -4.969,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-17",
+          "name": "Fence 01 01 17",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              13.64928,
+              0.6339,
+              42.93716
+            ],
+            "rotationDeg": [
+              180,
+              -6.006,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-18",
+          "name": "Fence 01 01 18",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              12.16695,
+              0.6339,
+              43.09092
+            ],
+            "rotationDeg": [
+              180,
+              -8.286,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-19",
+          "name": "Fence 01 01 19",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              10.68292,
+              0.6339,
+              43.31178
+            ],
+            "rotationDeg": [
+              180,
+              -5.275,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-20",
+          "name": "Fence 01 01 20",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              9.19762,
+              0.6339,
+              43.44982
+            ],
+            "rotationDeg": [
+              180,
+              -2.115,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-21",
+          "name": "Fence 01 01 21",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              7.69193,
+              0.6339,
+              43.50546
+            ],
+            "rotationDeg": [
+              -180,
+              0.372,
+              -180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-22",
+          "name": "Fence 01 01 22",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              6.20323,
+              0.6339,
+              43.4889
+            ],
+            "rotationDeg": [
+              -180,
+              4.745,
+              -180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-23",
+          "name": "Fence 01 01 23",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              4.72961,
+              0.6339,
+              43.36655
+            ],
+            "rotationDeg": [
+              -180,
+              4.715,
+              -180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-24",
+          "name": "Fence 01 01 24",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              3.2393,
+              0.6339,
+              43.245
+            ],
+            "rotationDeg": [
+              -180,
+              3.874,
+              -180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-25",
+          "name": "Fence 01 01 25",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              1.75079,
+              0.6339,
+              43.14446
+            ],
+            "rotationDeg": [
+              -180,
+              3.095,
+              -180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-26",
+          "name": "Fence 01 01 26",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              0.26691,
+              0.6339,
+              43.06691
+            ],
+            "rotationDeg": [
+              -180,
+              3.095,
+              -180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-27",
+          "name": "Fence 01 01 27",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -1.21997,
+              0.6339,
+              42.99083
+            ],
+            "rotationDeg": [
+              -180,
+              3.095,
+              -180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-28",
+          "name": "Fence 01 01 28",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -2.72084,
+              0.6339,
+              42.91197
+            ],
+            "rotationDeg": [
+              -180,
+              3.095,
+              -180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-29",
+          "name": "Fence 01 01 29",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -4.21912,
+              0.6339,
+              42.82553
+            ],
+            "rotationDeg": [
+              -180,
+              3.095,
+              -180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-30",
+          "name": "Fence 01 01 30",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -5.71051,
+              0.6339,
+              42.75538
+            ],
+            "rotationDeg": [
+              -180,
+              2.031,
+              -180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-31",
+          "name": "Fence 01 01 31",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -7.20756,
+              0.6339,
+              42.70919
+            ],
+            "rotationDeg": [
+              -180,
+              0.2,
+              -180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-32",
+          "name": "Fence 01 01 32",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -8.70596,
+              0.6339,
+              42.71231
+            ],
+            "rotationDeg": [
+              180,
+              -3.731,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-33",
+          "name": "Fence 01 01 33",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -10.20409,
+              0.6339,
+              42.8111
+            ],
+            "rotationDeg": [
+              180,
+              -6.38,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-34",
+          "name": "Fence 01 01 34",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              42.39378,
+              0.65168,
+              36.92166
+            ],
+            "rotationDeg": [
+              -179.913,
+              -31.631,
+              179.666
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-35",
+          "name": "Fence 01 01 35",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              43.59665,
+              0.71418,
+              35.96468
+            ],
+            "rotationDeg": [
+              -179.485,
+              -37.49,
+              177.876
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-36",
+          "name": "Fence 01 01 36",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              44.84011,
+              0.91068,
+              34.99291
+            ],
+            "rotationDeg": [
+              -178.714,
+              -37.481,
+              173.382
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-37",
+          "name": "Fence 01 01 37",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              46.03042,
+              1.12021,
+              34.08455
+            ],
+            "rotationDeg": [
+              -178.602,
+              -37.408,
+              172.949
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-38",
+          "name": "Fence 01 01 38",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              47.21193,
+              1.33503,
+              33.21292
+            ],
+            "rotationDeg": [
+              -178.616,
+              -36.652,
+              172.926
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-39",
+          "name": "Fence 01 01 39",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              29.70936,
+              5.50584,
+              -45.15931
+            ],
+            "rotationDeg": [
+              177.867,
+              -54.47,
+              169.752
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-40",
+          "name": "Fence 01 01 40",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              28.81746,
+              5.29786,
+              -43.91385
+            ],
+            "rotationDeg": [
+              177.751,
+              -54.9,
+              169.687
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-41",
+          "name": "Fence 01 01 41",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -65.9489,
+              4.74946,
+              -14.52758
+            ],
+            "rotationDeg": [
+              -0.066,
+              42.683,
+              6.243
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-42",
+          "name": "Fence 01 01 42",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -66.97903,
+              4.64734,
+              -13.37979
+            ],
+            "rotationDeg": [
+              0.211,
+              48.588,
+              3.176
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-43",
+          "name": "Fence 01 01 43",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -67.86855,
+              4.58843,
+              -12.10859
+            ],
+            "rotationDeg": [
+              -0.102,
+              55.42,
+              1.684
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-44",
+          "name": "Fence 01 01 44",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -68.71554,
+              4.62432,
+              -10.7493
+            ],
+            "rotationDeg": [
+              -1.101,
+              58.203,
+              -0.996
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-45",
+          "name": "Fence 01 01 45",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -69.52512,
+              4.64712,
+              -9.47085
+            ],
+            "rotationDeg": [
+              3.371,
+              59.137,
+              -4.408
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-46",
+          "name": "Fence 01 01 46",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -70.33637,
+              4.79767,
+              -8.10784
+            ],
+            "rotationDeg": [
+              4.236,
+              58.985,
+              -9.198
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-47",
+          "name": "Fence 01 01 47",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -71.08124,
+              4.95453,
+              -6.82871
+            ],
+            "rotationDeg": [
+              5.542,
+              59.616,
+              -10.189
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-48",
+          "name": "Fence 01 01 48",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -6.60358,
+              1.94296,
+              -48.25793
+            ],
+            "rotationDeg": [
+              179.899,
+              -34.754,
+              176.144
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-49",
+          "name": "Fence 01 01 49",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              25.44448,
+              4.2836,
+              -60.31239
+            ],
+            "rotationDeg": [
+              -179.086,
+              -9.844,
+              174.166
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-50",
+          "name": "Fence 01 01 50",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              23.94083,
+              4.13774,
+              -60.03596
+            ],
+            "rotationDeg": [
+              179.406,
+              -8.08,
+              174.352
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-51",
+          "name": "Fence 01 01 51",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              22.41403,
+              3.97882,
+              -59.8157
+            ],
+            "rotationDeg": [
+              -179.939,
+              -7.352,
+              177.251
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-52",
+          "name": "Fence 01 01 52",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              20.8664,
+              3.92366,
+              -59.6167
+            ],
+            "rotationDeg": [
+              -179.649,
+              -8.681,
+              178.699
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-53",
+          "name": "Fence 01 01 53",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              19.38726,
+              3.86423,
+              -59.40182
+            ],
+            "rotationDeg": [
+              -177.949,
+              -10.465,
+              179.638
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-54",
+          "name": "Fence 01 01 54",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              17.88631,
+              3.84497,
+              -59.10625
+            ],
+            "rotationDeg": [
+              -179.646,
+              -13.714,
+              178.668
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-55",
+          "name": "Fence 01 01 55",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              16.4179,
+              3.82102,
+              -58.73362
+            ],
+            "rotationDeg": [
+              179.42,
+              -22.674,
+              176.491
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-56",
+          "name": "Fence 01 01 56",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              15.02094,
+              3.74254,
+              -58.12966
+            ],
+            "rotationDeg": [
+              178.454,
+              -29.579,
+              175.632
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-57",
+          "name": "Fence 01 01 57",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              13.72216,
+              3.63738,
+              -57.37489
+            ],
+            "rotationDeg": [
+              178.515,
+              -31.848,
+              175.284
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-58",
+          "name": "Fence 01 01 58",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              12.46201,
+              3.53688,
+              -56.5744
+            ],
+            "rotationDeg": [
+              178.357,
+              -30.961,
+              174.355
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-59",
+          "name": "Fence 01 01 59",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              11.1398,
+              3.41117,
+              -55.79674
+            ],
+            "rotationDeg": [
+              179.181,
+              -26.167,
+              175.886
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-60",
+          "name": "Fence 01 01 60",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              9.79768,
+              3.28749,
+              -55.14868
+            ],
+            "rotationDeg": [
+              -179.84,
+              -20.972,
+              177.052
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-61",
+          "name": "Fence 01 01 61",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              8.39135,
+              3.18104,
+              -54.61592
+            ],
+            "rotationDeg": [
+              -179.694,
+              -21.308,
+              177.796
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-62",
+          "name": "Fence 01 01 62",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              6.9993,
+              3.11502,
+              -54.08667
+            ],
+            "rotationDeg": [
+              -179.662,
+              -18.196,
+              177.256
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-63",
+          "name": "Fence 01 01 63",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              5.54292,
+              3.02719,
+              -53.59338
+            ],
+            "rotationDeg": [
+              -179.411,
+              -17.254,
+              -179.658
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-64",
+          "name": "Fence 01 01 64",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              4.1353,
+              3.01554,
+              -53.1539
+            ],
+            "rotationDeg": [
+              -179.617,
+              -17.576,
+              178.157
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-65",
+          "name": "Fence 01 01 65",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              2.64988,
+              2.98255,
+              -52.6787
+            ],
+            "rotationDeg": [
+              -179.356,
+              -17.881,
+              -179.371
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-66",
+          "name": "Fence 01 01 66",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              1.23437,
+              2.99366,
+              -52.20971
+            ],
+            "rotationDeg": [
+              -179.343,
+              -21.275,
+              -179.331
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-67",
+          "name": "Fence 01 01 67",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -0.08138,
+              2.96583,
+              -51.69119
+            ],
+            "rotationDeg": [
+              -179.56,
+              -24.52,
+              178.171
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-68",
+          "name": "Fence 01 01 68",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -1.36869,
+              2.87457,
+              -51.08275
+            ],
+            "rotationDeg": [
+              179.585,
+              -22.767,
+              174.033
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-69",
+          "name": "Fence 01 01 69",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -2.67949,
+              2.70393,
+              -50.52266
+            ],
+            "rotationDeg": [
+              178.955,
+              -29.753,
+              170.602
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-70",
+          "name": "Fence 01 01 70",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -3.90596,
+              2.47385,
+              -49.81787
+            ],
+            "rotationDeg": [
+              178.869,
+              -30.226,
+              166.672
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-71",
+          "name": "Fence 01 01 71",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -5.29704,
+              2.13687,
+              -49.01902
+            ],
+            "rotationDeg": [
+              179.441,
+              -30.42,
+              173.086
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-72",
+          "name": "Fence 01 01 72",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -7.89548,
+              1.8497,
+              -47.3705
+            ],
+            "rotationDeg": [
+              -179.469,
+              -34.718,
+              179.717
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-73",
+          "name": "Fence 01 01 73",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -9.15306,
+              1.80778,
+              -46.51247
+            ],
+            "rotationDeg": [
+              -179.309,
+              -27.492,
+              -179.25
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-a-74",
+          "name": "Fence 01 01 74",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -10.54601,
+              1.83817,
+              -45.80856
+            ],
+            "rotationDeg": [
+              -179.409,
+              -18.535,
+              -175.982
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-c-01",
+          "name": "Fence 01 03 01",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-c",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -11.72054,
+              0.6339,
+              42.98297
+            ],
+            "rotationDeg": [
+              180,
+              -5.705,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-c-02",
+          "name": "Fence 01 03 02",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-c",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              38.66793,
+              0.6339,
+              39.17528
+            ],
+            "rotationDeg": [
+              0,
+              25.769,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-c-03",
+          "name": "Fence 01 03 03",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-c",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              48.39002,
+              1.54337,
+              32.26585
+            ],
+            "rotationDeg": [
+              1.965,
+              35.314,
+              6.646
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-c-04",
+          "name": "Fence 01 03 04",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-c",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              41.09937,
+              0.64039,
+              37.69391
+            ],
+            "rotationDeg": [
+              180,
+              -16.625,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-c-05",
+          "name": "Fence 01 03 05",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-c",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              26.89268,
+              4.51535,
+              -60.76803
+            ],
+            "rotationDeg": [
+              -0.468,
+              15.75,
+              8.385
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-c-06",
+          "name": "Fence 01 03 06",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-c",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -11.92619,
+              1.93588,
+              -45.33533
+            ],
+            "rotationDeg": [
+              180,
+              -14.957,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-c-07",
+          "name": "Fence 01 03 07",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-c",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -64.84545,
+              4.92971,
+              -15.5363
+            ],
+            "rotationDeg": [
+              0.072,
+              40.336,
+              6.151
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-c-08",
+          "name": "Fence 01 03 08",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-c",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -72.0595,
+              5.10723,
+              -5.6293
+            ],
+            "rotationDeg": [
+              -175.649,
+              -46.111,
+              -170.38
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-c-09",
+          "name": "Fence 01 03 09",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-c",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              30.58098,
+              5.74988,
+              -46.38718
+            ],
+            "rotationDeg": [
+              -3.137,
+              56.871,
+              11.456
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-c-10",
+          "name": "Fence 01 03 10",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-c",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              27.97489,
+              5.08072,
+              -42.67987
+            ],
+            "rotationDeg": [
+              176.006,
+              -58.833,
+              168.202
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-d-01",
+          "name": "Fence 01 04 01",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-d",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              30.58098,
+              5.74988,
+              -46.38718
+            ],
+            "rotationDeg": [
+              177.714,
+              -54.425,
+              169.246
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-d-02",
+          "name": "Fence 01 04 02",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-d",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              26.89268,
+              4.51535,
+              -60.76803
+            ],
+            "rotationDeg": [
+              179.238,
+              -17.649,
+              171.531
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-d-03",
+          "name": "Fence 01 04 03",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-d",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              38.66793,
+              0.6339,
+              39.17528
+            ],
+            "rotationDeg": [
+              180,
+              -23.955,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-d-04",
+          "name": "Fence 01 04 04",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-d",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              48.39002,
+              1.54337,
+              32.26585
+            ],
+            "rotationDeg": [
+              -178.576,
+              -38.928,
+              173.028
+            ]
+          }
+        },
+        {
+          "id": "prop-fence-d-05",
+          "name": "Fence 01 04 05",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fence-d",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -72.0595,
+              5.10723,
+              -5.6293
+            ],
+            "rotationDeg": [
+              5.617,
+              50.827,
+              -10.569
+            ]
+          }
+        },
+        {
+          "id": "prop-fountain-01",
+          "name": "Fountain 01",
+          "content": {
+            "type": "asset",
+            "asset": "prop-fountain",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              20.22482,
+              2.43534,
+              -9.04554
+            ]
+          }
+        },
+        {
+          "id": "prop-gate-01",
+          "name": "Gate 01",
+          "content": {
+            "type": "asset",
+            "asset": "prop-gate",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              40.10642,
+              0.62702,
+              39.04964
+            ],
+            "rotationDeg": [
+              180,
+              -26.91,
+              180
+            ],
+            "scale": 1.25808
+          }
+        },
+        {
+          "id": "prop-gazebo-01",
+          "name": "Gazebo 01",
+          "content": {
+            "type": "asset",
+            "asset": "prop-gazebo",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -0.12635,
+              3.31911,
+              0.21443
+            ],
+            "rotationDeg": [
+              0,
+              -23.342,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-pergola-01",
+          "name": "Pergola 01",
+          "content": {
+            "type": "asset",
+            "asset": "prop-pergola",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -13.13261,
+              0.51584,
+              -29.57534
+            ],
+            "rotationDeg": [
+              0,
+              -70.1,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-a-01",
+          "name": "Planter Circular 01 01",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -2.98975,
+              1.24009,
+              -21.46594
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-a-02",
+          "name": "Planter Circular 01 02",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -30.09992,
+              2.52061,
+              1.9706
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-a-03",
+          "name": "Planter Circular 01 03",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -19.81984,
+              1.31851,
+              -13.3534
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-a-04",
+          "name": "Planter Circular 01 04",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -52.5742,
+              2.28726,
+              -11.18085
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-a-05",
+          "name": "Planter Circular 01 05",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -13.52116,
+              1.42517,
+              17.63604
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-a-06",
+          "name": "Planter Circular 01 06",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -15.25501,
+              0.65525,
+              24.28936
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-a-07",
+          "name": "Planter Circular 01 07",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              26.90172,
+              1.62235,
+              -39.64181
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-a-08",
+          "name": "Planter Circular 01 08",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              0.58917,
+              2.02221,
+              -13.94528
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-a-09",
+          "name": "Planter Circular 01 09",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              41.70012,
+              0.62575,
+              -26.29175
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-a-10",
+          "name": "Planter Circular 01 10",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-a",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -27.2705,
+              1.63363,
+              18.66397
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-01",
+          "name": "Planter Circular 02 01",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -1.21042,
+              2.53363,
+              7.58467
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-02",
+          "name": "Planter Circular 02 02",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -3.83974,
+              2.55601,
+              7.21074
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-03",
+          "name": "Planter Circular 02 03",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              14.35148,
+              1.66125,
+              2.82515
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-04",
+          "name": "Planter Circular 02 04",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              24.84264,
+              4.20512,
+              -45.61581
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-05",
+          "name": "Planter Circular 02 05",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -54.57091,
+              2.36266,
+              -10.15083
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-06",
+          "name": "Planter Circular 02 06",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -67.45049,
+              4.49538,
+              -8.91262
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-07",
+          "name": "Planter Circular 02 07",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              7.43891,
+              2.48149,
+              0.88149
+            ],
+            "rotationDeg": [
+              0,
+              86.268,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-08",
+          "name": "Planter Circular 02 08",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              6.78325,
+              2.42557,
+              3.7501
+            ],
+            "rotationDeg": [
+              0,
+              86.268,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-09",
+          "name": "Planter Circular 02 09",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              0.94951,
+              2.86627,
+              -6.8728
+            ],
+            "rotationDeg": [
+              179.977,
+              8.059,
+              179.925
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-10",
+          "name": "Planter Circular 02 10",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              3.80142,
+              2.83059,
+              -6.05309
+            ],
+            "rotationDeg": [
+              179.977,
+              8.059,
+              179.925
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-11",
+          "name": "Planter Circular 02 11",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              10.85122,
+              2.0402,
+              1.73494
+            ],
+            "rotationDeg": [
+              0,
+              86.268,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-12",
+          "name": "Planter Circular 02 12",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -31.68091,
+              2.30538,
+              7.58874
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-13",
+          "name": "Planter Circular 02 13",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -14.26613,
+              1.75173,
+              13.8076
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-14",
+          "name": "Planter Circular 02 14",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -21.78832,
+              0.86263,
+              24.95679
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-15",
+          "name": "Planter Circular 02 15",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -17.86002,
+              0.52235,
+              26.69184
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-16",
+          "name": "Planter Circular 02 16",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -31.03244,
+              2.16807,
+              11.79101
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-17",
+          "name": "Planter Circular 02 17",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -17.6494,
+              2.03157,
+              12.56509
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-18",
+          "name": "Planter Circular 02 18",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -5.08987,
+              1.2346,
+              17.84478
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-19",
+          "name": "Planter Circular 02 19",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -2.28412,
+              1.17709,
+              15.85755
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-20",
+          "name": "Planter Circular 02 20",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              32.67273,
+              0.3316,
+              27.3978
+            ],
+            "rotationDeg": [
+              0,
+              86.268,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-21",
+          "name": "Planter Circular 02 21",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              36.55929,
+              0.38558,
+              26.13537
+            ],
+            "rotationDeg": [
+              0,
+              86.268,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-22",
+          "name": "Planter Circular 02 22",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              41.96059,
+              0.41901,
+              -0.77428
+            ],
+            "rotationDeg": [
+              0,
+              86.268,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-23",
+          "name": "Planter Circular 02 23",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              39.83485,
+              0.57603,
+              -4.9647
+            ],
+            "rotationDeg": [
+              0,
+              86.268,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-24",
+          "name": "Planter Circular 02 24",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              2.99832,
+              1.00305,
+              -24.04222
+            ],
+            "rotationDeg": [
+              0,
+              86.268,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-25",
+          "name": "Planter Circular 02 25",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              7.16379,
+              0.97339,
+              -24.19602
+            ],
+            "rotationDeg": [
+              0,
+              86.268,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-round-b-26",
+          "name": "Planter Circular 02 26",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-round-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              6.54012,
+              1.62442,
+              -18.84862
+            ],
+            "rotationDeg": [
+              0,
+              86.268,
+              0
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-long-b-01",
+          "name": "Planter Long02 01",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-long-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -9.02125,
+              2.76732,
+              0.82562
+            ],
+            "rotationDeg": [
+              180,
+              -89.162,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-long-b-02",
+          "name": "Planter Long02 02",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-long-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              -13.10954,
+              2.53234,
+              0.30934
+            ],
+            "rotationDeg": [
+              180,
+              -86.928,
+              180
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-long-b-03",
+          "name": "Planter Long02 03",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-long-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              12.44024,
+              2.34838,
+              -9.61412
+            ],
+            "rotationDeg": [
+              180,
+              -85.779,
+              180
+            ],
+            "scale": 0.81986
+          }
+        },
+        {
+          "id": "prop-planter-long-b-04",
+          "name": "Planter Long02 04",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-long-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              25.35697,
+              1.96427,
+              -14.51101
+            ],
+            "rotationDeg": [
+              -180,
+              44.04,
+              -180
+            ],
+            "scale": 0.81986
+          }
+        },
+        {
+          "id": "prop-planter-long-b-05",
+          "name": "Planter Long02 05",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-long-b",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              22.26079,
+              2.05727,
+              -1.71369
+            ],
+            "rotationDeg": [
+              0,
+              10.671,
+              0
+            ],
+            "scale": 0.81986
+          }
+        },
+        {
+          "id": "prop-planter-long-d-01",
+          "name": "Planter Long04 01",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-long-d",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              46.12212,
+              0.11977,
+              -6.03938
+            ],
+            "rotationDeg": [
+              -179.656,
+              60.706,
+              179.7
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-long-d-02",
+          "name": "Planter Long04 02",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-long-d",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              7.26493,
+              0.28405,
+              36.09181
+            ],
+            "rotationDeg": [
+              -0.169,
+              3.534,
+              0.01
+            ]
+          }
+        },
+        {
+          "id": "prop-planter-long-d-03",
+          "name": "Planter Long04 03",
+          "content": {
+            "type": "asset",
+            "asset": "prop-planter-long-d",
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              26.64273,
+              0.10009,
+              18.0055
+            ],
+            "rotationDeg": [
+              -0.307,
+              -56.761,
+              -0.257
+            ]
+          }
+        },
+        {
+          "id": "sky-dome-01",
+          "name": "Sky 01",
+          "content": {
+            "type": "asset",
+            "asset": "sky-dome"
+          },
+          "transform": {
+            "position": [
+              -42.39914,
+              0,
+              -15.66924
+            ],
+            "scale": 1.63297
+          }
+        },
+        {
+          "id": "tree-hero-01",
+          "name": "Tree Hero 01",
+          "content": {
+            "type": "asset",
+            "asset": "tree-hero",
+            "castShadow": true,
+            "receiveShadow": true
+          },
+          "transform": {
+            "position": [
+              37.27751,
+              -0.08405,
+              15.14337
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "authoring": {
+    "views": []
+  },
+  "player": {
+    "transform": {
+      "position": [
+        40.7168,
+        0.3859,
+        33.6175
+      ],
+      "rotationDeg": [
+        0,
+        45,
+        0
+      ]
+    }
+  }
+}

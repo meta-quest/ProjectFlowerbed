@@ -1,0 +1,117 @@
+<!--
+  Floating label above the wrist seedbox: the hovered (or selected) seed,
+  the current page, and the paging buttons. Driven by seedbox-system.ts.
+-->
+<style>
+  .card {
+    flex-direction: column;
+    width: 42;
+    padding-top: 1.6;
+    padding-bottom: 1.6;
+    padding-left: 2.2;
+    padding-right: 2.2;
+    gap: 1;
+    border-radius: 3;
+    background-color: #15211b;
+    border-width: 0.25;
+    border-color: #35503f;
+  }
+
+  .row {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.4;
+  }
+
+  .swatch {
+    width: 2.4;
+    height: 2.4;
+    border-radius: 1.2;
+    background-color: #86dc3d;
+  }
+
+  .name {
+    color: #f6f3ea;
+    font-size: 2.8;
+    font-weight: 700;
+    flex-grow: 1;
+  }
+
+  .state {
+    color: #86dc3d;
+    font-size: 1.6;
+    font-weight: 700;
+  }
+
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page {
+    color: #a9bdb1;
+    font-size: 1.7;
+    flex-shrink: 0;
+  }
+
+  .keys {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8;
+  }
+
+  .key {
+    width: 2.6;
+    height: 2.6;
+    border-radius: 1.3;
+    background-color: #2a3c33;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .key-text {
+    color: #f6f3ea;
+    font-size: 1.4;
+    font-weight: 700;
+  }
+
+  .key-label {
+    color: #a9bdb1;
+    font-size: 1.6;
+  }
+
+  .dots {
+    flex-direction: row;
+    gap: 0.7;
+  }
+
+  .dot {
+    width: 1.1;
+    height: 1.1;
+    border-radius: 0.55;
+    background-color: #3c5246;
+  }
+</style>
+<div class="card">
+  <div class="row">
+    <div class="swatch" id="seed-swatch"></div>
+    <span class="name" id="seed-name">Sugar Pine</span>
+    <span class="state" id="seed-state">SELECTED</span>
+  </div>
+  <div class="footer">
+    <div class="dots">
+      <div class="dot" id="page-dot-0"></div>
+      <div class="dot" id="page-dot-1"></div>
+      <div class="dot" id="page-dot-2"></div>
+      <div class="dot" id="page-dot-3"></div>
+    </div>
+    <span class="page" id="seed-page">Page 1 of 4</span>
+    <div class="keys" id="seed-keys">
+      <div class="key" id="key-y"><span class="key-text" id="key-y-text">Y</span></div>
+      <span class="key-label" id="key-y-label">back</span>
+      <div class="key" id="key-x"><span class="key-text" id="key-x-text">X</span></div>
+      <span class="key-label" id="key-x-label">next</span>
+    </div>
+  </div>
+</div>

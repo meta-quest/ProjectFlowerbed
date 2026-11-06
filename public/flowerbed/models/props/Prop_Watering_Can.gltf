@@ -1,0 +1,209 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 14760,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 2877,
+      "max": [
+        32767,
+        23954,
+        12893
+      ],
+      "min": [
+        -32767,
+        -23954,
+        -12893
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 2877,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 2877,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 2877,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 29520,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 29520,
+      "byteLength": 57540,
+      "byteStride": 20,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Prop_Watering_Can_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Watering_Can_NormalMap.ktx2"
+    },
+    {
+      "name": "Prop_Watering_Can_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Watering_Can_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Prop_Watering_Can_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Watering_Can_BaseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Prop_Watering_Can.bin",
+      "byteLength": 87060
+    }
+  ],
+  "materials": [
+    {
+      "name": "Prop_Watering_Can",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh.003",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TEXCOORD_0": 3,
+            "TANGENT": 4
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Prop_Watering_Can",
+      "translation": [
+        -0.09916304051876068,
+        0.3116611795163111,
+        5.960464477539063e-8
+      ],
+      "scale": [
+        0.42630113661289215,
+        0.42630113661289215,
+        0.42630113661289215
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "water_origin",
+      "translation": [
+        -0.5049547553062439,
+        0.5374516844749451,
+        0
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

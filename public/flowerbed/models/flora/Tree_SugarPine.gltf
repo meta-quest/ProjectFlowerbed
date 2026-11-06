@@ -1,0 +1,279 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 6240,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 1738,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 1738,
+      "bufferView": 1,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 1738,
+      "max": [
+        16422,
+        32767,
+        16526
+      ],
+      "min": [
+        -16422,
+        -32767,
+        -16526
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 1738,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 1738,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 1738,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 28
+    },
+    {
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 5,
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 12480,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12480,
+      "byteLength": 55616,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 68096,
+      "byteLength": 320
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Tree_Sugar_Pine_normal",
+      "mimeType": "image/ktx2",
+      "uri": "Tree_Sugar_Pine_normal.ktx2"
+    },
+    {
+      "name": "Tree_Sugar_Pine_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Tree_Sugar_Pine_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Tree_Sugar_Pine_baseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Tree_Sugar_Pine_baseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Tree_SugarPine.bin",
+      "byteLength": 68416
+    }
+  ],
+  "materials": [
+    {
+      "name": "M_SkinnedPlant_Tree_SugarPine",
+      "alphaMode": "MASK",
+      "alphaCutoff": 0.5,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Tree_SugarPine",
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 1,
+            "JOINTS_0": 2,
+            "POSITION": 3,
+            "NORMAL": 4,
+            "WEIGHTS_0": 5,
+            "TANGENT": 6
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root"
+    },
+    {
+      "name": "Branches01",
+      "translation": [
+        0,
+        3.9875035285949707,
+        0
+      ]
+    },
+    {
+      "name": "Branches02",
+      "translation": [
+        0,
+        5.001505374908447,
+        0
+      ]
+    },
+    {
+      "name": "Branches03",
+      "translation": [
+        0,
+        6.049533843994141,
+        0
+      ]
+    },
+    {
+      "name": "Branches04",
+      "translation": [
+        0,
+        6.982847690582275,
+        0
+      ]
+    },
+    {
+      "name": "Tree_SugarPine",
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "ARM_Tree_SugarPine",
+      "children": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "name": "ARM_Tree_SugarPine",
+      "inverseBindMatrices": 7,
+      "joints": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        6
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

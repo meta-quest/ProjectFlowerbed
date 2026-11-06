@@ -1,0 +1,61 @@
+<!--
+  Small contextual hint bubble (legacy tooltips). A key badge, a title and
+  one line of guidance; text is set by src/ui/hints.ts.
+-->
+<style>
+  .bubble {
+    flex-direction: row;
+    align-items: center;
+    gap: 10;
+    width: 340;
+    padding-top: 12;
+    padding-bottom: 12;
+    padding-left: 12;
+    padding-right: 16;
+    border-radius: 18;
+    background-color: #f6f3ea;
+  }
+
+  .badge {
+    min-width: 40;
+    height: 40;
+    padding-left: 8;
+    padding-right: 8;
+    border-radius: 20;
+    align-items: center;
+    justify-content: center;
+    background-color: #15211b;
+  }
+
+  .badge-text {
+    color: #86dc3d;
+    font-size: 16;
+    font-weight: 700;
+  }
+
+  .text {
+    flex-direction: column;
+    gap: 2;
+    flex-shrink: 1;
+    flex-grow: 1;
+  }
+
+  .title {
+    color: #15211b;
+    font-size: 19;
+    font-weight: 700;
+  }
+
+  .line {
+    color: #3a4a41;
+    font-size: 16;
+    line-height: 1.3;
+  }
+</style>
+<div class="bubble" id="hint-root">
+  <div class="badge"><span class="badge-text" id="hint-key">A</span></div>
+  <div class="text">
+    <span class="title" id="hint-title">Open the menu</span>
+    <span class="line" id="hint-text">Press A to open the tool dial.</span>
+  </div>
+</div>

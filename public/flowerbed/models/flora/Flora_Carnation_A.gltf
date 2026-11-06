@@ -1,0 +1,310 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 2406,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 802,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 802,
+      "max": [
+        9553,
+        32767,
+        13177
+      ],
+      "min": [
+        -9553,
+        -32767,
+        -13177
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 4
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 802,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 802,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 802,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 802,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 5,
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 4812,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4812,
+      "byteLength": 22456,
+      "byteStride": 28,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 27268,
+      "byteLength": 320
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Flora_Carnation_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Carnation_NormalMap.ktx2"
+    },
+    {
+      "name": "Flora_Carnation_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Carnation_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Flora_Carnation_A_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Carnation_A_BaseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Flora_Carnation_A.bin",
+      "byteLength": 27588
+    }
+  ],
+  "materials": [
+    {
+      "name": "SkinnedPlant_Flora_Carnation_A",
+      "alphaMode": "MASK",
+      "alphaCutoff": 0.5,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Flora_Carnation",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "WEIGHTS_0": 5,
+            "TANGENT": 6
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root",
+      "rotation": [
+        0.03554794192314148,
+        -0.001121256616897881,
+        -0.0015434995293617249,
+        0.9993661642074585
+      ]
+    },
+    {
+      "name": "Flower_01",
+      "translation": [
+        0.004678784403949976,
+        0.5995830297470093,
+        0.05872510001063347
+      ],
+      "rotation": [
+        0.19910161197185516,
+        -0.045024096965789795,
+        -0.045024093240499496,
+        0.977908194065094
+      ]
+    },
+    {
+      "name": "Flower_02",
+      "translation": [
+        -0.00013993277389090508,
+        0.5858194828033447,
+        -0.004574696067720652
+      ],
+      "rotation": [
+        -0.30339711904525757,
+        -0.011839635670185089,
+        -0.011839635670185089,
+        0.9527171850204468
+      ]
+    },
+    {
+      "name": "Leaves_01",
+      "translation": [
+        0.0022538634948432446,
+        0.3778750002384186,
+        0.021668381989002228
+      ],
+      "rotation": [
+        0.0025058735627681017,
+        -0.00326175126247108,
+        -0.0032617514953017235,
+        0.9999863505363464
+      ]
+    },
+    {
+      "name": "Leaves_02",
+      "translation": [
+        0.00044281434384174645,
+        0.20181067287921906,
+        0.013858390040695667
+      ],
+      "rotation": [
+        0.03478896617889404,
+        -0.006582583300769329,
+        -0.006582583300769329,
+        0.9993513226509094
+      ]
+    },
+    {
+      "name": "Flora_Carnation",
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "Flora_Carnation_Armature",
+      "children": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "name": "Flora_Carnation_Armature",
+      "inverseBindMatrices": 7,
+      "joints": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        6
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

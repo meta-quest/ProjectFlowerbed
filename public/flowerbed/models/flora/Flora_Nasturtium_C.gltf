@@ -1,0 +1,284 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 11070,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 3393,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 3393,
+      "max": [
+        30471,
+        17742,
+        32767
+      ],
+      "min": [
+        -30471,
+        -17742,
+        -32767
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 4
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 3393,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 3393,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 3393,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 20
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 3393,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 3393,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 28
+    },
+    {
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 5,
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 22140,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 22140,
+      "byteLength": 108576,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 130716,
+      "byteLength": 320
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Flora_Nasturtium_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Nasturtium_NormalMap.ktx2"
+    },
+    {
+      "name": "Flora_Nasturtium_C_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Nasturtium_C_BaseColor.ktx2"
+    },
+    {
+      "name": "Flora_Nasturtium_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Flora_Nasturtium_occlusionRoughnessMetallic.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Flora_Nasturtium_C.bin",
+      "byteLength": 131036
+    }
+  ],
+  "materials": [
+    {
+      "name": "SkinnedPlant_Flora_Nasturtium_C",
+      "alphaMode": "MASK",
+      "alphaCutoff": 0.5,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "high_0.004",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 1,
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "TEXCOORD_1": 5,
+            "WEIGHTS_0": 6,
+            "TANGENT": 7
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Root"
+    },
+    {
+      "name": "Flowers_02",
+      "rotation": [
+        0.1266220510005951,
+        0.4553399384021759,
+        0.45533987879753113,
+        0.7545185685157776
+      ]
+    },
+    {
+      "name": "Flowers_03",
+      "rotation": [
+        -0.06897515803575516,
+        -0.45200708508491516,
+        -0.4520072042942047,
+        0.7659123539924622
+      ]
+    },
+    {
+      "name": "Flowers_01",
+      "rotation": [
+        -0.45248594880104065,
+        0.09250848740339279,
+        0.09250833094120026,
+        0.8821229338645935
+      ]
+    },
+    {
+      "name": "Flowers_04"
+    },
+    {
+      "name": "Flora_Nasturtium_Geo",
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "Flora_Nasturtium",
+      "children": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "name": "Flora_Nasturtium",
+      "inverseBindMatrices": 8,
+      "joints": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        6
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

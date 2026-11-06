@@ -1,0 +1,343 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 354,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 14346,
+      "bufferView": 0,
+      "byteOffset": 708
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 120,
+      "max": [
+        32767,
+        10937,
+        32767
+      ],
+      "min": [
+        -32767,
+        -10937,
+        -32767
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 120,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 120,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 120,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 4290,
+      "max": [
+        32767,
+        20918,
+        17498
+      ],
+      "min": [
+        -32767,
+        -20918,
+        -17498
+      ],
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 4290,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 4290,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 4290,
+      "normalized": true,
+      "bufferView": 2,
+      "byteOffset": 16
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 29400,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 29400,
+      "byteLength": 2400,
+      "byteStride": 20,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 31800,
+      "byteLength": 85800,
+      "byteStride": 20,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Prop_Camera_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Camera_NormalMap.ktx2"
+    },
+    {
+      "name": "Prop_Camera_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Camera_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Prop_Camera_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Camera_BaseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Prop_Camera.bin",
+      "byteLength": 117600
+    }
+  ],
+  "materials": [
+    {
+      "name": "Prop_Camera",
+      "extras": {
+        "b_painter": {}
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Prop_Camera",
+      "extras": {
+        "hops": {}
+      },
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "TANGENT": 5
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    },
+    {
+      "name": "Prop_Camera.001",
+      "extras": {
+        "hops": {}
+      },
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7,
+            "TEXCOORD_0": 8,
+            "TANGENT": 9
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 1
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "shutter_release_button",
+      "extras": {
+        "kitops": {},
+        "MM": {},
+        "hops": {},
+        "b_painter_active_material": 0
+      },
+      "translation": [
+        0.09745036624372005,
+        0.10959554836153984,
+        -0.026292352937161922
+      ],
+      "scale": [
+        0.010365036316215992,
+        0.010365036316215992,
+        0.010365036316215992
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "Prop_Camera",
+      "extras": {
+        "kitops": {},
+        "MM": {},
+        "hops": {},
+        "b_painter_active_material": 0
+      },
+      "translation": [
+        0.031741950660943985,
+        0.05782567679671047,
+        -0.024786362424492836
+      ],
+      "scale": [
+        0.09059953689575195,
+        0.09059953689575195,
+        0.09059953689575195
+      ],
+      "mesh": 1
+    },
+    {
+      "name": "photo_start",
+      "translation": [
+        0.010024219751358032,
+        0.05233965069055557,
+        -0.008707096800208092
+      ]
+    },
+    {
+      "name": "photo_end",
+      "translation": [
+        -0.10855725407600403,
+        0.05233965069055557,
+        -0.008707107044756413
+      ]
+    },
+    {
+      "name": "camera_anchor",
+      "translation": [
+        0.11430972814559937,
+        0.026866137981414795,
+        -0.008707087486982346
+      ]
+    },
+    {
+      "name": "screen_anchor",
+      "translation": [
+        0.009436638094484806,
+        0.052028123289346695,
+        0.015322942286729813
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}

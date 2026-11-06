@@ -1,0 +1,271 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 153,
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 69,
+      "max": [
+        32767,
+        21078,
+        3556
+      ],
+      "min": [
+        -32767,
+        -21078,
+        -3556
+      ],
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 69,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 8
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 69,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5120,
+      "count": 69,
+      "normalized": true,
+      "bufferView": 1,
+      "byteOffset": 16
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 308,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 308,
+      "byteLength": 1380,
+      "byteStride": 20,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 2
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "sampler": 0,
+      "extensions": {
+        "KHR_texture_basisu": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "name": "Prop_Fence_NormalMap",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Fence_NormalMap.ktx2"
+    },
+    {
+      "name": "Prop_Fence_occlusionRoughnessMetallic",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Fence_occlusionRoughnessMetallic.ktx2"
+    },
+    {
+      "name": "Prop_Fence_BaseColor",
+      "mimeType": "image/ktx2",
+      "uri": "Prop_Fence_BaseColor.ktx2"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "Prop_Fence_01_01_LOD1.bin",
+      "byteLength": 1688
+    }
+  ],
+  "materials": [
+    {
+      "name": "Prop_Fence",
+      "extras": {
+        "DM": {},
+        "b_painter": {}
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "BezierCurve.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TEXCOORD_0": 3,
+            "TANGENT": 4
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Prop_Fence_01_01",
+      "extras": {
+        "kitops": {},
+        "MM": {},
+        "M3": {},
+        "hops": {},
+        "DM": {}
+      },
+      "translation": [
+        0.6997302025556564,
+        0.5144781627277553,
+        -0.0012463517487049103
+      ],
+      "scale": [
+        0.7999704629182816,
+        0.7999704629182816,
+        0.7999704629182816
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "extras": {
+        "b_painter_panels": [
+          "BRUSH",
+          "COLOR",
+          "TEXTURE",
+          "STENCIL",
+          "LAYER"
+        ],
+        "kitops": {},
+        "bc": {
+          "snap": {
+            "hit": 0
+          }
+        },
+        "MM": {
+          "revision": "6b9140d97c1c89684282504c1b43358bc5142503"
+        },
+        "b_painter_active_tex_brush_category": "Brush Textures",
+        "vr_landmarks": [
+          {
+            "type": 0
+          }
+        ],
+        "b_painter_active_brush": "Brush Mask",
+        "b_painter_brush": 0,
+        "b_painter_active_tex_brush": "None",
+        "scatter_properties": {},
+        "td": {},
+        "curvetools": {
+          "CurveLength": 1.6705399751663208
+        },
+        "zen_display": {
+          "stacked": 0,
+          "finished": 0,
+          "stretch": 0
+        },
+        "DM": {
+          "revision": "cc8df93aaa3044a610f0d75120f185790c4bb932",
+          "export_atlas_texture_channel_packCOL": [
+            {
+              "avoid_update": 0,
+              "name": "ao_curv_height",
+              "red": 2,
+              "green": 3,
+              "blue": 4
+            },
+            {
+              "avoid_update": 0,
+              "name": "masks",
+              "red": 1,
+              "green": 9,
+              "blue": 10
+            }
+          ]
+        },
+        "M3": {
+          "avoid_update": 0,
+          "shading_light": 0,
+          "use_flat_shadows": 0
+        }
+      },
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_basisu",
+    "KHR_mesh_quantization"
+  ]
+}
