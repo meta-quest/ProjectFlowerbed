@@ -62,7 +62,7 @@
     "@types/three": "^0.185.0",
     "@vitest/coverage-v8": "^4.1.11",
     "eslint": "^9.39.2",
-    "happy-dom": "^20.11.0",
+    "happy-dom": "^21.0.4",
     "prettier": "^3.9.6",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.65.0",
